@@ -1,0 +1,10 @@
+debug/QxtSpanSlider.o
+debug/main.o
+debug/mainwindow.o
+debug/myglwidget.o
+debug/roi.o
+debug/qrc_Res.o
+debug/moc_QxtSpanSlider.o
+debug/moc_QxtSpanSlider_p.o
+debug/moc_mainwindow.o
+debug/moc_myglwidget.o

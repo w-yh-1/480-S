@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/Shaders">
+        <file>fragment_shader.frag</file>
+        <file>vertex_shader.vert</file>
+    </qresource>
+    <qresource prefix="/colorBar"/>
+    <qresource prefix="/">
+        <file>colorBar/index0.png</file>
+        <file>colorBar/index1.png</file>
+        <file>colorBar/index2.png</file>
+        <file>colorBar/index3.png</file>
+        <file>colorBar/index4.png</file>
+        <file>colorBar/index5.png</file>
+        <file>colorBar/index6.png</file>
+        <file>colorBar/index7.png</file>
+        <file>colorBar/index8.png</file>
+        <file>colorBar/index9.png</file>
+        <file>title.ico</file>
+    </qresource>
+</RCC>
