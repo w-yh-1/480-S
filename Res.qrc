@@ -4,6 +4,9 @@
         <file>vertex_shader.vert</file>
     </qresource>
     <qresource prefix="/colorBar"/>
+    <qresource prefix="/i18n">
+        <file>IR_Analyst_zh_CN.qm</file>
+    </qresource>
     <qresource prefix="/">
         <file>colorBar/index0.png</file>
         <file>colorBar/index1.png</file>

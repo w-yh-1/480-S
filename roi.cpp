@@ -1,4 +1,4 @@
-﻿#include "roi.h"
+#include "roi.h"
 #include "QWidget"
 #include "QDebug"
 #include "myglwidget.h"
@@ -35,6 +35,19 @@ EmDirection ROI::region(const QPoint & point)
 {
     int mouseX = point.x();
     int mouseY = point.y();
+    
+    if(m_type == ROI_POINT)
+    {
+        int px = m_roiRect.x();
+        int py = m_roiRect.y();
+        if(abs(mouseX - px) <= CORPADDING && abs(mouseY - py) <= CORPADDING)
+        {
+            m_parent->setCursor(Qt::OpenHandCursor);
+            return DIR_MIDDLE;
+        }
+        return DIR_NONE;
+    }
+    
     int ret=0;
     QPoint roiTopLeft = m_roiRect.topLeft();
     QPoint roiBottomRight = m_roiRect.bottomRight();
@@ -136,37 +149,40 @@ void ROI::Scale_Rect(const QPoint & mousePoint)
  */
 void ROI::Create_Rect(const QPoint & mousePoint)
 {
-    m_parent->setCursor(Qt::ArrowCursor);                    //设置鼠标为指针形状
+    m_parent->setCursor(Qt::ArrowCursor);
 
-    int width = mousePoint.x() - m_paintStartPoint.x();  //移动的宽度
-    int height = mousePoint.y() - m_paintStartPoint.y(); //移动的高度
+    if(m_type == ROI_POINT)
+    {
+        m_roiRect.setX(mousePoint.x());
+        m_roiRect.setY(mousePoint.y());
+        m_roiRect.setSize(QSize(1, 1));
+        return;
+    }
+
+    int width = mousePoint.x() - m_paintStartPoint.x();
+    int height = mousePoint.y() - m_paintStartPoint.y();
 
     if (width < 0 && height < 0)
     {
-        //鼠标向左上角移动
         m_roiRect.setX(mousePoint.x());
         m_roiRect.setY(mousePoint.y());
     }
     else if (width < 0)
     {
-        //鼠标向负X位置移动
         m_roiRect.setX(mousePoint.x());
         m_roiRect.setY(m_paintStartPoint.y());
     }
     else if (height < 0)
     {
-        //鼠标向负Y位置移动
         m_roiRect.setX(m_paintStartPoint.x());
         m_roiRect.setY(mousePoint.y());
     }
     else
     {
-        //正常  向右下移动
         m_roiRect.setX(m_paintStartPoint.x());
         m_roiRect.setY(m_paintStartPoint.y());
     }
 
-    //设置矩形大小 绝对值 避免反方向的产生的负值
     m_roiRect.setSize(QSize(abs(width), abs(height)));
 }
 
@@ -183,11 +199,19 @@ void ROI::Move_Rect(const QPoint & mousePoint)
     int width = mousePoint.x() - m_moveStartPoint.x();
     int height = mousePoint.y() - m_moveStartPoint.y();
 
-    QRect ret;
-    ret.setX(m_roiRect.x() + width);
-    ret.setY(m_roiRect.y() + height);
-    ret.setSize(m_roiRect.size());
-    m_roiRect = ret;
+    if(m_type == ROI_POINT)
+    {
+        m_roiRect.setX(m_roiRect.x() + width);
+        m_roiRect.setY(m_roiRect.y() + height);
+    }
+    else
+    {
+        QRect ret;
+        ret.setX(m_roiRect.x() + width);
+        ret.setY(m_roiRect.y() + height);
+        ret.setSize(m_roiRect.size());
+        m_roiRect = ret;
+    }
     m_moveStartPoint = mousePoint;
 }
 void ROI::ResponseMousePressEV(const QPoint &point)
@@ -195,21 +219,26 @@ void ROI::ResponseMousePressEV(const QPoint &point)
     EmDirection dir = region(point);     //获取鼠标当前的位置
     if (dir == DIR_MIDDLE)
     {
-        //鼠标在矩形中心位置
         m_parent->setCursor(Qt::ClosedHandCursor);
         m_moveStartPoint=point;
         m_bMovedPressed = true;
     }
     else if (dir == DIR_NONE)
     {
-        //鼠标在矩形外部
         m_parent->setCursor(Qt::ArrowCursor);
         m_bPainterPressed = true;
         m_paintStartPoint= point;
+        if(m_type == ROI_POINT)
+        {
+            m_roiRect.setX(point.x());
+            m_roiRect.setY(point.y());
+            m_roiRect.setSize(QSize(1, 1));
+            Analyst_Rect();
+            m_parent->update();
+        }
     }
     else
     {
-        //鼠标在矩形边缘
         m_moveStartPoint=point;
         m_bScalePressed = true;
         m_emCurDir = dir;
@@ -305,6 +334,25 @@ void ROI::Draw(QPainter &painter,bool isCurrent) const
                          +"\tAver:"+ QString::number(m_averVal));
         break;
     }
+    case ROI_POINT:{
+        int px = m_roiRect.x();
+        int py = m_roiRect.y();
+        
+        if(isCurrent)
+            painter.setPen(QPen(Qt::green, 2));
+        else
+            painter.setPen(QPen(Qt::yellow, 2));
+        
+        painter.drawLine(px - 8, py, px + 8, py);
+        painter.drawLine(px, py - 8, px, py + 8);
+        
+        painter.setBrush(QBrush(Qt::red, Qt::SolidPattern));
+        painter.drawEllipse(px - 3, py - 3, 6, 6);
+        
+        painter.setPen(Qt::white);
+        painter.drawText(px - 20, py + 18, QString::number(m_maxVal) + "°C");
+        break;
+    }
     default:
         return;
 
@@ -313,6 +361,12 @@ void ROI::Draw(QPainter &painter,bool isCurrent) const
 }
 bool ROI::contains(const QPoint &point)const
 {
+    if(m_type == ROI_POINT)
+    {
+        int px = m_roiRect.x();
+        int py = m_roiRect.y();
+        return (abs(point.x() - px) <= CORPADDING && abs(point.y() - py) <= CORPADDING);
+    }
     return m_roiRect.contains(point);
 }
 bool ROI::operator==(const ROI &other)
@@ -356,6 +410,17 @@ void ROI::Analyst_Rect()
             cnt=0;
         }
         m_averVal/=cols;
+        break;
+    }
+    case ROI_POINT:
+    {
+        int x = qBound(0, m_roiRect.x(), 639);
+        int y = qBound(0, m_roiRect.y(), 511);
+        m_maxVal = m_minVal = m_averVal = data[y][x];
+        m_max.setX(x);
+        m_max.setY(y);
+        m_min.setX(x);
+        m_min.setY(y);
         break;
     }
     default:

@@ -1,9 +1,10 @@
-﻿#include "mainwindow.h"
+#include "mainwindow.h"
 #include "ui_mainwindow.h.bak"
 #include "QFileDialog"
 #include "QComboBox"
 #include "QxtSpanSlider.h"
 #include <QStandardPaths>
+#include "roi.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -22,6 +23,8 @@ MainWindow::MainWindow(QWidget *parent)
     QActionGroup *AG=new QActionGroup(this);
     AG->addAction(ui->actionRect);
     AG->addAction(ui->actionPoint);
+    connect(ui->actionRect, &QAction::triggered, this, [=](){ ui->openGLwidget->Clear_CurrentROI(); ui->openGLwidget->Set_ROI_Type(ROI_RECT); });
+    connect(ui->actionPoint, &QAction::triggered, this, [=](){ ui->openGLwidget->Clear_CurrentROI(); ui->openGLwidget->Set_ROI_Type(ROI_POINT); });
     connect(ui->lineEdit_relHum,&QLineEdit::editingFinished,this,&MainWindow::OnLineEditEditingFinished);
     connect(ui->lineEdit_distance,&QLineEdit::editingFinished,this,&MainWindow::OnLineEditEditingFinished);
     connect(ui->lineEdit_emiss,&QLineEdit::editingFinished,this,&MainWindow::OnLineEditEditingFinished);

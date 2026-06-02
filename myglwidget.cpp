@@ -1,4 +1,4 @@
-﻿#include <myglwidget.h>
+#include <myglwidget.h>
 #include <QFile>
 #include <QPainter>
 #include <QMouseEvent>
@@ -142,7 +142,11 @@ void myGLwidget::paintGL()
     for(int i=m_roiList.size()-1;i>=0;--i)
     {
         m_roiList[i].Draw(painter);
-        painter.drawText(m_roiList[i].m_roiRect.x(),m_roiList[i].m_roiRect.y()-3,"ID:"+QString::number(i+1));
+        int idX = m_roiList[i].m_roiRect.x() - 25;
+        int idY = m_roiList[i].m_roiRect.y() - 10;
+        if(idX < 0) idX = 0;
+        if(idY < 0) idY = 0;
+        painter.drawText(idX, idY, "ID:"+QString::number(i+1));
     }
 
     if(m_CurrentROI!=NULL)
@@ -233,6 +237,23 @@ void myGLwidget::Set_ImgColor(int index)
     m_colorIndex=index;
     if(!m_imgFilePath.isEmpty())
         Update_Texdata();
+}
+
+void myGLwidget::Set_ROI_Type(ROI_type type)
+{
+    m_currentROIType = type;
+}
+
+void myGLwidget::Clear_CurrentROI()
+{
+    if(m_CurrentROI != NULL)
+    {
+        delete m_CurrentROI;
+        m_CurrentROI = NULL;
+        m_indexInList = -1;
+        setCursor(Qt::ArrowCursor);
+        update();
+    }
 }
 
 void myGLwidget::Update_Texdata()
@@ -344,7 +365,7 @@ void myGLwidget::mousePressEvent(QMouseEvent * ev)
     if (ev->buttons() & Qt::LeftButton)
     {
         if(m_CurrentROI==NULL)
-            m_CurrentROI = new ROI(this);
+            m_CurrentROI = new ROI(this, m_currentROIType);
         m_CurrentROI->ResponseMousePressEV(ev->pos());
     }
 }

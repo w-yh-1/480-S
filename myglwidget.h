@@ -23,6 +23,8 @@ myGLwidget(QWidget *parent = nullptr);
 void Save_Img(QString &fileName);
 void Set_ImgPath(QString &path);
 void Set_ImgColor(int index);
+void Set_ROI_Type(ROI_type type);
+void Clear_CurrentROI();
 void Updata_Tdata();
 void Update_Texdata();
 short *m_paramsData;
@@ -75,5 +77,6 @@ float   m_GammaFactor;
 
 QList<ROI> m_roiList;
 int m_indexInList=-1;
+ROI_type m_currentROIType = ROI_RECT;
 };
 #endif // MYGLWIDGET_H
