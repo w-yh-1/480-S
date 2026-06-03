@@ -162,6 +162,8 @@ void myGLwidget::resizeGL(int w, int h)
 
 void myGLwidget::Set_ImgPath(QString &path)
 {
+    Save_CurrentROIList();
+    
     int jpgTailPos;
     QFile rawImgFile(path);
     m_imgFilePath=path;
@@ -224,6 +226,9 @@ void myGLwidget::Set_ImgPath(QString &path)
     // auto result=std::minmax_element(m_Tdata, m_Tdata + sizeof(m_Tdata)/sizeof(m_Tdata[0]));
     // m_TL=*result.first;
     // m_TH=*result.second;
+    
+    Load_CurrentROIList();
+    
     if(m_roiList.size()>-1)
     {
         for(int i=m_roiList.size()-1;i>=0;--i)
@@ -254,6 +259,29 @@ void myGLwidget::Clear_CurrentROI()
         setCursor(Qt::ArrowCursor);
         update();
     }
+}
+
+void myGLwidget::Save_CurrentROIList()
+{
+    if(!m_imgFilePath.isEmpty())
+    {
+        m_allRoiLists[m_imgFilePath] = m_roiList;
+    }
+}
+
+void myGLwidget::Load_CurrentROIList()
+{
+    if(m_allRoiLists.contains(m_imgFilePath))
+    {
+        m_roiList = m_allRoiLists[m_imgFilePath];
+    }
+    else
+    {
+        m_roiList.clear();
+    }
+    m_indexInList = -1;
+    m_CurrentROI = NULL;
+    update();
 }
 
 void myGLwidget::Update_Texdata()

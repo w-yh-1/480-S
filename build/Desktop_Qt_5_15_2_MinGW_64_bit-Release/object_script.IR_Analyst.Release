@@ -1,0 +1,10 @@
+release/QxtSpanSlider.o
+release/main.o
+release/mainwindow.o
+release/myglwidget.o
+release/roi.o
+release/qrc_Res.o
+release/moc_QxtSpanSlider.o
+release/moc_QxtSpanSlider_p.o
+release/moc_mainwindow.o
+release/moc_myglwidget.o
