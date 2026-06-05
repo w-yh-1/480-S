@@ -40,7 +40,7 @@ EmDirection ROI::region(const QPoint & point)
     {
         int px = m_roiRect.x();
         int py = m_roiRect.y();
-        if(abs(mouseX - px) <= CORPADDING && abs(mouseY - py) <= CORPADDING)
+        if(abs(mouseX - px) <= POINT_PADDING && abs(mouseY - py) <= POINT_PADDING)
         {
             m_parent->setCursor(Qt::OpenHandCursor);
             return DIR_MIDDLE;
@@ -325,10 +325,11 @@ void ROI::Draw(QPainter &painter,bool isCurrent) const
         painter.drawPolygon(polygon);
         painter.setBrush(Qt::NoBrush);
         if(isCurrent)
-            painter.setPen(Qt::green);
+            painter.setPen(QPen(Qt::yellow, 3));
         else
-            painter.setPen(pen0);
+            painter.setPen(QPen(Qt::green, 2));
         painter.drawRect(m_roiRect);
+        painter.setPen(Qt::green);
         painter.drawText(m_roiRect,"\tMax:"+QString::number(m_maxVal)
                          +"\tMin:"+QString::number(m_minVal)
                          +"\tAver:"+ QString::number(m_averVal));
@@ -339,9 +340,9 @@ void ROI::Draw(QPainter &painter,bool isCurrent) const
         int py = m_roiRect.y();
         
         if(isCurrent)
-            painter.setPen(QPen(Qt::green, 2));
+            painter.setPen(QPen(Qt::yellow, 3));
         else
-            painter.setPen(QPen(Qt::yellow, 2));
+            painter.setPen(QPen(Qt::green, 2));
         
         painter.drawLine(px - 8, py, px + 8, py);
         painter.drawLine(px, py - 8, px, py + 8);
@@ -349,7 +350,7 @@ void ROI::Draw(QPainter &painter,bool isCurrent) const
         painter.setBrush(QBrush(Qt::red, Qt::SolidPattern));
         painter.drawEllipse(px - 3, py - 3, 6, 6);
         
-        painter.setPen(Qt::white);
+        painter.setPen(Qt::green);
         painter.drawText(px - 20, py + 18, QString::number(m_maxVal) + "°C");
         break;
     }
@@ -365,7 +366,7 @@ bool ROI::contains(const QPoint &point)const
     {
         int px = m_roiRect.x();
         int py = m_roiRect.y();
-        return (abs(point.x() - px) <= CORPADDING && abs(point.y() - py) <= CORPADDING);
+        return (abs(point.x() - px) <= POINT_PADDING && abs(point.y() - py) <= POINT_PADDING);
     }
     return m_roiRect.contains(point);
 }

@@ -392,9 +392,39 @@ void myGLwidget::mousePressEvent(QMouseEvent * ev)
         return;
     if (ev->buttons() & Qt::LeftButton)
     {
+        QPoint pos = ev->pos();
+        
+        // 如果已选中某个ROI，检查点击是否在ROI外
+        if(m_indexInList >= 0 && m_CurrentROI != NULL)
+        {
+            if(!m_CurrentROI->contains(pos))
+            {
+                // 点击在ROI外，取消选中
+                m_indexInList = -1;
+                m_CurrentROI = NULL;
+                setCursor(Qt::ArrowCursor);
+                update();
+                return;
+            }
+        }
+        
+        // 检查是否点击在已存在的ROI范围内
+        for(int i = m_roiList.size() - 1; i >= 0; --i)
+        {
+            if(m_roiList.at(i).contains(pos))
+            {
+                // 点击在已存在的ROI范围内，选中它而不是创建新的
+                m_CurrentROI = &m_roiList[i];
+                m_indexInList = i;
+                m_CurrentROI->ResponseMousePressEV(pos);
+                update();
+                return;
+            }
+        }
+        
         if(m_CurrentROI==NULL)
             m_CurrentROI = new ROI(this, m_currentROIType);
-        m_CurrentROI->ResponseMousePressEV(ev->pos());
+        m_CurrentROI->ResponseMousePressEV(pos);
     }
 }
 /**
@@ -427,7 +457,31 @@ void myGLwidget::mouseReleaseEvent(QMouseEvent * ev)
 
     //qDebug()<<ev->buttons()<<endl;
     m_CurrentROI->ResponseMouseReleaseEV(ev->pos());
-
+    
+    // 自动保存ROI
+    if(m_indexInList < 0)
+    {
+        bool shouldSave = false;
+        if(m_CurrentROI->m_type == ROI_RECT)
+        {
+            // 矩形需要有有效的尺寸
+            shouldSave = (m_CurrentROI->m_roiRect.width() > 5 && m_CurrentROI->m_roiRect.height() > 5);
+        }
+        else if(m_CurrentROI->m_type == ROI_POINT)
+        {
+            // 点只要有位置就保存
+            shouldSave = true;
+        }
+        
+        if(shouldSave)
+        {
+            m_roiList.append(*m_CurrentROI);
+            delete m_CurrentROI;
+            m_CurrentROI = NULL;
+            setCursor(Qt::ArrowCursor);
+            update();
+        }
+    }
 }
 /**
  * @brief				鼠标双击事件

@@ -1,4 +1,4 @@
-﻿#ifndef ROI_H
+#ifndef ROI_H
 #define ROI_H
 
 #include"QRect"
@@ -6,7 +6,8 @@
 #include"QLine"
 #include"QPainter"
 #include "QPolygon"
-#define CORPADDING       6        //四角可拉伸宽度
+#define CORPADDING       12       //四角可拉伸宽度
+#define POINT_PADDING    15       //点的选中范围
 #define MIN_WIDTH        6        //可拉伸的最小宽度
 #define MIN_HEIGHT       6        //可拉伸的最小高度
 #define EDGE_WIDTH       2        //边框的宽度
@@ -48,10 +49,10 @@ public:
     bool operator ==(const ROI &other);
     void Analyst_Rect();
     QRect	m_roiRect;					//绘制的ROI
+    ROI_type m_type;
 
 private:
     float(*data)[640]=NULL;
-    ROI_type m_type;
     QWidget *m_parent;
     QPoint  m_max;
     QPoint  m_min;
