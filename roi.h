@@ -6,11 +6,14 @@
 #include"QLine"
 #include"QPainter"
 #include "QPolygon"
+#include <QDataStream>
 #define CORPADDING       12       //四角可拉伸宽度
 #define POINT_PADDING    15       //点的选中范围
 #define MIN_WIDTH        6        //可拉伸的最小宽度
 #define MIN_HEIGHT       6        //可拉伸的最小高度
 #define EDGE_WIDTH       2        //边框的宽度
+#define IMG_WIDTH        640      //图像宽度
+#define IMG_HEIGHT       512      //图像高度
 enum ROI_type{
     ROI_POINT=0,
     ROI_LINE,
@@ -36,6 +39,7 @@ class ROI
 public:
     ROI(QWidget *parent = nullptr,ROI_type type=ROI_RECT);
     ~ROI();
+    void SetParent(QWidget *parent);
     void Draw(QPainter &painter,bool isCurrent=false) const;
     EmDirection region(const QPoint &point);   //根据鼠标位置设置鼠标形状
     bool contains(const QPoint &point)const;
@@ -50,6 +54,10 @@ public:
     void Analyst_Rect();
     QRect	m_roiRect;					//绘制的ROI
     ROI_type m_type;
+
+    // 序列化
+    friend QDataStream& operator<<(QDataStream& out, const ROI& roi);
+    friend QDataStream& operator>>(QDataStream& in, ROI& roi);
 
 private:
     float(*data)[640]=NULL;

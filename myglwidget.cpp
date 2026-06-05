@@ -11,6 +11,7 @@
 #define H 512
 myGLwidget::myGLwidget(QWidget *parent):
     QOpenGLWidget(parent),
+    m_paramsData(nullptr),
     m_isoEnable(false),
     pbo(QOpenGLBuffer::PixelUnpackBuffer),
     m_backgroundImg(640,512,QImage::Format_RGB888),
@@ -18,9 +19,8 @@ myGLwidget::myGLwidget(QWidget *parent):
     m_imgFilePath(),
     m_CurrentROI(NULL),
     m_pImgAllData(nullptr),
-    m_paramsData(nullptr),
-    m_amplifiedRawData(nullptr),
     m_colorIndex(0),
+    m_amplifiedRawData(nullptr),
     m_roiList()
 
 {
@@ -179,7 +179,29 @@ void myGLwidget::Set_ImgPath(QString &path)
         jpgTailPos=0;
     else
         jpgTailPos+=2;
-    m_pImgRawAndParamsData = new QByteArray(m_pImgAllData->mid(jpgTailPos));
+    
+    // 计算原始数据大小：温度数据 + 参数数据，去掉末尾可能存在的ROI数据
+    int rawSize = 640 * 512 * sizeof(short) + 640 * sizeof(short);
+    QByteArray allRawData = m_pImgAllData->mid(jpgTailPos);
+    
+    // 检查是否有旧的ROI数据标记
+    QByteArray roiMarker("ROI_DATA");
+    int roiPos = allRawData.lastIndexOf(roiMarker);
+    if(roiPos != -1 && roiPos < rawSize)
+    {
+        // ROI标记在原始数据范围内，说明原始数据中恰好包含这些字节，不截断
+        m_pImgRawAndParamsData = new QByteArray(allRawData.left(rawSize));
+    }
+    else if(roiPos != -1)
+    {
+        // ROI标记在原始数据之后，截断
+        m_pImgRawAndParamsData = new QByteArray(allRawData.left(roiPos));
+    }
+    else
+    {
+        m_pImgRawAndParamsData = new QByteArray(allRawData);
+    }
+    
     m_rawImgData = reinterpret_cast<short *>(m_pImgAllData->data()+jpgTailPos);
     m_paramsDataFloat = reinterpret_cast<float *>(m_pImgAllData->data()+jpgTailPos+640*512*sizeof(short));
     
@@ -277,7 +299,41 @@ void myGLwidget::Load_CurrentROIList()
     }
     else
     {
-        m_roiList.clear();
+        // 从图片文件末尾读取ROI数据
+        QFile imgFile(m_imgFilePath);
+        if(imgFile.open(QIODevice::ReadOnly))
+        {
+            QByteArray allData = imgFile.readAll();
+            imgFile.close();
+            
+            // 查找ROI数据标记 "ROI_DATA"
+            QByteArray roiMarker("ROI_DATA");
+            int roiPos = allData.lastIndexOf(roiMarker);
+            if(roiPos != -1)
+            {
+                QByteArray roiData = allData.mid(roiPos + roiMarker.size());
+                QDataStream in(&roiData, QIODevice::ReadOnly);
+                qint32 count;
+                in >> count;
+                m_roiList.clear();
+                for(int i = 0; i < count; ++i)
+                {
+                    ROI roi;
+                    in >> roi;
+                    roi.SetParent(this);
+                    m_roiList.append(roi);
+                }
+                m_allRoiLists[m_imgFilePath] = m_roiList;
+            }
+            else
+            {
+                m_roiList.clear();
+            }
+        }
+        else
+        {
+            m_roiList.clear();
+        }
     }
     m_indexInList = -1;
     m_CurrentROI = NULL;
@@ -613,4 +669,18 @@ void myGLwidget::Save_Img(QString &fileName)
     }
     pixmap.save(&fileToSave,"JPG");
     fileToSave.write(*m_pImgRawAndParamsData);
+    
+    // 追加ROI数据到文件末尾
+    QByteArray roiBytes;
+    QDataStream out(&roiBytes, QIODevice::WriteOnly);
+    out << (qint32)m_roiList.size();
+    for(int i = 0; i < m_roiList.size(); ++i)
+    {
+        out << m_roiList[i];
+    }
+    fileToSave.write("ROI_DATA");
+    fileToSave.write(roiBytes);
+    fileToSave.close();
+    
+    Save_CurrentROIList();
 }

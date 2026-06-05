@@ -25,6 +25,19 @@ ROI::~ROI()
 {
     m_parent=NULL;
 }
+
+void ROI::SetParent(QWidget *parent)
+{
+    m_parent = parent;
+    myGLwidget *ptr=(myGLwidget *)m_parent;
+    data=(float(*)[640])ptr->m_Tdata;
+    pen0.setColor(Qt::yellow);
+    pen0.setWidth(EDGE_WIDTH);
+    pen1.setColor(Qt::red);
+    pen1.setWidth(1);
+    pen2.setColor(Qt::blue);
+    pen2.setWidth(1);
+}
 /**
  * @brief				判断鼠标的位置
  * @param point         鼠标的位置
@@ -104,28 +117,32 @@ void ROI::Scale_Rect(const QPoint & mousePoint)
     switch (m_emCurDir)
     {
     case DIR_LEFT:
-        newRect.setLeft(mousePoint.x());
+        newRect.setLeft(qBound(0, mousePoint.x(), IMG_WIDTH - MIN_WIDTH));
         break;
     case DIR_RIGHT:
-        newRect.setRight(mousePoint.x());
+        newRect.setRight(qBound(MIN_WIDTH, mousePoint.x(), IMG_WIDTH - 1));
         break;
     case DIR_TOP:
-        newRect.setTop(mousePoint.y());
+        newRect.setTop(qBound(0, mousePoint.y(), IMG_HEIGHT - MIN_HEIGHT));
         break;
     case DIR_BOTTOM:
-        newRect.setBottom(mousePoint.y());
+        newRect.setBottom(qBound(MIN_HEIGHT, mousePoint.y(), IMG_HEIGHT - 1));
         break;
     case DIR_LEFTTOP:
-        newRect.setTopLeft(mousePoint);
+        newRect.setTopLeft(QPoint(qBound(0, mousePoint.x(), IMG_WIDTH - MIN_WIDTH), 
+                                   qBound(0, mousePoint.y(), IMG_HEIGHT - MIN_HEIGHT)));
         break;
     case DIR_LEFTBOTTOM:
-        newRect.setBottomLeft(mousePoint);
+        newRect.setBottomLeft(QPoint(qBound(0, mousePoint.x(), IMG_WIDTH - MIN_WIDTH), 
+                                      qBound(MIN_HEIGHT, mousePoint.y(), IMG_HEIGHT - 1)));
         break;
     case DIR_RIGHTTOP:
-        newRect.setTopRight(mousePoint);
+        newRect.setTopRight(QPoint(qBound(MIN_WIDTH, mousePoint.x(), IMG_WIDTH - 1), 
+                                    qBound(0, mousePoint.y(), IMG_HEIGHT - MIN_HEIGHT)));
         break;
     case DIR_RIGHTBOTTOM:
-        newRect.setBottomRight(mousePoint);
+        newRect.setBottomRight(QPoint(qBound(MIN_WIDTH, mousePoint.x(), IMG_WIDTH - 1), 
+                                       qBound(MIN_HEIGHT, mousePoint.y(), IMG_HEIGHT - 1)));
         break;
     default:
         return;
@@ -153,29 +170,36 @@ void ROI::Create_Rect(const QPoint & mousePoint)
 
     if(m_type == ROI_POINT)
     {
-        m_roiRect.setX(mousePoint.x());
-        m_roiRect.setY(mousePoint.y());
+        // 边界限制
+        int newX = qBound(0, mousePoint.x(), IMG_WIDTH - 1);
+        int newY = qBound(0, mousePoint.y(), IMG_HEIGHT - 1);
+        m_roiRect.setX(newX);
+        m_roiRect.setY(newY);
         m_roiRect.setSize(QSize(1, 1));
         return;
     }
 
-    int width = mousePoint.x() - m_paintStartPoint.x();
-    int height = mousePoint.y() - m_paintStartPoint.y();
+    // 边界限制鼠标位置
+    int mx = qBound(0, mousePoint.x(), IMG_WIDTH - 1);
+    int my = qBound(0, mousePoint.y(), IMG_HEIGHT - 1);
+
+    int width = mx - m_paintStartPoint.x();
+    int height = my - m_paintStartPoint.y();
 
     if (width < 0 && height < 0)
     {
-        m_roiRect.setX(mousePoint.x());
-        m_roiRect.setY(mousePoint.y());
+        m_roiRect.setX(mx);
+        m_roiRect.setY(my);
     }
     else if (width < 0)
     {
-        m_roiRect.setX(mousePoint.x());
+        m_roiRect.setX(mx);
         m_roiRect.setY(m_paintStartPoint.y());
     }
     else if (height < 0)
     {
         m_roiRect.setX(m_paintStartPoint.x());
-        m_roiRect.setY(mousePoint.y());
+        m_roiRect.setY(my);
     }
     else
     {
@@ -201,14 +225,24 @@ void ROI::Move_Rect(const QPoint & mousePoint)
 
     if(m_type == ROI_POINT)
     {
-        m_roiRect.setX(m_roiRect.x() + width);
-        m_roiRect.setY(m_roiRect.y() + height);
+        int newX = m_roiRect.x() + width;
+        int newY = m_roiRect.y() + height;
+        // 边界限制
+        newX = qBound(0, newX, IMG_WIDTH - 1);
+        newY = qBound(0, newY, IMG_HEIGHT - 1);
+        m_roiRect.setX(newX);
+        m_roiRect.setY(newY);
     }
     else
     {
         QRect ret;
-        ret.setX(m_roiRect.x() + width);
-        ret.setY(m_roiRect.y() + height);
+        int newX = m_roiRect.x() + width;
+        int newY = m_roiRect.y() + height;
+        // 边界限制：确保矩形完全在图像范围内
+        newX = qBound(0, newX, IMG_WIDTH - m_roiRect.width());
+        newY = qBound(0, newY, IMG_HEIGHT - m_roiRect.height());
+        ret.setX(newX);
+        ret.setY(newY);
         ret.setSize(m_roiRect.size());
         m_roiRect = ret;
     }
@@ -227,11 +261,14 @@ void ROI::ResponseMousePressEV(const QPoint &point)
     {
         m_parent->setCursor(Qt::ArrowCursor);
         m_bPainterPressed = true;
-        m_paintStartPoint= point;
+        // 边界限制起始点
+        int px = qBound(0, point.x(), IMG_WIDTH - 1);
+        int py = qBound(0, point.y(), IMG_HEIGHT - 1);
+        m_paintStartPoint = QPoint(px, py);
         if(m_type == ROI_POINT)
         {
-            m_roiRect.setX(point.x());
-            m_roiRect.setY(point.y());
+            m_roiRect.setX(px);
+            m_roiRect.setY(py);
             m_roiRect.setSize(QSize(1, 1));
             Analyst_Rect();
             m_parent->update();
@@ -427,4 +464,25 @@ void ROI::Analyst_Rect()
     default:
         return;
     }
+}
+
+QDataStream& operator<<(QDataStream& out, const ROI& roi)
+{
+    out << (qint32)roi.m_type;
+    out << roi.m_roiRect;
+    return out;
+}
+
+QDataStream& operator>>(QDataStream& in, ROI& roi)
+{
+    qint32 type;
+    in >> type;
+    roi.m_type = (ROI_type)type;
+    in >> roi.m_roiRect;
+    roi.m_parent = nullptr;
+    roi.m_bPainterPressed = false;
+    roi.m_bMovedPressed = false;
+    roi.m_bScalePressed = false;
+    roi.m_emCurDir = EmDirection::DIR_NONE;
+    return in;
 }

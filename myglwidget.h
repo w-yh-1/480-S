@@ -9,6 +9,7 @@
 #include <QMenu>
 #include <QList>
 #include <QMap>
+#include <QDataStream>
 #include"include/guidemt.h"
 #include "roi.h"
 #define MaxValueLimit (1<<15)

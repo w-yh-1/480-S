@@ -635,6 +635,8 @@ release/moc_myglwidget.cpp: ../../myglwidget.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtCore/QList \
+		C:/Qt/5.15.2/mingw81_64/include/QtCore/QMap \
+		C:/Qt/5.15.2/mingw81_64/include/QtCore/QDataStream \
 		../../include/guidemt.h \
 		../../roi.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtCore/QRect \
@@ -801,6 +803,8 @@ ui_mainwindow.h: ../../mainwindow.ui \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtCore/QList \
+		C:/Qt/5.15.2/mingw81_64/include/QtCore/QMap \
+		C:/Qt/5.15.2/mingw81_64/include/QtCore/QDataStream \
 		../../include/guidemt.h \
 		../../roi.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtCore/QRect \
@@ -1394,6 +1398,8 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtGui/QOpenGLTexture \
 		C:/Qt/5.15.2/mingw81_64/include/QtGui/qopengltexture.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtCore/QList \
+		C:/Qt/5.15.2/mingw81_64/include/QtCore/QMap \
+		C:/Qt/5.15.2/mingw81_64/include/QtCore/QDataStream \
 		../../include/guidemt.h \
 		../../roi.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtCore/QRect \
@@ -1553,6 +1559,8 @@ release/myglwidget.o: ../../myglwidget.cpp ../../myglwidget.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtCore/QList \
+		C:/Qt/5.15.2/mingw81_64/include/QtCore/QMap \
+		C:/Qt/5.15.2/mingw81_64/include/QtCore/QDataStream \
 		../../include/guidemt.h \
 		../../roi.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtCore/QRect \
@@ -1658,6 +1666,7 @@ release/roi.o: ../../roi.cpp ../../roi.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtGui/QPolygon \
+		C:/Qt/5.15.2/mingw81_64/include/QtCore/QDataStream \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -1720,6 +1729,7 @@ release/roi.o: ../../roi.cpp ../../roi.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
 		C:/Qt/5.15.2/mingw81_64/include/QtCore/QList \
+		C:/Qt/5.15.2/mingw81_64/include/QtCore/QMap \
 		../../include/guidemt.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\roi.o ..\..\roi.cpp
 
