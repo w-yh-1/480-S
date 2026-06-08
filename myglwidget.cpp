@@ -4,6 +4,7 @@
 #include <QMouseEvent>
 #include <QRegion>
 #include <cmath>
+#include <cstring>
 #define CORE_VERSION  "#version 330 core\n"
 #define GET_GL_SOURCE_STR(x) CORE_VERSION#x
 
@@ -658,16 +659,36 @@ void myGLwidget::contextMenuEvent(QContextMenuEvent * ev)
 //}
 void myGLwidget::Save_Img(QString &fileName)
 {
-    QFile fileToSave(fileName);
-    fileToSave.open(QIODevice::WriteOnly);
-    QPixmap pixmap = grab();
-    QPainter painter(&pixmap);
+    // 从PBO获取当前显示的RGB数据
+    pbo.bind();
+    uchar *ptr = (uchar *)pbo.map(QOpenGLBuffer::ReadOnly);
+    
+    // 创建高质量图像
+    QImage image(640, 512, QImage::Format_RGB888);
+    memcpy(image.bits(), ptr, 640 * 512 * 3);
+    
+    pbo.unmap();
+    pbo.release();
+    
+    // 在图像上绘制ROI
+    QPainter painter(&image);
+    painter.setRenderHint(QPainter::Antialiasing, true);
+    painter.setRenderHint(QPainter::TextAntialiasing, true);
     for(int i=m_roiList.size()-1;i>=0;--i)
     {
         m_roiList[i].Draw(painter);
         painter.drawText(m_roiList[i].m_roiRect.x(),m_roiList[i].m_roiRect.y()-3,"ID:"+QString::number(i));
     }
-    pixmap.save(&fileToSave,"JPG");
+    painter.end();
+    
+    // 保存图像
+    QFile fileToSave(fileName);
+    fileToSave.open(QIODevice::WriteOnly);
+    
+    // 使用高质量保存JPG
+    image.save(&fileToSave, "JPG", 95);
+    
+    // 写入原始温度和参数数据
     fileToSave.write(*m_pImgRawAndParamsData);
     
     // 追加ROI数据到文件末尾
