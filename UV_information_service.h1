@@ -1,0 +1,62 @@
+#ifndef UV_SERVICE_H
+#define UV_SERVICE_H
+#include "Serial.h"
+#include <pthread.h>
+#define DEV_380 "/dev/ttyS8"
+#define UV_BAUD_RATE 9600
+#define UV_DATA_BITS 8
+#define UV_STOP_BITS 2
+#define UV_PARITY_MODE Serial::PARITY_NONE
+static const unsigned char MsgEnd[] = {0xED, 0XAA, 0X55,0x00};
+typedef enum
+{
+    Refactory = 0x0300,
+    SaveFactors = 0x0400,
+    GetGain = 0x0702,
+    SetGain,
+    GetPhotons = 0x0800,
+    GetQuadPhotons = 0x0801,
+    GetFrameType = 0x0803,
+    SetFrameType,
+    GetCountPeriod=0x0806,
+    SetCountPeriod=0x0807,
+    SetImgFlip=0x0907,
+    SetIntegration=0x090F
+} CommandIndex;
+class UV_information_service
+{
+private:
+    /* data */
+    Serial m_serial; 
+    pthread_t service_tid;
+    char m_receivebuffer[32];
+    unsigned int m_last_gain_factor;
+    unsigned int m_last_frame_type;
+    unsigned int m_last_integration;
+    bool m_last_count_period;
+    /* func */
+    void RecvMsgDispose(char *Msg);                  // 对消息进行解析
+    bool SerialRecvMsgVerify(char *str, int length); // 校验消息是否有效
+    bool SerialCmdSend(CommandIndex index);
+    bool SerialCmdSend(CommandIndex index, int value);
+    
+public:
+    /* data */
+    unsigned int m_photons;
+    unsigned int m_gain_factor = 50;
+    unsigned int m_frame_type;
+    unsigned int m_integration;
+    unsigned int m_first_photons;
+    unsigned int m_second_photons;
+    unsigned int m_third_photons;
+    unsigned int m_fourth_photons;
+    bool m_count_period;
+    /* func */
+    UV_information_service();
+    ~UV_information_service();
+    bool init(void); // 打开串口，创建线程。
+    void deinit(void);
+    friend void *ZH380ServiceThread(void *arg);
+};
+
+#endif

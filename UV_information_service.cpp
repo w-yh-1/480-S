@@ -1,0 +1,237 @@
+#include "UV_information_service.h"
+#include <string.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <QDebug>
+void *ZH380ServiceThread(void *arg)
+{
+    // 串口消息处理
+    UV_information_service *service = (UV_information_service *)arg;
+    int counts;
+    service->SerialCmdSend(GetGain);
+    service->SerialCmdSend(SetFrameType, service->m_frame_type);
+    service->SerialCmdSend(SetCountPeriod, service->m_count_period);
+    for (;;)
+    {
+        counts = service->m_serial.available();
+        if (counts > 0)
+        {
+            do
+            {
+                bzero(service->m_receivebuffer, sizeof(service->m_receivebuffer));
+
+                counts = service->m_serial.read(service->m_receivebuffer, sizeof(service->m_receivebuffer), (const char *)MsgEnd, 50);
+                if (counts > 0)
+                {
+                    service->SerialRecvMsgVerify(service->m_receivebuffer, sizeof(service->m_receivebuffer));
+
+                }
+                else{
+
+                    break;
+                }
+            } while (true);
+        }
+        pthread_testcancel();
+        if (service->m_frame_type != 02)
+            service->SerialCmdSend(GetPhotons);
+
+
+        if (service->m_gain_factor != service->m_last_gain_factor)
+        {
+            service->SerialCmdSend(SetGain, service->m_gain_factor);
+            service->m_last_gain_factor = service->m_gain_factor;
+        }
+        if (service->m_frame_type != service->m_last_frame_type)
+        {
+            service->SerialCmdSend(SetFrameType, service->m_frame_type);
+            service->m_last_frame_type = service->m_frame_type;
+        }
+        if (service->m_count_period != service->m_last_count_period)
+        {
+            service->SerialCmdSend(SetCountPeriod, service->m_count_period);
+            service->m_last_count_period = service->m_count_period;
+        }
+        if (service->m_integration != service->m_last_integration)
+        {
+            service->SerialCmdSend(SetIntegration, service->m_integration);
+            service->m_last_integration = service->m_integration;
+        }
+        if(service->m_color != service->m_last_color)
+        {
+            service->SerialCmdSend(SetColor, service->m_color);
+            service->m_last_color = service->m_color;
+        }
+        usleep(40 * 1000);
+    }
+}
+
+UV_information_service::UV_information_service(/* args */) : m_receivebuffer{}, m_frame_type(0), service_tid(0), m_count_period(0), m_integration(0)
+{
+}
+
+UV_information_service::~UV_information_service()
+{
+    if (service_tid)
+        deinit();
+}
+bool UV_information_service::init()
+{
+    if (Serial::OK != m_serial.open(DEV_380, UV_BAUD_RATE, UV_DATA_BITS, UV_PARITY_MODE, UV_STOP_BITS))
+        return false;
+    if (pthread_create(&service_tid, 0, ZH380ServiceThread, this) != 0)
+        return false;
+    return true;
+}
+void UV_information_service::deinit()
+{
+    m_serial.close();
+    pthread_cancel(service_tid);
+}
+void UV_information_service::RecvMsgDispose(char *Msg)
+{
+
+    int index = (Msg[0] << 8) + Msg[1];
+    char *swap;
+
+    switch (index)
+    {
+    case GetPhotons: // 光子数
+        swap = (char *)&m_photons;
+        swap[0] = Msg[5];
+        swap[1] = Msg[4];
+        swap[2] = Msg[3];
+        swap[3] = Msg[2];
+        break;
+    case GetQuadPhotons: // 四分光子数
+
+        swap = (char *)&m_first_photons;
+        swap[0] = Msg[5];
+        swap[1] = Msg[4];
+        swap[2] = Msg[3];
+        swap[3] = Msg[2];
+        swap = (char *)&m_second_photons;
+        swap[0] = Msg[9];
+        swap[1] = Msg[8];
+        swap[2] = Msg[7];
+        swap[3] = Msg[6];
+        swap = (char *)&m_third_photons;
+        swap[0] = Msg[13];
+        swap[1] = Msg[12];
+        swap[2] = Msg[11];
+        swap[3] = Msg[10];
+        swap = (char *)&m_fourth_photons;
+        swap[0] = Msg[17];
+        swap[1] = Msg[16];
+        swap[2] = Msg[15];
+        swap[3] = Msg[14];
+        break;
+    case GetGain:
+        m_gain_factor = Msg[2];
+        m_last_gain_factor = m_gain_factor;
+        break;
+    case GetFrameType:
+        m_frame_type = Msg[2];
+        m_last_frame_type = m_frame_type;
+        break;
+    default:
+        break;
+    }
+}
+
+bool UV_information_service::SerialRecvMsgVerify(char *str, int length)
+{
+    int checksumVal;
+    bool ret = false;
+
+    for (int i = 0; i < length; i++)
+    {
+        if (str[i] == 0x55 && str[i + 1] == 0xAA)
+        {
+            str += (i + 2); // 指向校验和字节
+            checksumVal = str[0];
+
+            if (str[checksumVal] == 0xED && str[checksumVal + 1] == 0xAA && str[checksumVal + 2] == 0x55)
+            {
+                RecvMsgDispose(str + 2); // 指向命令字
+
+                ret = true;
+            }
+        }
+    }
+    return ret;
+}
+
+bool UV_information_service::SerialCmdSend(CommandIndex index)
+{
+
+    unsigned char Cmd[9] = {0x55, 0xAA, 0x04, 0x00, 0x00, 0x00, 0xED, 0xAA, 0x55};
+
+    switch (index)
+    {
+    case Refactory:
+        Cmd[4] = 0x03;
+        break;
+    case SaveFactors:
+        Cmd[4] = 0x04;
+        break;
+    case GetGain:
+        Cmd[4] = 0x07;
+        Cmd[5] = 0x02;
+        break;
+    case GetPhotons:
+        Cmd[4] = 0x08;
+        break;
+    case GetFrameType:
+        Cmd[4] = 0x08;
+        Cmd[5] = 0x03;
+        break;
+    case GetQuadPhotons:
+        Cmd[4] = 0x08;
+        Cmd[5] = 0x01;
+        break;
+
+
+    default:
+        return false;
+    }
+    m_serial.write((const char *)Cmd, sizeof(Cmd));
+    return true;
+}
+
+bool UV_information_service::SerialCmdSend(CommandIndex index, int value)
+{
+    unsigned char Cmd[10] = {0x55, 0xAA, 0x05, 0x00, 0x00, 0x00, 0x00, 0xED, 0xAA, 0x55};
+    switch (index)
+    {
+    case SetGain:
+        Cmd[4] = 0x07;
+        Cmd[5] = 0x03;
+        break;
+    case SetFrameType:
+        Cmd[4] = 0x08;
+        Cmd[5] = 0x04;
+        break;
+    case SetCountPeriod:
+        Cmd[4] = 0x08;
+        Cmd[5] = 0x07;
+        break;
+    case SetImgFlip:
+        Cmd[4] = 0x09;
+        Cmd[5] = 0x07;
+        break;
+    case SetIntegration:
+        Cmd[4] = 0x09;
+        Cmd[5] = 0x0F;
+        break;
+    case SetColor:
+        Cmd[4] = 0x09;
+        Cmd[5] = 0x11;
+        break;
+    default:
+        return false;
+    }
+    Cmd[6] = value;
+    m_serial.write((const char *)Cmd, sizeof(Cmd));
+    return true;
+}

@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>SettingsDialog.qml</file>
+        <file>photo/--.png</file>
+        <file>photo/变焦2.png</file>
+        <file>photo/bc.png</file>
+        <file>photo/js.png</file>
+        <file>photo/msqh.png</file>
+        <file>photo/sz.png</file>
+        <file>photo/ys.png</file>
+        <file>photo/z++.png</file>
+        <file>photo/z--.png</file>
+        <file>photo/dc.png</file>
+        <file>photo/拍照.png</file>
+        <file>photo/录像.png</file>
+        <file>photo/baojing.png</file>
+        <file>photo/paizhao.jpg</file>
+        <file>photo/logo.png</file>
+        <file>photo/back.png</file>
+        <file>photo/fanhui.png</file>
+        <file>back.png</file>
+        <file>fanhui.png</file>
+        <file>photo/logo2.png</file>
+        <file>photo/logo_e.png</file>
+    </qresource>
+</RCC>
