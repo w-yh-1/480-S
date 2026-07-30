@@ -379,7 +379,7 @@ int E_button::moshiqiehuan(){
     //this->mssz = (this->mssz + 1) % 4;
 
     //this->m_mssz = (this->m_mssz + 1) % 4;
-    int newMode = (this->m_mssz + 1) % 5;
+    int newMode = (this->m_mssz + 1) % 6;
     this->setmoshi(newMode);
 
 
@@ -414,6 +414,11 @@ int E_button::moshiqiehuan(){
         break;
     case 3: //add IR mode
         this->cam->switch_mode(IR_Mode);
+        for(int i =0;i<6; i++)
+            this->cam->zoom_out();
+        break;
+    case 5: //add IR_UV_blend mode
+        this->cam->switch_mode(IR_UV_blendMode);
         for(int i =0;i<6; i++)
             this->cam->zoom_out();
         break;

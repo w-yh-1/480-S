@@ -506,6 +506,74 @@ void *camera_blend::camBlendTask(void *args)
                 camera_source_put_frame(p->mCamSourceUV, uv_frame_id);
             }
             break;
+        case IR_UV_blendMode:
+            // 检查所需摄像头是否可用
+            if (p->mIRCameraUSB == NULL || p->mCamSourceUV == NULL)
+            {
+                printf("IR_UV_blendMode: IR or UV camera not available\n");
+                continue;
+            }
+            // 获取最新的红外图像作为背景
+            {
+                rga_buffer_t ir_rga_buf{0};
+                rga_buffer_handle_t ir_rga_handle{0};
+                if (p->mIRCameraUSB->IR_getFrame(&yuv_data, &yuv_size, &raw_data, &raw_size, &irWidth, &irHeight)) {
+                    if (yuv_data && yuv_size > 0 && p->enc) {
+                        ir_rga_handle = importbuffer_virtualaddr(yuv_data, irWidth, irHeight, RK_FORMAT_UYVY_422);
+                        ir_rga_buf = wrapbuffer_handle(ir_rga_handle, irWidth, irHeight, RK_FORMAT_UYVY_422);
+                        RGA_improcess(ir_rga_buf, p->enc->mEnc_buf[index].rga_buf, p->mIrSrcRect, p->IRrect);
+                        releasebuffer_handle(ir_rga_handle);
+                    }
+                }
+            }
+            // 跳过一帧紫外图像
+            uv_frame_id = camera_source_get_frame(p->mCamSourceUV);
+            if (uv_frame_id < 0)
+            {
+                printf("UV camera failed to skip frame\n");
+            }
+            else
+                camera_source_put_frame(p->mCamSourceUV, uv_frame_id);
+            // 获取最新的紫外图像，减少拖尾
+            uv_frame_id = camera_source_get_frame(p->mCamSourceUV);
+            if (uv_frame_id < 0)
+            {
+                printf("UV camera failed to get frame\n");
+                continue;
+            }
+            // 如果光子颜色纯白，选择更简单的算法
+            // UV 光子需限定在红外图像范围内
+            if (p->mColor != 0xFFFFFFFF)
+            {
+                // 先将UV白色像素提取到mPhotonsBuf（全缓冲区，避免溢出1280x720）
+                RGA_imcolorkey(*camera_frame_to_RgaBuffer(p->mCamSourceUV, uv_frame_id),
+                               p->mPhotonsBuf.rga_buf,
+                               p->mUvSrcRect,
+                               {0},
+                               white_range,
+                               IM_ALPHA_COLORKEY_NORMAL);
+                camera_source_put_frame(p->mCamSourceUV, uv_frame_id);
+                // 再将mPhotonsBuf非黑像素叠加到enc_buf的IRrect范围内
+                if (p->enc)
+                    RGA_imcolorkey(p->mPhotonsBuf.rga_buf, p->enc->mEnc_buf[index].rga_buf,
+                                   {0},
+                                   p->IRrect,
+                                   black_range,
+                               IM_ALPHA_COLORKEY_NORMAL);
+            }
+            else
+            {
+                // 直接将UV非黑像素叠加到enc_buf的IRrect范围内
+                if (p->enc)
+                    RGA_imcolorkey(*camera_frame_to_RgaBuffer(p->mCamSourceUV, uv_frame_id),
+                                   p->enc->mEnc_buf[index].rga_buf,
+                                   p->mUvSrcRect,
+                                   p->IRrect,
+                                   black_range,
+                                   IM_ALPHA_COLORKEY_NORMAL);
+                camera_source_put_frame(p->mCamSourceUV, uv_frame_id);
+            }
+            break;
         default:
             break;
         }
@@ -533,7 +601,7 @@ void *camera_blend::camBlendTask(void *args)
         // 更新缩放倍率
         p->change_SrcRect_by_zoomRatio();
         // 刷新光子颜色掩模图
-        if (p->mCurrenMode == VL_UV_blendMode && p->mColor != 0xFFFFFFFF)
+        if ((p->mCurrenMode == VL_UV_blendMode || p->mCurrenMode == IR_UV_blendMode) && p->mColor != 0xFFFFFFFF)
             imfill(p->mPhotonsBuf.rga_buf, {0}, p->mColor);
             
         // 处理拍照请求
@@ -749,7 +817,7 @@ void camera_blend::switch_mode(CamMode mode)
 {
     mCurrenMode = mode;
     // 设置红外数据标志
-    if (mode == IR_Mode) {
+    if (mode == IR_Mode || mode == IR_UV_blendMode) {
         isClearCache = true;
         IR_DataFlag = true;
     } else {

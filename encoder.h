@@ -16,6 +16,7 @@ enum CamMode
     VL_UV_blendMode,
     UV_Mode,
     IR_Mode,
+    IR_UV_blendMode,
     SoundWave_Mode,
     UNINITIALIZED
 };
