@@ -17,7 +17,6 @@ enum CamMode
     UV_Mode,
     IR_Mode,
     IR_UV_blendMode,
-    SoundWave_Mode,
     UNINITIALIZED
 };
 typedef struct osd_infos_t

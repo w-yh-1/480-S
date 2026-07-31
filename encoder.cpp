@@ -1691,8 +1691,8 @@ void encoder::modify_osd_cn_mode(MppEncOSDData *osd_data, unsigned int mode)
     case IR_Mode:
         mode_text = "红外";
         break;
-    case SoundWave_Mode:
-        mode_text = "声波";
+    case IR_UV_blendMode:
+        mode_text = "融合";
         break;  
     default:
         break;
@@ -1726,6 +1726,9 @@ void encoder::modify_osd_en_mode(MppEncOSDData *osd_data, unsigned int mode)
         break;
     case IR_Mode:
         mode_text = "IR";
+        break;
+    case IR_UV_blendMode:
+        mode_text = "Fusion";
         break;
     default:
         break;

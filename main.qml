@@ -57,11 +57,11 @@ Window {
             else testtr3.text = "Режим：ИК";
             break;
         case 4:
-            if(lang === 0) testtr3.text = "模式：声波";
-            else if(lang === 1) testtr3.text = "Mode：SoundWave";
-            else if(lang === 4) testtr3.text = "パターン：音波";
-            else if(lang === 5) testtr3.text = "Modalità：onda sonora";
-            else testtr3.text = "Режим：звуковые волны";
+            if(lang === 0) testtr3.text = "模式：融合";
+            else if(lang === 1) testtr3.text = "Mode：Fusion";
+            else if(lang === 4) testtr3.text = "パターン：IR＋UV";
+            else if(lang === 5) testtr3.text = "Modalità：Fusion";
+            else testtr3.text = "Режим：слияние";
             break;
         }
     }
@@ -164,6 +164,35 @@ Window {
         height: 70
         source: "file:///opt/logo_e.png" // 初始为空
         fillMode: Image.PreserveAspectFit // 保持图片纵横比
+    }
+
+    // UV 范围调试框（绿色边框）
+    property bool showUvDebugRect: true  // 设为 false 可关闭调试框
+    Rectangle {
+        id: uvDebugRect
+        visible: showUvDebugRect && ebutton.getmoshi() === 4  // 仅在 IR_UV_blendMode 时显示
+        x: ebutton.getIruvDstX()
+        y: ebutton.getIruvDstY()
+        width: ebutton.getIruvDstWidth()
+        height: ebutton.getIruvDstHeight()
+        color: "transparent"
+        border.color: "green"
+        border.width: 3
+        z: 100
+    }
+    // 定时更新调试框位置（仅在调试模式下运行）
+    Timer {
+        id: uvDebugTimer
+        interval: 500  // 500ms 更新一次
+        running: showUvDebugRect
+        repeat: true
+        onTriggered: {
+            uvDebugRect.x = ebutton.getIruvDstX()
+            uvDebugRect.y = ebutton.getIruvDstY()
+            uvDebugRect.width = ebutton.getIruvDstWidth()
+            uvDebugRect.height = ebutton.getIruvDstHeight()
+            uvDebugRect.visible = showUvDebugRect && ebutton.getmoshi() === 4
+        }
     }
 
     Window {
@@ -776,6 +805,7 @@ property string dynamicText1: "C：0/M"
             listView1.model.setProperty(6, "name", "Language");
             listView1.model.setProperty(7, "name", "Time Settings");
             listView1.model.setProperty(8, "name", "Positioning Switch");
+            factorCorrectionTitle.text = "Factor Correction";
             shezhi_biaoti_1 = "set up";
             yanseshezhi_biaoti_1 = "color set";
             testtr.text = "UVIRSYS";
@@ -852,6 +882,7 @@ property string dynamicText1: "C：0/M"
                     listView1.model.setProperty(6, "name", "语言");
                     listView1.model.setProperty(7, "name", "时间设置");
                     listView1.model.setProperty(8, "name", "定位开关");
+                    factorCorrectionTitle.text = "因子矫正";
                     shezhi_biaoti_1 = "设置";
                     yanseshezhi_biaoti_1 = "颜色设置";
                     testtr.text = "紫红光电 UVIRSYS";
@@ -927,6 +958,7 @@ property string dynamicText1: "C：0/M"
                     listView1.model.setProperty(6, "name", "言語");
                     listView1.model.setProperty(7, "name", "時刻設定");
                     listView1.model.setProperty(8, "name", "位置スイッチ");
+                    factorCorrectionTitle.text = "係数補正";
                     shezhi_biaoti_1 = "設定";
                     yanseshezhi_biaoti_1 = "色設定";
                     testtr.text = "UVIRSYS";
@@ -1003,6 +1035,7 @@ property string dynamicText1: "C：0/M"
                 listView1.model.setProperty(6, "name", "Язык");
                 listView1.model.setProperty(7, "name", "Настройки времени");
                 listView1.model.setProperty(8, "name", "позиционный переключатель");
+                factorCorrectionTitle.text = "Коррекция факторов";
                 shezhi_biaoti_1 = "настройка";
                 yanseshezhi_biaoti_1 = "установка цвета";
                 testtr.text = "UVIRSYS";
@@ -1086,6 +1119,7 @@ property string dynamicText1: "C：0/M"
                 listView1.model.setProperty(6, "name", "Lingua");
                 listView1.model.setProperty(7, "name", "Imposta data/ora");
                 listView1.model.setProperty(8, "name", "interruttore di posizionamento");
+                factorCorrectionTitle.text = "Correzione fattori";
                 shezhi_biaoti_1 = "Impostazioni";
                 yanseshezhi_biaoti_1 = "colore";
                 testtr.text = "UVIRSYS";
@@ -2247,6 +2281,7 @@ property string dynamicText1: "C：0/M"
                     listView1.model.setProperty(6, "name", "言語");
                     listView1.model.setProperty(7, "name", "時刻設定");
                     listView1.model.setProperty(8, "name", "位置スイッチ");
+                    factorCorrectionTitle.text = "係数補正";
                     shezhi_biaoti_1 = "設定";
                     yanseshezhi_biaoti_1 = "色設定";
                     testtr.text = "UVIRSYS";
@@ -3429,12 +3464,13 @@ property string dynamicText1: "C：0/M"
                     ListElement { name: "语言"; icon: "☎" }
                     ListElement { name: "时间设置"; icon: "◷" }
                     ListElement { name: "定位开关"; icon: "✈" }
+                    //ListElement { name: "因子矫正"; icon: "⚙" }
                 }
             }
 
             Rectangle{
                 id: settings_list
-                visible: !jifen_page.visible && !jishu_page.visible && !ceju_page.visible && !yuyan_page.visible && !quezhi_page.visible && !wifi_page.visible && !shijian_page.visible && !gps_jiemian.visible
+                visible: !jifen_page.visible && !jishu_page.visible && !ceju_page.visible && !yuyan_page.visible && !quezhi_page.visible && !wifi_page.visible && !shijian_page.visible && !gps_jiemian.visible && !yinzijiaozheng_page.visible
                 anchors.left: parent.left
                 anchors.leftMargin: 40
                 anchors.right: parent.right
@@ -3449,7 +3485,7 @@ property string dynamicText1: "C：0/M"
 
                 Flickable {
                     anchors.fill: parent
-                    contentHeight: 9 * 150
+                    contentHeight: 10 * 150
                     boundsBehavior: Flickable.DragAndOvershootBounds
 
                     Column{
@@ -3528,6 +3564,9 @@ property string dynamicText1: "C：0/M"
                                                 gps_jiemian.visible = true;
                                                 //GPS初始化
 
+                                            }
+                                            if(index == 9) {
+                                                yinzijiaozheng_page.visible = true;
                                             }
                                         }
                                 }
@@ -3946,6 +3985,230 @@ property string dynamicText1: "C：0/M"
                                     anchors.bottom: parent.bottom
                                     anchors.horizontalCenter: parent.horizontalCenter
                                 }
+                            }
+                        }
+                    }
+                }
+
+                // ========== 因子矫正子页面 ==========
+                Rectangle {
+                    id: yinzijiaozheng_page
+                    anchors.fill: parent
+                    color: "#e8e8e8"
+                    visible: false
+                    z: 10
+
+                    // 顶部标题栏
+                    Rectangle {
+                        width: parent.width
+                        height: 140
+                        color: "#ffffff"
+
+                        Image {
+                            anchors.left: parent.left
+                            anchors.leftMargin: 30
+                            anchors.verticalCenter: parent.verticalCenter
+                            source: "photo/fanhui.png"
+                            width: 80
+                            height: 80
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: yinzijiaozheng_page.visible = false
+                            }
+                        }
+
+                        Text {
+                            id: factorCorrectionTitle
+                            anchors.centerIn: parent
+                            color: "#000000"
+                            text: "因子矫正"
+                            font.bold: true
+                            font.pixelSize: 48
+                        }
+                    }
+
+                    // 内容区域
+                    Rectangle {
+                        anchors.left: parent.left
+                        anchors.leftMargin: 40
+                        anchors.right: parent.right
+                        anchors.rightMargin: 40
+                        anchors.top: parent.top
+                        anchors.topMargin: 160
+                        anchors.bottom: parent.bottom
+                        anchors.bottomMargin: 20
+                        color: "#ffffff"
+                        radius: 30
+
+                        // 因子矫正通用组件
+                        Component {
+                            id: factorFieldComp
+
+                            Column {
+                                spacing: 8
+                                anchors.verticalCenter: parent.verticalCenter
+
+                                // + 按钮
+                                Rectangle {
+                                    width: 80
+                                    height: 80
+                                    radius: 40
+                                    color: maUpFactor.pressed ? "#e0e0e0" : "#f5f5f5"
+                                    border.color: "#dddddd"
+                                    border.width: 2
+                                    anchors.horizontalCenter: parent.horizontalCenter
+
+                                    Text {
+                                        text: "+"
+                                        font.pixelSize: 40
+                                        color: "#666666"
+                                        anchors.centerIn: parent
+                                    }
+
+                                    MouseArea {
+                                        id: maUpFactor
+                                        anchors.fill: parent
+                                        onClicked: {
+                                            control.onIncrement()
+                                            control.value = control.getter()
+                                        }
+                                    }
+                                }
+
+                                // 数值显示
+                                Rectangle {
+                                    width: 160
+                                    height: 100
+                                    radius: 16
+                                    color: "#fafafa"
+                                    border.color: "#e0e0e0"
+                                    border.width: 2
+
+                                    Text {
+                                        anchors.centerIn: parent
+                                        text: control.value
+                                        font.pixelSize: 52
+                                        font.bold: true
+                                        color: "#333333"
+                                    }
+                                }
+
+                                // - 按钮
+                                Rectangle {
+                                    width: 80
+                                    height: 80
+                                    radius: 40
+                                    color: maDownFactor.pressed ? "#e0e0e0" : "#f5f5f5"
+                                    border.color: "#dddddd"
+                                    border.width: 2
+                                    anchors.horizontalCenter: parent.horizontalCenter
+
+                                    Text {
+                                        text: "−"
+                                        font.pixelSize: 40
+                                        color: "#666666"
+                                        anchors.centerIn: parent
+                                    }
+
+                                    MouseArea {
+                                        id: maDownFactor
+                                        anchors.fill: parent
+                                        onClicked: {
+                                            control.onDecrement()
+                                            control.value = control.getter()
+                                        }
+                                    }
+                                }
+
+                                // 标签
+                                Text {
+                                    text: control.label
+                                    font.pixelSize: 28
+                                    color: "#999999"
+                                    anchors.horizontalCenter: parent.horizontalCenter
+                                    horizontalAlignment: Text.AlignHCenter
+                                    width: 200
+                                    wrapMode: Text.WordWrap
+                                }
+                            }
+                        }
+
+                        // 四个因子排列：上下两行，每行两个
+                        Grid {
+                            anchors.centerIn: parent
+                            columns: 2
+                            spacing: 40
+
+                            // 水平距离
+                            Loader {
+                                sourceComponent: factorFieldComp
+                                property var control: ({
+                                    value: ebutton.getHorzDistCorrectionFactor(),
+                                    label: "水平距离",
+                                    getter: function() { return ebutton.getHorzDistCorrectionFactor() },
+                                    onIncrement: function() {
+                                        var v = ebutton.getHorzDistCorrectionFactor()
+                                        ebutton.setHorzDistCorrectionFactor(v + 1)
+                                    },
+                                    onDecrement: function() {
+                                        var v = ebutton.getHorzDistCorrectionFactor()
+                                        ebutton.setHorzDistCorrectionFactor(v - 1)
+                                    }
+                                })
+                            }
+
+                            // 垂直距离
+                            Loader {
+                                sourceComponent: factorFieldComp
+                                property var control: ({
+                                    value: ebutton.getVertDistCorrectionFactor(),
+                                    label: "垂直距离",
+                                    getter: function() { return ebutton.getVertDistCorrectionFactor() },
+                                    onIncrement: function() {
+                                        var v = ebutton.getVertDistCorrectionFactor()
+                                        ebutton.setVertDistCorrectionFactor(v + 1)
+                                    },
+                                    onDecrement: function() {
+                                        var v = ebutton.getVertDistCorrectionFactor()
+                                        ebutton.setVertDistCorrectionFactor(v - 1)
+                                    }
+                                })
+                            }
+
+                            // 水平角度
+                            Loader {
+                                sourceComponent: factorFieldComp
+                                property var control: ({
+                                    value: ebutton.getHorzAngCorrectionFactor(),
+                                    label: "水平角度",
+                                    getter: function() { return ebutton.getHorzAngCorrectionFactor() },
+                                    onIncrement: function() {
+                                        var v = ebutton.getHorzAngCorrectionFactor()
+                                        ebutton.setHorzAngCorrectionFactor(v + 1)
+                                    },
+                                    onDecrement: function() {
+                                        var v = ebutton.getHorzAngCorrectionFactor()
+                                        ebutton.setHorzAngCorrectionFactor(v - 1)
+                                    }
+                                })
+                            }
+
+                            // 垂直角度
+                            Loader {
+                                sourceComponent: factorFieldComp
+                                property var control: ({
+                                    value: ebutton.getVertAngCorrectionFactor(),
+                                    label: "垂直角度",
+                                    getter: function() { return ebutton.getVertAngCorrectionFactor() },
+                                    onIncrement: function() {
+                                        var v = ebutton.getVertAngCorrectionFactor()
+                                        ebutton.setVertAngCorrectionFactor(v + 1)
+                                    },
+                                    onDecrement: function() {
+                                        var v = ebutton.getVertAngCorrectionFactor()
+                                        ebutton.setVertAngCorrectionFactor(v - 1)
+                                    }
+                                })
                             }
                         }
                     }
@@ -5982,6 +6245,7 @@ property string dynamicText1: "C：0/M"
                                         listView1.model.setProperty(6, "name", "语言");
                                         listView1.model.setProperty(7, "name", "时间设置");
                                         listView1.model.setProperty(8, "name", "定位开关");
+                                        factorCorrectionTitle.text = "因子矫正";
                                         shezhi_biaoti_1 = "设置";
                                         yanseshezhi_biaoti_1 = "颜色设置";
                                         testtr.text = "紫红光电 UVIRSYS";
@@ -6026,6 +6290,7 @@ property string dynamicText1: "C：0/M"
                                         listView1.model.setProperty(6, "name", "Language");
                                         listView1.model.setProperty(7, "name", "Time Settings");
                                         listView1.model.setProperty(8, "name", "Positioning Switch");
+                                        factorCorrectionTitle.text = "Factor Correction";
                                         shezhi_biaoti_1 = "set up";
                                         yanseshezhi_biaoti_1 = "color set";
                                         testtr.text = "UVIRSYS";
@@ -6071,6 +6336,7 @@ property string dynamicText1: "C：0/M"
                                         listView1.model.setProperty(6, "name", "言語");
                                         listView1.model.setProperty(7, "name", "時刻設定");
                                         listView1.model.setProperty(8, "name", "位置スイッチ");
+                                        factorCorrectionTitle.text = "係数補正";
                                         shezhi_biaoti_1 = "設定";
                                         yanseshezhi_biaoti_1 = "色設定";
                                         testtr.text = "UVIRSYS";
@@ -6120,6 +6386,7 @@ property string dynamicText1: "C：0/M"
                                         listView1.model.setProperty(6, "name", "Язык");
                                         listView1.model.setProperty(7, "name", "Настройки времени");
                                         listView1.model.setProperty(8, "name", "позиционный переключатель");
+                factorCorrectionTitle.text = "Коррекция факторов";
                                         shezhi_biaoti_1 = "настройка";
                                         yanseshezhi_biaoti_1 = "установка цвета";
                                         testtr.text = "UVIRSYS";
@@ -6698,11 +6965,11 @@ Button {
         text: {
             var lang = ebutton.yuyan
             if (lang === 0) return "最高温度: " + maxTemperature.toFixed(1) + "°C"
-            else if (lang === 1) return "Max Temperature: " + maxTemperature.toFixed(1) + "°C"
-            else if (lang === 2) return "Максимальная температура: " + maxTemperature.toFixed(1) + "°C"
-            else if (lang === 4) return "最高気温: " + maxTemperature.toFixed(1) + "°C"
-            else if (lang === 5) return "Temperatura massima: " + maxTemperature.toFixed(1) + "°C"
-            else return "Max Temperature: " + maxTemperature.toFixed(1) + "°C"
+            else if (lang === 1) return "Tmax: " + maxTemperature.toFixed(1) + "°C"
+            else if (lang === 2) return "Tmax: " + maxTemperature.toFixed(1) + "°C"
+            else if (lang === 4) return "Tmax: " + maxTemperature.toFixed(1) + "°C"
+            else if (lang === 5) return "Tmax: " + maxTemperature.toFixed(1) + "°C"
+            else return "Tmax: " + maxTemperature.toFixed(1) + "°C"
         }
         font.pixelSize: 32
         font.bold: true

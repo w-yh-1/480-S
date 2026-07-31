@@ -52,6 +52,16 @@ private:
     im_rect mUvSrcRect = {160, 90, 960, 540};
     im_rect mIrSrcRect = {0, 0, 640, 512};
     im_rect IRrect = {285, 0, 1350, 1080};
+    im_rect mIruvDstRect = {285, 0, 1350, 1080}; // IR-UV融合: UV叠加目标矩形(经偏移矫正)
+    // IR-UV 偏移矫正参数（直接在代码中修改）
+    // mIruvOverlayRect: IR图像上UV基准覆盖区域（1.0倍缩放时的UV目标区域）
+    im_rect mIruvOverlayRect = {200, 150, 950, 780};
+    float mIruvHorzScaleFactor = 0.75f;  // UV水平缩放因子（基准比例）
+    float mIruvVertScaleFactor = 0.5f;  // UV垂直缩放因子（基准比例，可独立调整）
+    int mIruvHorzDistCorrectionFactor = 0; // 水平距离矫正因子
+    int mIruvVertDistCorrectionFactor = 1000; // 垂直距离矫正因子
+    int mIruvHorzAngCorrectionFactor = 15;  // 水平角度矫正因子
+    int mIruvVertAngCorrectionFactor = 10;  // 垂直角度矫正因子
     struct sp_bo *mBo0 = NULL;
     struct sp_bo *mBo1 = NULL;
     int mCurrentZoomRatio = 5;    // 当前缩放倍率 单位：0.1倍 10代表1倍。
@@ -67,6 +77,7 @@ private:
     int mIRYuvSize = 0;
     // func
     void change_SrcRect_by_zoomRatio();
+    void update_ir_uv_rects(int distance = 0);
     static void *camBlendTask(void *args);
     CamMode mCurrenMode = VL_UV_blendMode;
 
@@ -74,6 +85,34 @@ private:
 public:
     camera_blend(/* args */) {};
     ~camera_blend();
+    // UV 范围调试接口（供 QML 调用）
+    int getIruvDstX() { return mIruvDstRect.x; }
+    int getIruvDstY() { return mIruvDstRect.y; }
+    int getIruvDstWidth() { return mIruvDstRect.width; }
+    int getIruvDstHeight() { return mIruvDstRect.height; }
+
+    // 因子矫正接口（供 QML 调用）
+    int getHorzDistCorrectionFactor() { return mIruvHorzDistCorrectionFactor; }
+    void setHorzDistCorrectionFactor(int v) {
+        mIruvHorzDistCorrectionFactor = v;
+        qDebug() << "HorzDistFactor: " << v << endl;
+    }
+    int getVertDistCorrectionFactor() { return mIruvVertDistCorrectionFactor; }
+    void setVertDistCorrectionFactor(int v) {
+        mIruvVertDistCorrectionFactor = v;
+        qDebug() << "VertDistFactor: " << v << endl;
+    }
+    int getHorzAngCorrectionFactor() { return mIruvHorzAngCorrectionFactor; }
+    void setHorzAngCorrectionFactor(int v) {
+        mIruvHorzAngCorrectionFactor = v;
+        qDebug() << "HorzAngFactor: " << v << endl;
+    }
+    int getVertAngCorrectionFactor() { return mIruvVertAngCorrectionFactor; }
+    void setVertAngCorrectionFactor(int v) {
+        mIruvVertAngCorrectionFactor = v;
+        qDebug() << "VertAngFactor: " << v << endl;
+    }
+
     bool camBlendThreadStart(DrmDisplay *displayer,pOutput_func output_func,osd_infos osd_data);
     void swtich_photons_color(uint32_t color); // color:BGRA
     void zoom_out();                           // 缩小

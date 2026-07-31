@@ -157,6 +157,22 @@ public:
     Q_INVOKABLE void switch_l(int i);
     Q_INVOKABLE void setIRColor(int index);
 
+    // UV 范围调试接口
+    Q_INVOKABLE int getIruvDstX() { return cam ? cam->getIruvDstX() : 0; }
+    Q_INVOKABLE int getIruvDstY() { return cam ? cam->getIruvDstY() : 0; }
+    Q_INVOKABLE int getIruvDstWidth() { return cam ? cam->getIruvDstWidth() : 0; }
+    Q_INVOKABLE int getIruvDstHeight() { return cam ? cam->getIruvDstHeight() : 0; }
+
+    // 因子矫正接口（供 QML 调用）
+    Q_INVOKABLE int getHorzDistCorrectionFactor() { return cam ? cam->getHorzDistCorrectionFactor() : 0; }
+    Q_INVOKABLE void setHorzDistCorrectionFactor(int v) { if (cam) cam->setHorzDistCorrectionFactor(v); }
+    Q_INVOKABLE int getVertDistCorrectionFactor() { return cam ? cam->getVertDistCorrectionFactor() : 0; }
+    Q_INVOKABLE void setVertDistCorrectionFactor(int v) { if (cam) cam->setVertDistCorrectionFactor(v); }
+    Q_INVOKABLE int getHorzAngCorrectionFactor() { return cam ? cam->getHorzAngCorrectionFactor() : 0; }
+    Q_INVOKABLE void setHorzAngCorrectionFactor(int v) { if (cam) cam->setHorzAngCorrectionFactor(v); }
+    Q_INVOKABLE int getVertAngCorrectionFactor() { return cam ? cam->getVertAngCorrectionFactor() : 0; }
+    Q_INVOKABLE void setVertAngCorrectionFactor(int v) { if (cam) cam->setVertAngCorrectionFactor(v); }
+
     //gps重连
     Q_INVOKABLE bool gps_reinit();
 

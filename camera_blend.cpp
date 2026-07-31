@@ -211,7 +211,45 @@ void camera_blend::change_SrcRect_by_zoomRatio()
     default:
         break;
     }
+    // 更新 IR-UV 融合的偏移矫正矩形
+    unsigned int distance = 0;
+    if (enc && enc->osd_infos_ptr.distance_val_ptr)
+        distance = *enc->osd_infos_ptr.distance_val_ptr;
+    update_ir_uv_rects((int)distance);
 }
+
+void camera_blend::update_ir_uv_rects(int distance)
+{
+    // 计算缩放倍率（mCurrentZoomRatio 单位 0.1倍）
+    float zoom_ratio = mCurrentZoomRatio / 10.0f;
+    if (zoom_ratio < 1.0f)
+        zoom_ratio = 1.0f;
+
+    // 参考 camera_process.cpp.back: 偏移 = 角度矫正 + 距离矫正
+    int x_offset = distance > 30? (int)(zoom_ratio * (mIruvHorzDistCorrectionFactor / (float)distance + mIruvHorzAngCorrectionFactor)): (int)(zoom_ratio * mIruvHorzAngCorrectionFactor);
+    int y_offset = distance > 30? (int)(zoom_ratio * (mIruvVertDistCorrectionFactor / (float)distance + mIruvVertAngCorrectionFactor)): (int)(zoom_ratio * mIruvVertAngCorrectionFactor);
+    //printf("distance: %d, x_offset: %d, y_offset: %d\n", distance, x_offset, y_offset);
+    // UV 目标尺寸 = 基准 × scaleFactor × zoom_ratio
+    // 水平和垂直使用独立的缩放因子
+    int temp_dst_width = (int)(mIruvOverlayRect.width * mIruvHorzScaleFactor * zoom_ratio);
+    int temp_dst_height = (int)(mIruvOverlayRect.height * mIruvVertScaleFactor * zoom_ratio);
+
+    // UV 目标位置：基于 mIruvOverlayRect 的中心，再加上偏移（固定偏移 + 动态偏移）
+    int base_center_x = IRrect.x + mIruvOverlayRect.x + mIruvOverlayRect.width / 2;
+    int base_center_y = IRrect.y + mIruvOverlayRect.y + mIruvOverlayRect.height / 2;
+    int temp_dst_x = base_center_x - temp_dst_width / 2 + x_offset;
+    int temp_dst_y = base_center_y - temp_dst_height / 2 + y_offset;
+
+    mIruvDstRect.x = temp_dst_x;
+    mIruvDstRect.y = temp_dst_y;
+    mIruvDstRect.width = temp_dst_width;
+    mIruvDstRect.height = temp_dst_height;
+
+    // 确保有效尺寸
+    if (mIruvDstRect.width <= 0) mIruvDstRect.width = 1;
+    if (mIruvDstRect.height <= 0) mIruvDstRect.height = 1;
+}
+
 int camera_blend::setxy(int x, int y){
     // 文件路径
     QString filePath = "/mnt/sdcard/config.ini";  // 请根据实际路径修改
@@ -542,7 +580,7 @@ void *camera_blend::camBlendTask(void *args)
                 continue;
             }
             // 如果光子颜色纯白，选择更简单的算法
-            // UV 光子需限定在红外图像范围内
+            // UV 光子需限定在红外图像范围内（使用矫正后的 mIruvDstRect）
             if (p->mColor != 0xFFFFFFFF)
             {
                 // 先将UV白色像素提取到mPhotonsBuf（全缓冲区，避免溢出1280x720）
@@ -553,22 +591,22 @@ void *camera_blend::camBlendTask(void *args)
                                white_range,
                                IM_ALPHA_COLORKEY_NORMAL);
                 camera_source_put_frame(p->mCamSourceUV, uv_frame_id);
-                // 再将mPhotonsBuf非黑像素叠加到enc_buf的IRrect范围内
+                // 再将mPhotonsBuf非黑像素叠加到enc_buf的矫正后目标范围内
                 if (p->enc)
                     RGA_imcolorkey(p->mPhotonsBuf.rga_buf, p->enc->mEnc_buf[index].rga_buf,
                                    {0},
-                                   p->IRrect,
+                                   p->mIruvDstRect,
                                    black_range,
                                IM_ALPHA_COLORKEY_NORMAL);
             }
             else
             {
-                // 直接将UV非黑像素叠加到enc_buf的IRrect范围内
+                // 直接将UV非黑像素叠加到enc_buf的矫正后目标范围内
                 if (p->enc)
                     RGA_imcolorkey(*camera_frame_to_RgaBuffer(p->mCamSourceUV, uv_frame_id),
                                    p->enc->mEnc_buf[index].rga_buf,
                                    p->mUvSrcRect,
-                                   p->IRrect,
+                                   p->mIruvDstRect,
                                    black_range,
                                    IM_ALPHA_COLORKEY_NORMAL);
                 camera_source_put_frame(p->mCamSourceUV, uv_frame_id);
@@ -608,7 +646,7 @@ void *camera_blend::camBlendTask(void *args)
         if (p->isRequireNewFrame && p->enc)
         {
             RGA_improcess(p->enc->mEnc_buf[index].rga_buf, p->mTempShootBuf.rga_buf);
-            if ((p->mCurrenMode == IR_Mode || p->mCurrenMode == SoundWave_Mode) && raw_data && raw_size > 0) {
+            if ((p->mCurrenMode == IR_Mode || p->mCurrenMode == IR_UV_blendMode) && raw_data && raw_size > 0) {
                 p->mRawData = raw_data;
                 p->mRawSize = raw_size;
                 p->mRawWidth = irWidth;

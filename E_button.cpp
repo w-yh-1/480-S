@@ -379,7 +379,7 @@ int E_button::moshiqiehuan(){
     //this->mssz = (this->mssz + 1) % 4;
 
     //this->m_mssz = (this->m_mssz + 1) % 4;
-    int newMode = (this->m_mssz + 1) % 6;
+    int newMode = (this->m_mssz + 1) % 5;
     this->setmoshi(newMode);
 
 
@@ -407,7 +407,6 @@ int E_button::moshiqiehuan(){
             this->cam->zoom_out();
         break;
     case 2:
-    case 4:
         this->cam->switch_mode(UV_Mode);
         for(int i =0;i<6; i++)
             this->cam->zoom_out();
@@ -417,7 +416,7 @@ int E_button::moshiqiehuan(){
         for(int i =0;i<6; i++)
             this->cam->zoom_out();
         break;
-    case 5: //add IR_UV_blend mode
+    case 4: //add IR_UV_blend mode
         this->cam->switch_mode(IR_UV_blendMode);
         for(int i =0;i<6; i++)
             this->cam->zoom_out();
@@ -1512,7 +1511,7 @@ void E_button::bgra8888() {
 
 
             // 增益、距离、计数仅在紫外和融合模式下显示，可见光和红外模式不显示
-            if (this->m_mssz != 0 && this->m_mssz != 3 && this->m_mssz != 4) {
+            if (this->m_mssz != 0 && this->m_mssz != 3) {
                 text = this->rootObject->findChild<QObject*>("zengyi")->property("text").toString();
                 painter.drawText(150,920, text);
                 text = this->rootObject->findChild<QObject*>("juli")->property("text").toString();
@@ -1680,6 +1679,19 @@ void E_button::bgra8888() {
                         painter.drawConvexPolygon(tri, 3);
                     }
                 }
+            }
+
+            // ==== IR_UV融合 绿框 ====
+            if (this->m_mssz == 4 && this->cam != NULL) {
+                QPen uvDebugPen(QColor("#00FF00"), 3);
+                painter.setPen(uvDebugPen);
+                painter.setBrush(Qt::NoBrush);
+                painter.drawRect(
+                    this->cam->getIruvDstX(),
+                    this->cam->getIruvDstY(),
+                    this->cam->getIruvDstWidth(),
+                    this->cam->getIruvDstHeight()
+                    );
             }
 
             painter.end();
