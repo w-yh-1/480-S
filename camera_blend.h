@@ -53,18 +53,21 @@ private:
     im_rect mIrSrcRect = {0, 0, 640, 512};
     im_rect IRrect = {285, 0, 1350, 1080};
     im_rect mIruvDstRect = {285, 0, 1350, 1080}; // IR-UV融合: UV叠加目标矩形(经偏移矫正)
+    im_rect mIruvDstRectClipped = {285, 0, 1350, 1080}; // 裁剪到IRrect范围内的UV目标矩形
+    im_rect mUvSrcRectForBlend = {160, 90, 960, 540}; // 融合模式UV源矩形(含红外变焦裁剪)
     // IR-UV 偏移矫正参数（直接在代码中修改）
     // mIruvOverlayRect: IR图像上UV基准覆盖区域（1.0倍缩放时的UV目标区域）
     im_rect mIruvOverlayRect = {200, 150, 950, 780};
     float mIruvHorzScaleFactor = 0.75f;  // UV水平缩放因子（基准比例）
-    float mIruvVertScaleFactor = 0.5f;  // UV垂直缩放因子（基准比例，可独立调整）
+    float mIruvVertScaleFactor = 0.55f;  // UV垂直缩放因子（基准比例，可独立调整）
     int mIruvHorzDistCorrectionFactor = 0; // 水平距离矫正因子
     int mIruvVertDistCorrectionFactor = 1000; // 垂直距离矫正因子
     int mIruvHorzAngCorrectionFactor = 15;  // 水平角度矫正因子
-    int mIruvVertAngCorrectionFactor = 10;  // 垂直角度矫正因子
+    int mIruvVertAngCorrectionFactor = -25;  // 垂直角度矫正因子
     struct sp_bo *mBo0 = NULL;
     struct sp_bo *mBo1 = NULL;
     int mCurrentZoomRatio = 5;    // 当前缩放倍率 单位：0.1倍 10代表1倍。
+    int mIrZoomLevel = 1;         // 红外数字变焦倍数：1=正常，2=2倍
     uint32_t mColor = 0xFFFFFFFF; // 默认为白色
     bool isColorChanged = true;
     bool isRequireNewFrame = false;
@@ -85,11 +88,16 @@ private:
 public:
     camera_blend(/* args */) {};
     ~camera_blend();
+    void setIrZoom(int level);
     // UV 范围调试接口（供 QML 调用）
     int getIruvDstX() { return mIruvDstRect.x; }
     int getIruvDstY() { return mIruvDstRect.y; }
     int getIruvDstWidth() { return mIruvDstRect.width; }
     int getIruvDstHeight() { return mIruvDstRect.height; }
+    int getIruvDstClippedX() { return mIruvDstRectClipped.x; }
+    int getIruvDstClippedY() { return mIruvDstRectClipped.y; }
+    int getIruvDstClippedWidth() { return mIruvDstRectClipped.width; }
+    int getIruvDstClippedHeight() { return mIruvDstRectClipped.height; }
 
     // 因子矫正接口（供 QML 调用）
     int getHorzDistCorrectionFactor() { return mIruvHorzDistCorrectionFactor; }

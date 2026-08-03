@@ -440,13 +440,13 @@ void encoder::draw_en_osd(MppEncOSDData *osd_data)
     int buf_height = osd_data->region[0].num_mb_y * 16;
     int buf_stride = buf_width;
     unsigned char color = 1;
-    g_ftosd.render_text("Gain: 0%", (unsigned char *)ptr, buf_width, buf_height / 2+2, buf_stride, 0, 32, color);
-    g_ftosd.render_text("Dist: 0m", (unsigned char *)ptr, buf_width, buf_height / 2+2, buf_stride, 300, 32, color);
-    g_ftosd.render_text("UVPT: 0/M", (unsigned char *)ptr, buf_width, buf_height / 2+2, buf_stride, 580, 32, color);
+    g_ftosd.render_text("G：0%", (unsigned char *)ptr, buf_width, buf_height / 2+2, buf_stride, 0, 32, color);
+    g_ftosd.render_text("D：0m", (unsigned char *)ptr, buf_width, buf_height / 2+2, buf_stride, 300, 32, color);
+    g_ftosd.render_text("C：0/M", (unsigned char *)ptr, buf_width, buf_height / 2+2, buf_stride, 600, 32, color);
 
     unsigned char *ptr2 = (unsigned char *)ptr + buf_width * (buf_height / 2);
     g_ftosd.render_text("Mode: Fuse", (unsigned char *)ptr2, buf_width, buf_height / 2+2, buf_stride, 0, 32, color);
-    g_ftosd.render_text("T&H: 0°C/0%", (unsigned char *)ptr2, buf_width, buf_height / 2+2, buf_stride, 300, 32, color);
+    g_ftosd.render_text("T/H：0°C/0%", (unsigned char *)ptr2, buf_width, buf_height / 2+2, buf_stride, 300, 32, color);
     
     // region[1]: 公司logo "紫红光电 UVIRSYS"
     int logo_buf_width = osd_data->region[1].num_mb_x * 16;
@@ -488,10 +488,10 @@ void encoder::modify_osd_T_and_H_data(MppEncOSDData *osd_data, unsigned int T_va
     if (isCN)
     {
         clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 300+32*4, 0, 160, buf_height / 2, buf_stride);
-        g_ftosd.render_text(gain_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 300+32*4, 32, color);
+        g_ftosd.render_text(gain_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 300+32*4-10, 32, color);
     }else{
         clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 300+32*3-16, 0, 160, buf_height / 2, buf_stride);
-        g_ftosd.render_text(gain_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 300+32*3-16, 32, color);
+        g_ftosd.render_text(gain_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 300+32*3-10, 32, color);
     }
     
 }
@@ -1752,13 +1752,13 @@ void encoder::modify_osd_gain_data(MppEncOSDData *osd_data, unsigned int value)
     snprintf(gain_text, sizeof(gain_text), "%u%%", value);
     if (isCN)
     {
-        clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 32*3, 0, 160, buf_height / 2, buf_stride);
-        g_ftosd.render_text(gain_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 32*3, 32, color);
+        clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 32*2, 0, 160, buf_height / 2, buf_stride);
+        g_ftosd.render_text(gain_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 32*2, 32, color);
     }
     else
     {
-        clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 32*3-10, 0, 160, buf_height / 2, buf_stride);
-        g_ftosd.render_text(gain_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 32*3-10, 32, color);
+        clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 32*2-10, 0, 160, buf_height / 2, buf_stride);
+        g_ftosd.render_text(gain_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 32*2-10, 32, color);
     }
 
 }
@@ -1778,8 +1778,8 @@ void encoder::modify_osd_count_data(MppEncOSDData *osd_data, unsigned int value,
     
     char count_text[32];
     snprintf(count_text, sizeof(count_text), "%d/%s", value, period ? "S" : "M");
-    clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 580+32*3, 0, 160, buf_height / 2, buf_stride);
-    g_ftosd.render_text(count_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 580+32*3, 32, color);
+    clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 600+32*2-32+4, 0, 160, buf_height / 2, buf_stride);
+    g_ftosd.render_text(count_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 600+32*2-32+4, 32, color);
 }
 
 void encoder::modify_osd_distance_data(MppEncOSDData *osd_data, unsigned int value)
@@ -1796,13 +1796,13 @@ void encoder::modify_osd_distance_data(MppEncOSDData *osd_data, unsigned int val
     snprintf(dist_text, sizeof(dist_text), "%.1fm", value / 10.0);
     if(isCN)
     {
-        clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 300+32*3, 0, 160, buf_height / 2, buf_stride);
-        g_ftosd.render_text(dist_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 300+32*3, 32, color);
+        clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 300+32*2, 0, 160, buf_height / 2, buf_stride);
+        g_ftosd.render_text(dist_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 300+32*2, 32, color);
     }
     else
     {
-        clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 300+32*3-20, 0, 160, buf_height / 2, buf_stride);
-        g_ftosd.render_text(dist_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 300+32*3-20, 32, color);
+        clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 300+32*2-20, 0, 160, buf_height / 2, buf_stride);
+        g_ftosd.render_text(dist_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 300+32*2-20, 32, color);
     }
 }
 
@@ -1844,7 +1844,7 @@ void encoder::draw_time_osd(MppEncOSDData *osd_data)
     }
 
     char time_text[32];
-    snprintf(time_text, sizeof(time_text), "%04d-%02d-%02d %02d:%02d:%02d", year, month, day, hour, minute, second);
+    snprintf(time_text, sizeof(time_text), "T:%04d-%02d-%02d %02d:%02d:%02d", year, month, day, hour, minute, second);
     clear_area((unsigned char *)ptr, buf_width, buf_height / 2, 600, 0, buf_width - 600, buf_height / 2, buf_stride);
     g_ftosd.render_text(time_text, (unsigned char *)ptr, buf_width, buf_height / 2, buf_stride, 600, 32, color);
 }

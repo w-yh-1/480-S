@@ -376,6 +376,12 @@ int E_button::moshiqiehuan(){
     biaozhiwei_cishu = 0;
     biaozhiwei_cishu_sc = 0;
 
+    if(this->m_irZoomLevel != 1)
+    {
+        this->cam->setIrZoom(1);
+        this->m_irZoomLevel = 1;
+    }
+
     //this->mssz = (this->mssz + 1) % 4;
 
     //this->m_mssz = (this->m_mssz + 1) % 4;
@@ -623,7 +629,15 @@ QString E_button::readBatteryLevel(){
 }
 
 void E_button::myFunction() {
-    qDebug() << biaozhiwei_cishu_vl;
+    if(this->m_mssz == 3 || this->m_mssz == 4)
+    {
+        if(this->m_irZoomLevel == 1)
+        {
+            this->cam->setIrZoom(2);
+            this->m_irZoomLevel = 2;
+        }
+        return;
+    }
     if(this->m_mssz == 1 && biaozhiwei_cishu < 2)
     {
         this->cam->zoom_in();
@@ -704,7 +718,15 @@ void E_button::myFunction1() {
 
 }
 void E_button::anotherFunction() {
-    qDebug() << biaozhiwei_cishu_vl;
+    if(this->m_mssz == 3 || this->m_mssz == 4)
+    {
+        if(this->m_irZoomLevel == 2)
+        {
+            this->cam->setIrZoom(1);
+            this->m_irZoomLevel = 1;
+        }
+        return;
+    }
     if(this->m_mssz == 1&& biaozhiwei_cishu > 0){
         this->cam->zoom_out();
         this->cam->zoom_out();
@@ -1687,10 +1709,10 @@ void E_button::bgra8888() {
                 painter.setPen(uvDebugPen);
                 painter.setBrush(Qt::NoBrush);
                 painter.drawRect(
-                    this->cam->getIruvDstX(),
-                    this->cam->getIruvDstY(),
-                    this->cam->getIruvDstWidth(),
-                    this->cam->getIruvDstHeight()
+                    this->cam->getIruvDstClippedX(),
+                    this->cam->getIruvDstClippedY(),
+                    this->cam->getIruvDstClippedWidth(),
+                    this->cam->getIruvDstClippedHeight()
                     );
             }
 

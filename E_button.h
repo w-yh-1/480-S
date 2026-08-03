@@ -78,6 +78,7 @@ public:
     int biaozhiwei_yuyan = 0;
     int guangzishu = 0;
     int haomi = 0;
+    int m_irZoomLevel = 1;
     //int mssz = 1;
 
     Q_PROPERTY(int mssz READ getmoshi WRITE setmoshi NOTIFY msszChanged)

@@ -17,7 +17,7 @@ CXX           = /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/roc
 DEFINES       = -DXLSX_NO_LIB -DQT_QML_DEBUG -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -g0 -D_FORTIFY_SOURCE=1 --sysroot=/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -g0 -D_FORTIFY_SOURCE=1 --sysroot=/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot -std=gnu++11 -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I../../../480-S-580-S -I. -I../../include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rockchip -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/ipc_server -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/smartIr -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2 -I../../src/xlsx -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQmlModels -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore -I. -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++
+INCPATH       = -I../../../480-S-580-S -I. -I../../include -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rockchip -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/ipc_server -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2 -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/smartIr -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2 -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2 -I../../src/xlsx -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5 -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10 -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQmlModels -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10 -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore -I. -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++
 QMAKE         = /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -37,10 +37,10 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = 480-S1.0.0
-DISTDIR = /home/wyh/code/480-S-580-S-new/480-S-580-S/build/rk3588-Debug/.tmp/480-S1.0.0
+DISTDIR = /home/wyh/project/480-S-580-S/build/rk3588-Debug/.tmp/480-S1.0.0
 LINK          = /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/aarch64-buildroot-linux-gnu-g++
 LFLAGS        = --sysroot=/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot
-LIBS          = $(SUBLIBS) -latomic -L/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib -L/home/wyh/code/480-S-580-S-new/480-S-580-S/lib -lrga -lrockchip_mpp -lrkaiq -lthermal -lusb-1.0 -lUSBLib -lfreetype /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Quick.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Widgets.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Gui.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5QmlModels.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Qml.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Network.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Core.so -lmali-hook -lmali-hook-injector -lmali -ldrm -lwayland-client -lwayland-server -lpthread  -lrt -lpthread -ldl 
+LIBS          = $(SUBLIBS) -latomic -L/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib -L/home/wyh/project/480-S-580-S/lib -lrga -lrockchip_mpp -lrkaiq -lthermal -lusb-1.0 -lUSBLib -lfreetype /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Quick.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Widgets.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Gui.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5QmlModels.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Qml.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Network.so /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/libQt5Core.so -lmali-hook -lmali-hook-injector -lmali -ldrm -lwayland-client -lwayland-server -lpthread  -lrt -lpthread -ldl 
 AR            = /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/aarch64-buildroot-linux-gnu-ar cqs
 RANLIB        = 
 SED           = sed
@@ -161,128 +161,128 @@ OBJECTS       = E_button.o \
 		moc_IRTemperatureWrapper.o
 DIST          = ../../photo/baojing.png \
 		../../photo/paizhao.jpg \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_pre.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/unix.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/linux.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/sanitize.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base-unix.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-base.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-unix.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qdevice.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/device_config.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_pre.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/arch.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_post.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qconfig.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_accessibility_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_edid_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_egl_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fb_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_input_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_kms_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldevtools_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_service_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_theme_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xkbcommon_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_zlib_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_functions.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_config.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/qmake.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_post.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_pre.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/unix.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/linux.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/sanitize.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base-unix.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-base.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-unix.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qdevice.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/device_config.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_pre.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/arch.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_post.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qconfig.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_accessibility_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_edid_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_egl_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fb_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_input_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_kms_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldevtools_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_service_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_theme_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xkbcommon_support_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_zlib_private.pri \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_functions.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_config.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/qmake.conf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_post.prf \
 		../../.qmake.stash \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exclusive_builds.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/toolchain.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_pre.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exclusive_builds.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/toolchain.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_pre.prf \
 		../../../../src/xlsx/qtxlsx.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resolve_config.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_post.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qml_debug.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/warn_on.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources_functions.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/moc.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/opengl.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/uic.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/thread.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qmake_use.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/file_copies.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/testcase_targets.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exceptions.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/yacc.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/lex.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resolve_config.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_post.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qml_debug.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/warn_on.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources_functions.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/moc.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/opengl.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/uic.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/thread.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qmake_use.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/file_copies.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/testcase_targets.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exceptions.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/yacc.prf \
+		/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/lex.prf \
 		../../../../480-S.pro ../../src/xlsx/xlsxdocpropscore_p.h \
 		../../src/xlsx/xlsxdocpropsapp_p.h \
 		../../src/xlsx/xlsxrelationships_p.h \
@@ -409,253 +409,253 @@ first: all
 480-S:  $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
-Makefile: ../../480-S.pro /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/qmake.conf /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_pre.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/unix.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/linux.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/sanitize.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base-unix.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-base.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-unix.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qdevice.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/device_config.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_pre.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/arch.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_post.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qconfig.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_accessibility_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_edid_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_egl_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fb_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_input_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_kms_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldevtools_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_service_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_theme_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xkbcommon_support_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_zlib_private.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_functions.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_config.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/qmake.conf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_post.prf \
+Makefile: ../../480-S.pro ../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_pre.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/unix.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/linux.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/sanitize.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base-unix.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-base.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-unix.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qdevice.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/device_config.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_pre.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/arch.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_post.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qconfig.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_accessibility_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_edid_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_egl_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fb_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_input_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_kms_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldevtools_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_service_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_theme_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xkbcommon_support_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_zlib_private.pri \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_functions.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_config.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/qmake.conf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_post.prf \
 		.qmake.stash \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exclusive_builds.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/toolchain.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_pre.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exclusive_builds.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/toolchain.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_pre.prf \
 		../../src/xlsx/qtxlsx.pri \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resolve_config.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_post.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qml_debug.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/warn_on.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources_functions.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/moc.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/opengl.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/uic.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/thread.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qmake_use.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/file_copies.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/testcase_targets.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exceptions.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/yacc.prf \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/lex.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resolve_config.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_post.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qml_debug.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/warn_on.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources_functions.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/moc.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/opengl.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/uic.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/thread.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qmake_use.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/file_copies.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/testcase_targets.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exceptions.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/yacc.prf \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/lex.prf \
 		../../480-S.pro \
 		../../qml.qrc
 	$(QMAKE) -o Makefile ../../480-S.pro -spec devices/linux-buildroot-g++ CONFIG+=debug CONFIG+=qml_debug
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_pre.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/unix.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/linux.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/sanitize.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base-unix.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-base.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-unix.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qdevice.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/device_config.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_pre.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/arch.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_post.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qconfig.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_accessibility_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bootstrap_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_edid_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_egl_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fb_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_input_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_kms_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediagsttools_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_packetprotocol_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldebug_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldevtools_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickparticles_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickshapes_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_service_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_theme_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xkbcommon_support_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_zlib_private.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_functions.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_config.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/qmake.conf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_post.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_pre.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/unix.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/linux.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/sanitize.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/gcc-base-unix.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-base.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/common/g++-unix.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qdevice.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/device_config.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_pre.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/arch.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/common/linux_device_post.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/qconfig.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_accessibility_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bluetooth_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_bootstrap_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_concurrent_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_core_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_dbus_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_edid_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_egl_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fb_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_gui_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_input_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_kms_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimedia_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediagsttools_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_network_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_nfc_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_opengl_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_openglextensions_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_packetprotocol_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_printsupport_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qml_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldebug_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmldevtools_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlmodels_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmltest_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quick_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickparticles_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickshapes_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_quickwidgets_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialbus_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_serialport_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_service_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_sql_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_svg_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_testlib_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_theme_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_virtualkeyboard_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandclient_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_waylandcompositor_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_widgets_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xkbcommon_support_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_xml_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/modules/qt_lib_zlib_private.pri:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_functions.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt_config.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++/qmake.conf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/spec_post.prf:
 .qmake.stash:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exclusive_builds.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/toolchain.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_pre.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exclusive_builds.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/toolchain.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_pre.prf:
 ../../src/xlsx/qtxlsx.pri:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resolve_config.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_post.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qml_debug.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/warn_on.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources_functions.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/moc.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/opengl.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/uic.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/thread.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qmake_use.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/file_copies.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/testcase_targets.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exceptions.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/yacc.prf:
-/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/lex.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resolve_config.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/default_post.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qml_debug.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/warn_on.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qt.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources_functions.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/resources.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/moc.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/opengl.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/uic.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/unix/thread.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/qmake_use.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/file_copies.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/testcase_targets.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/exceptions.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/yacc.prf:
+../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/lex.prf:
 ../../480-S.pro:
 ../../qml.qrc:
 qmake: FORCE
@@ -673,7 +673,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../../qml.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/data/dummy.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../../src/xlsx/xlsxdocpropscore_p.h ../../src/xlsx/xlsxdocpropsapp_p.h ../../src/xlsx/xlsxrelationships_p.h ../../src/xlsx/xlsxutility_p.h ../../src/xlsx/xlsxsharedstrings_p.h ../../src/xlsx/xlsxcontenttypes_p.h ../../src/xlsx/xlsxtheme_p.h ../../src/xlsx/xlsxformat.h ../../src/xlsx/xlsxworkbook.h ../../src/xlsx/xlsxstyles_p.h ../../src/xlsx/xlsxabstractsheet.h ../../src/xlsx/xlsxabstractsheet_p.h ../../src/xlsx/xlsxworksheet.h ../../src/xlsx/xlsxworksheet_p.h ../../src/xlsx/xlsxchartsheet.h ../../src/xlsx/xlsxchartsheet_p.h ../../src/xlsx/xlsxzipwriter_p.h ../../src/xlsx/xlsxworkbook_p.h ../../src/xlsx/xlsxformat_p.h ../../src/xlsx/xlsxglobal.h ../../src/xlsx/xlsxdrawing_p.h ../../src/xlsx/xlsxzipreader_p.h ../../src/xlsx/xlsxdocument.h ../../src/xlsx/xlsxdocument_p.h ../../src/xlsx/xlsxcell.h ../../src/xlsx/xlsxcell_p.h ../../src/xlsx/xlsxdatavalidation.h ../../src/xlsx/xlsxdatavalidation_p.h ../../src/xlsx/xlsxcellreference.h ../../src/xlsx/xlsxcellrange.h ../../src/xlsx/xlsxrichstring_p.h ../../src/xlsx/xlsxrichstring.h ../../src/xlsx/xlsxconditionalformatting.h ../../src/xlsx/xlsxconditionalformatting_p.h ../../src/xlsx/xlsxcolor_p.h ../../src/xlsx/xlsxnumformatparser_p.h ../../src/xlsx/xlsxdrawinganchor_p.h ../../src/xlsx/xlsxmediafile_p.h ../../src/xlsx/xlsxabstractooxmlfile.h ../../src/xlsx/xlsxabstractooxmlfile_p.h ../../src/xlsx/xlsxchart.h ../../src/xlsx/xlsxchart_p.h ../../src/xlsx/xlsxsimpleooxmlfile_p.h ../../src/xlsx/xlsxcellformula.h ../../src/xlsx/xlsxcellformula_p.h ../../E_button.h ../../FileModel.h ../../GPS.h ../../ID_R_service.h ../../Serial.h ../../Stream.h ../../UV_information_service.h ../../common.h ../../camera_blend.h ../../dma_buf.h ../../drm_display.h ../../drm_buf.h ../../camera_source.h ../../encoder.h ../../font_array.h ../../include/Log.h ../../include/Utils.h ../../select_delay.h ../../include/USBLib.h ../../ir_camera_usb.h ../../free_type_osd.h ../../IRTemperatureWrapper.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../../E_button.cpp ../../FileModel.cpp ../../GPS.cpp ../../ID_R_service.cpp ../../RtpSendPs.cpp ../../Serial.cpp ../../Stream.cpp ../../UV_information_service.cpp ../../dma_buf.cpp ../../encoder.cpp ../../free_type_osd.cpp ../../main.cpp ../../camera_blend.cpp ../../drm_display.cpp ../../drm_buf.cpp ../../camera_source.cpp ../../ir_camera_usb.cpp ../../IRTemperatureWrapper.cpp ../../src/xlsx/xlsxdocpropscore.cpp ../../src/xlsx/xlsxdocpropsapp.cpp ../../src/xlsx/xlsxrelationships.cpp ../../src/xlsx/xlsxutility.cpp ../../src/xlsx/xlsxsharedstrings.cpp ../../src/xlsx/xlsxcontenttypes.cpp ../../src/xlsx/xlsxtheme.cpp ../../src/xlsx/xlsxformat.cpp ../../src/xlsx/xlsxstyles.cpp ../../src/xlsx/xlsxworkbook.cpp ../../src/xlsx/xlsxabstractsheet.cpp ../../src/xlsx/xlsxworksheet.cpp ../../src/xlsx/xlsxchartsheet.cpp ../../src/xlsx/xlsxzipwriter.cpp ../../src/xlsx/xlsxdrawing.cpp ../../src/xlsx/xlsxzipreader.cpp ../../src/xlsx/xlsxdocument.cpp ../../src/xlsx/xlsxcell.cpp ../../src/xlsx/xlsxdatavalidation.cpp ../../src/xlsx/xlsxcellreference.cpp ../../src/xlsx/xlsxcellrange.cpp ../../src/xlsx/xlsxrichstring.cpp ../../src/xlsx/xlsxconditionalformatting.cpp ../../src/xlsx/xlsxcolor.cpp ../../src/xlsx/xlsxnumformatparser.cpp ../../src/xlsx/xlsxdrawinganchor.cpp ../../src/xlsx/xlsxmediafile.cpp ../../src/xlsx/xlsxabstractooxmlfile.cpp ../../src/xlsx/xlsxchart.cpp ../../src/xlsx/xlsxsimpleooxmlfile.cpp ../../src/xlsx/xlsxcellformula.cpp $(DISTDIR)/
 
@@ -703,7 +703,7 @@ compiler_rcc_make_all: qrc_qml.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) qrc_qml.cpp
 qrc_qml.cpp: ../../qml.qrc \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/rcc \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/rcc \
 		../../SettingsDialog.qml \
 		../../back.png \
 		../../main.qml \
@@ -731,57 +731,478 @@ qrc_qml.cpp: ../../qml.qrc \
 compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
-moc_predefs.h: /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/data/dummy.cpp
-	/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/aarch64-buildroot-linux-gnu-g++ -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -g0 -D_FORTIFY_SOURCE=1 --sysroot=/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot -std=gnu++11 -Wall -Wextra -dM -E -o moc_predefs.h /home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/data/dummy.cpp
+moc_predefs.h: ../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/data/dummy.cpp
+	/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/aarch64-buildroot-linux-gnu-g++ -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -g0 -D_FORTIFY_SOURCE=1 --sysroot=/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot -std=gnu++11 -Wall -Wextra -dM -E -o moc_predefs.h ../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/features/data/dummy.cpp
 
 compiler_moc_header_make_all: moc_xlsxdocument.cpp moc_E_button.cpp moc_FileModel.cpp moc_IRTemperatureWrapper.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_xlsxdocument.cpp moc_E_button.cpp moc_FileModel.cpp moc_IRTemperatureWrapper.cpp
 moc_xlsxdocument.cpp: ../../src/xlsx/xlsxdocument.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
 		../../src/xlsx/xlsxworksheet.h \
 		../../src/xlsx/xlsxabstractsheet.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
 		../../src/xlsx/xlsxcell.h \
 		../../src/xlsx/xlsxcellrange.h \
 		../../src/xlsx/xlsxcellreference.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPointF \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QObject \
 		moc_predefs.h \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc
-	/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc $(DEFINES) --include /home/wyh/code/480-S-580-S-new/480-S-580-S/build/rk3588-Debug/moc_predefs.h -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++ -I/home/wyh/code/480-S-580-S-new/480-S-580-S -I/home/wyh/code/480-S-580-S-new/480-S-580-S/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rockchip -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/ipc_server -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/smartIr -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2 -I/home/wyh/code/480-S-580-S-new/480-S-580-S/src/xlsx -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQmlModels -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore -I. -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/aarch64-buildroot-linux-gnu -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/backward -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include-fixed -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include ../../src/xlsx/xlsxdocument.h -o moc_xlsxdocument.cpp
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc
+	/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc $(DEFINES) --include /home/wyh/project/480-S-580-S/build/rk3588-Debug/moc_predefs.h -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++ -I/home/wyh/project/480-S-580-S -I/home/wyh/project/480-S-580-S/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rockchip -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/ipc_server -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/smartIr -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2 -I/home/wyh/project/480-S-580-S/src/xlsx -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQmlModels -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore -I. -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/aarch64-buildroot-linux-gnu -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/backward -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include-fixed -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include ../../src/xlsx/xlsxdocument.h -o moc_xlsxdocument.cpp
 
 moc_E_button.cpp: ../../E_button.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QObject \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
 		../../camera_blend.h \
 		../../drm_display.h \
 		../../common.h \
+		../../include/rk_mpi.h \
+		../../include/rk_mpi_cmd.h \
+		../../include/rk_vdec_cmd.h \
+		../../include/rk_type.h \
+		../../include/mpp_err.h \
+		../../include/rk_vdec_cfg.h \
+		../../include/rk_venc_cmd.h \
+		../../include/mpp_frame.h \
+		../../include/mpp_buffer.h \
+		../../include/mpp_meta.h \
+		../../include/mpp_packet.h \
+		../../include/rk_venc_rc.h \
+		../../include/rk_venc_cfg.h \
+		../../include/rk_venc_ref.h \
+		../../include/mpp_task.h \
+		../../include/drmrga.h \
+		../../include/rga.h \
 		../../drm_buf.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.hpp \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_version.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_type.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_buffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_single.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_task.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_mpi.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_expand.h \
 		../../dma_buf.h \
 		../../camera_source.h \
 		../../encoder.h \
+		../../include/mpp_rc_api.h \
+		../../include/mpp_rc_defs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
 		../../RtpSendPs.h \
 		../../include/USBLib.h \
 		../../ir_camera_usb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QTextStream \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QIODevice \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QCoreApplication \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreapplication.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qeventloop.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRegularExpression \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregularexpression.h \
 		../../UV_information_service.h \
 		../../Serial.h \
 		../../Stream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
 		../../ID_R_service.h \
 		../../GPS.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QProcess \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocess.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QFileDialog \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qfiledialog.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qtwidgetsglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qtwidgets-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qurl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qurlquery.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qdialog.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qwidget.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpalette.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qbrush.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfontmetrics.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfontinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qsizepolicy.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcursor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qkeysequence.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qvector2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtouchdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/QQuickImageProvider \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qquickimageprovider.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qtquickglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qtqmlglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qtqml-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtnetworkglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtnetwork-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qtquick-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlengine.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qjsengine.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qjsvalue.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmldebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqml.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlprivate.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlparserstatus.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmllist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlpropertyvaluesource.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetaobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlerror.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QImage \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QPixmap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QLabel \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qlabel.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qframe.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QThread \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qthread.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdeadlinetimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qelapsedtimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/QTcpServer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtcpserver.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qabstractsocket.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qhostaddress.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/QTcpSocket \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtcpsocket.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/QNetworkInterface \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qnetworkinterface.h \
 		../../main.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QApplication \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qapplication.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qdesktopwidget.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qguiapplication.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qinputmethod.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/QQmlApplicationEngine \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlapplicationengine.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/QQmlContext \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlcontext.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/QQuickItem \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qquickitem.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlcomponent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qaccessible.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QTimer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasictimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QWindow \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindow.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QEvent \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMargins \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRect \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qsurface.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qsurfaceformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qicon.h \
 		moc_predefs.h \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc
-	/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc $(DEFINES) --include /home/wyh/code/480-S-580-S-new/480-S-580-S/build/rk3588-Debug/moc_predefs.h -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++ -I/home/wyh/code/480-S-580-S-new/480-S-580-S -I/home/wyh/code/480-S-580-S-new/480-S-580-S/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rockchip -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/ipc_server -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/smartIr -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2 -I/home/wyh/code/480-S-580-S-new/480-S-580-S/src/xlsx -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQmlModels -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore -I. -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/aarch64-buildroot-linux-gnu -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/backward -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include-fixed -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include ../../E_button.h -o moc_E_button.cpp
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc
+	/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc $(DEFINES) --include /home/wyh/project/480-S-580-S/build/rk3588-Debug/moc_predefs.h -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++ -I/home/wyh/project/480-S-580-S -I/home/wyh/project/480-S-580-S/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rockchip -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/ipc_server -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/smartIr -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2 -I/home/wyh/project/480-S-580-S/src/xlsx -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQmlModels -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore -I. -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/aarch64-buildroot-linux-gnu -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/backward -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include-fixed -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include ../../E_button.h -o moc_E_button.cpp
 
 moc_FileModel.cpp: ../../FileModel.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QAbstractListModel \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qabstractitemmodel.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFileInfoList \
 		moc_predefs.h \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc
-	/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc $(DEFINES) --include /home/wyh/code/480-S-580-S-new/480-S-580-S/build/rk3588-Debug/moc_predefs.h -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++ -I/home/wyh/code/480-S-580-S-new/480-S-580-S -I/home/wyh/code/480-S-580-S-new/480-S-580-S/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rockchip -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/ipc_server -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/smartIr -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2 -I/home/wyh/code/480-S-580-S-new/480-S-580-S/src/xlsx -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQmlModels -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore -I. -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/aarch64-buildroot-linux-gnu -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/backward -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include-fixed -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include ../../FileModel.h -o moc_FileModel.cpp
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc
+	/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc $(DEFINES) --include /home/wyh/project/480-S-580-S/build/rk3588-Debug/moc_predefs.h -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++ -I/home/wyh/project/480-S-580-S -I/home/wyh/project/480-S-580-S/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rockchip -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/ipc_server -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/smartIr -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2 -I/home/wyh/project/480-S-580-S/src/xlsx -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQmlModels -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore -I. -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/aarch64-buildroot-linux-gnu -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/backward -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include-fixed -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include ../../FileModel.h -o moc_FileModel.cpp
 
 moc_IRTemperatureWrapper.cpp: ../../IRTemperatureWrapper.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QObject \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
 		../../ir_camera_usb.h \
 		../../include/USBLib.h \
 		moc_predefs.h \
-		/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc
-	/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc $(DEFINES) --include /home/wyh/code/480-S-580-S-new/480-S-580-S/build/rk3588-Debug/moc_predefs.h -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++ -I/home/wyh/code/480-S-580-S-new/480-S-580-S -I/home/wyh/code/480-S-580-S-new/480-S-580-S/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rockchip -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/ipc_server -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/smartIr -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2 -I/home/wyh/code/480-S-580-S-new/480-S-580-S/src/xlsx -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQmlModels -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore -I. -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/aarch64-buildroot-linux-gnu -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/backward -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include-fixed -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include ../../IRTemperatureWrapper.h -o moc_IRTemperatureWrapper.cpp
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc
+	/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/bin/moc $(DEFINES) --include /home/wyh/project/480-S-580-S/build/rk3588-Debug/moc_predefs.h -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/mkspecs/devices/linux-buildroot-g++ -I/home/wyh/project/480-S-580-S -I/home/wyh/project/480-S-580-S/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rockchip -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/libdrm -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/ipc_server -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/smartIr -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2 -I/home/wyh/project/480-S-580-S/src/xlsx -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQmlModels -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore -I. -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0 -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/aarch64-buildroot-linux-gnu -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include/c++/12.3.0/backward -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/lib/gcc/aarch64-buildroot-linux-gnu/12.3.0/include-fixed -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/include -I/home/wyh/SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include ../../IRTemperatureWrapper.h -o moc_IRTemperatureWrapper.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -800,43 +1221,427 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 ####### Compile
 
 E_button.o: ../../E_button.cpp ../../E_button.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QObject \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
 		../../camera_blend.h \
 		../../drm_display.h \
 		../../common.h \
+		../../include/rk_mpi.h \
+		../../include/rk_mpi_cmd.h \
+		../../include/rk_vdec_cmd.h \
+		../../include/rk_type.h \
+		../../include/mpp_err.h \
+		../../include/rk_vdec_cfg.h \
+		../../include/rk_venc_cmd.h \
+		../../include/mpp_frame.h \
+		../../include/mpp_buffer.h \
+		../../include/mpp_meta.h \
+		../../include/mpp_packet.h \
+		../../include/rk_venc_rc.h \
+		../../include/rk_venc_cfg.h \
+		../../include/rk_venc_ref.h \
+		../../include/mpp_task.h \
+		../../include/drmrga.h \
+		../../include/rga.h \
 		../../drm_buf.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.hpp \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_version.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_type.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_buffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_single.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_task.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_mpi.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_expand.h \
 		../../dma_buf.h \
 		../../camera_source.h \
 		../../encoder.h \
+		../../include/mpp_rc_api.h \
+		../../include/mpp_rc_defs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
 		../../RtpSendPs.h \
 		../../include/USBLib.h \
 		../../ir_camera_usb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QTextStream \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QIODevice \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QCoreApplication \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreapplication.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qeventloop.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRegularExpression \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregularexpression.h \
 		../../UV_information_service.h \
 		../../Serial.h \
 		../../Stream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
 		../../ID_R_service.h \
 		../../GPS.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QProcess \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocess.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QFileDialog \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qfiledialog.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qtwidgetsglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qtwidgets-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qurl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qurlquery.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qdialog.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qwidget.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpalette.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qbrush.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfontmetrics.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfontinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qsizepolicy.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcursor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qkeysequence.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qvector2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtouchdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/QQuickImageProvider \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qquickimageprovider.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qtquickglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qtqmlglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qtqml-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtnetworkglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtnetwork-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qtquick-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlengine.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qjsengine.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qjsvalue.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmldebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqml.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlprivate.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlparserstatus.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmllist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlpropertyvaluesource.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetaobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlerror.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QImage \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QPixmap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QLabel \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qlabel.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qframe.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QThread \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qthread.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdeadlinetimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qelapsedtimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/QTcpServer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtcpserver.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qabstractsocket.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qhostaddress.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/QTcpSocket \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtcpsocket.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/QNetworkInterface \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qnetworkinterface.h \
 		../../main.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QApplication \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qapplication.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qdesktopwidget.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qguiapplication.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qinputmethod.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/QQmlApplicationEngine \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlapplicationengine.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/QQmlContext \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlcontext.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/QQuickItem \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qquickitem.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlcomponent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qaccessible.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QTimer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasictimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QWindow \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindow.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QEvent \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMargins \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRect \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qsurface.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qsurfaceformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qicon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QGuiApplication \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QUrl \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QElapsedTimer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QPainter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpainter.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextoption.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpen.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDateTime \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatetime.h \
 		../../src/xlsx/xlsxdocument.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
 		../../src/xlsx/xlsxworksheet.h \
 		../../src/xlsx/xlsxabstractsheet.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
 		../../src/xlsx/xlsxcell.h \
 		../../src/xlsx/xlsxcellrange.h \
 		../../src/xlsx/xlsxcellreference.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPointF \
 		../../src/xlsx/xlsxchartsheet.h \
 		../../src/xlsx/xlsxchart.h \
 		../../src/xlsx/xlsxrichstring.h \
-		../../src/xlsx/xlsxworkbook.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedDataPointer \
+		../../src/xlsx/xlsxworkbook.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QTimeZone \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtimezone.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QJsonDocument \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qjsondocument.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qjsonvalue.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcborvalue.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcborcommon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/quuid.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QJsonObject \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qjsonobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QJsonArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qjsonarray.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o E_button.o ../../E_button.cpp
 
-FileModel.o: ../../FileModel.cpp ../../FileModel.h
+FileModel.o: ../../FileModel.cpp ../../FileModel.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QAbstractListModel \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qabstractitemmodel.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFileInfoList
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o FileModel.o ../../FileModel.cpp
 
 GPS.o: ../../GPS.cpp ../../GPS.h \
 		../../Serial.h \
-		../../Stream.h
+		../../Stream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GPS.o ../../GPS.cpp
 
 ID_R_service.o: ../../ID_R_service.cpp ../../ID_R_service.h \
@@ -858,246 +1663,2707 @@ Stream.o: ../../Stream.cpp ../../Stream.h
 
 UV_information_service.o: ../../UV_information_service.cpp ../../UV_information_service.h \
 		../../Serial.h \
-		../../Stream.h
+		../../Stream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o UV_information_service.o ../../UV_information_service.cpp
 
-dma_buf.o: ../../dma_buf.cpp ../../dma_buf.h
+dma_buf.o: ../../dma_buf.cpp ../../dma_buf.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.hpp \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_version.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_type.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_buffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_single.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_task.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_mpi.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_expand.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/RgaUtils.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dma_buf.o ../../dma_buf.cpp
 
 encoder.o: ../../encoder.cpp ../../encoder.h \
+		../../include/rk_mpi.h \
+		../../include/rk_mpi_cmd.h \
+		../../include/rk_vdec_cmd.h \
+		../../include/rk_type.h \
+		../../include/mpp_err.h \
+		../../include/rk_vdec_cfg.h \
+		../../include/rk_venc_cmd.h \
+		../../include/mpp_frame.h \
+		../../include/mpp_buffer.h \
+		../../include/mpp_meta.h \
+		../../include/mpp_packet.h \
+		../../include/rk_venc_rc.h \
+		../../include/rk_venc_cfg.h \
+		../../include/rk_venc_ref.h \
+		../../include/mpp_task.h \
+		../../include/mpp_rc_api.h \
+		../../include/mpp_rc_defs.h \
 		../../camera_source.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.hpp \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_version.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_type.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_buffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_single.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_task.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_mpi.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_expand.h \
+		../../include/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
 		../../font_array.h \
-		../../free_type_osd.h
+		../../free_type_osd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2/ft2build.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2/freetype/config/ftheader.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o encoder.o ../../encoder.cpp
 
-free_type_osd.o: ../../free_type_osd.cpp ../../free_type_osd.h
+free_type_osd.o: ../../free_type_osd.cpp ../../free_type_osd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2/ft2build.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/freetype2/freetype/config/ftheader.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o free_type_osd.o ../../free_type_osd.cpp
 
-main.o: ../../main.cpp ../../E_button.h \
+main.o: ../../main.cpp ../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QGuiApplication \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qguiapplication.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreapplication.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qeventloop.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qinputmethod.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/QQmlApplicationEngine \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlapplicationengine.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlengine.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qurl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qurlquery.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qjsengine.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qjsvalue.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qtqmlglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qtqml-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtnetworkglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtnetwork-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmldebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqml.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlprivate.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlparserstatus.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmllist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlpropertyvaluesource.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetaobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlerror.h \
+		../../E_button.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QObject \
 		../../camera_blend.h \
 		../../drm_display.h \
 		../../common.h \
+		../../include/rk_mpi.h \
+		../../include/rk_mpi_cmd.h \
+		../../include/rk_vdec_cmd.h \
+		../../include/rk_type.h \
+		../../include/mpp_err.h \
+		../../include/rk_vdec_cfg.h \
+		../../include/rk_venc_cmd.h \
+		../../include/mpp_frame.h \
+		../../include/mpp_buffer.h \
+		../../include/mpp_meta.h \
+		../../include/mpp_packet.h \
+		../../include/rk_venc_rc.h \
+		../../include/rk_venc_cfg.h \
+		../../include/rk_venc_ref.h \
+		../../include/mpp_task.h \
+		../../include/drmrga.h \
+		../../include/rga.h \
 		../../drm_buf.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.hpp \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_version.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_type.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_buffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_single.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_task.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_mpi.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_expand.h \
 		../../dma_buf.h \
 		../../camera_source.h \
 		../../encoder.h \
+		../../include/mpp_rc_api.h \
+		../../include/mpp_rc_defs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
 		../../RtpSendPs.h \
 		../../include/USBLib.h \
 		../../ir_camera_usb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QTextStream \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QIODevice \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QCoreApplication \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRegularExpression \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregularexpression.h \
 		../../UV_information_service.h \
 		../../Serial.h \
 		../../Stream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
 		../../ID_R_service.h \
 		../../GPS.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QProcess \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocess.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QFileDialog \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qfiledialog.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qtwidgetsglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qtwidgets-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qdialog.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qwidget.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpalette.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qbrush.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfontmetrics.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfontinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qsizepolicy.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcursor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qkeysequence.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qvector2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtouchdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/QQuickImageProvider \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qquickimageprovider.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qtquickglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qtquick-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QImage \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QPixmap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QLabel \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qlabel.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qframe.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QThread \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qthread.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdeadlinetimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qelapsedtimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/QTcpServer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtcpserver.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qabstractsocket.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qhostaddress.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/QTcpSocket \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qtcpsocket.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/QNetworkInterface \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtNetwork/qnetworkinterface.h \
 		../../main.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QApplication \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qapplication.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qdesktopwidget.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/QQmlContext \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlcontext.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/QQuickItem \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQuick/qquickitem.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtQml/qqmlcomponent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qaccessible.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QTimer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasictimer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QWindow \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindow.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QEvent \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMargins \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRect \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qsurface.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qsurfaceformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qicon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QTextCodec \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextcodec.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFileSystemWatcher \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfilesystemwatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QMessageBox \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qmessagebox.h \
 		../../qtkeyboard.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/QLineEdit \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtWidgets/qlineedit.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextcursor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpen.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextoption.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QMouseEvent \
 		../../IRTemperatureWrapper.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../../main.cpp
 
 camera_blend.o: ../../camera_blend.cpp ../../camera_blend.h \
 		../../drm_display.h \
 		../../common.h \
+		../../include/rk_mpi.h \
+		../../include/rk_mpi_cmd.h \
+		../../include/rk_vdec_cmd.h \
+		../../include/rk_type.h \
+		../../include/mpp_err.h \
+		../../include/rk_vdec_cfg.h \
+		../../include/rk_venc_cmd.h \
+		../../include/mpp_frame.h \
+		../../include/mpp_buffer.h \
+		../../include/mpp_meta.h \
+		../../include/mpp_packet.h \
+		../../include/rk_venc_rc.h \
+		../../include/rk_venc_cfg.h \
+		../../include/rk_venc_ref.h \
+		../../include/mpp_task.h \
+		../../include/drmrga.h \
+		../../include/rga.h \
 		../../drm_buf.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.hpp \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_version.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_type.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_buffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_single.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_task.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_mpi.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_expand.h \
 		../../dma_buf.h \
 		../../camera_source.h \
 		../../encoder.h \
+		../../include/mpp_rc_api.h \
+		../../include/mpp_rc_defs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
 		../../RtpSendPs.h \
 		../../include/USBLib.h \
 		../../ir_camera_usb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QTextStream \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QIODevice \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QCoreApplication \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreapplication.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qeventloop.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRegularExpression \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregularexpression.h \
 		../../select_delay.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o camera_blend.o ../../camera_blend.cpp
 
 drm_display.o: ../../drm_display.cpp ../../drm_display.h \
 		../../common.h \
-		../../drm_buf.h
+		../../include/rk_mpi.h \
+		../../include/rk_mpi_cmd.h \
+		../../include/rk_vdec_cmd.h \
+		../../include/rk_type.h \
+		../../include/mpp_err.h \
+		../../include/rk_vdec_cfg.h \
+		../../include/rk_venc_cmd.h \
+		../../include/mpp_frame.h \
+		../../include/mpp_buffer.h \
+		../../include/mpp_meta.h \
+		../../include/mpp_packet.h \
+		../../include/rk_venc_rc.h \
+		../../include/rk_venc_cfg.h \
+		../../include/rk_venc_ref.h \
+		../../include/mpp_task.h \
+		../../include/drmrga.h \
+		../../include/rga.h \
+		../../drm_buf.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.hpp \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_version.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_type.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_buffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_single.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_task.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_mpi.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_expand.h \
+		../../include/drm_mode.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o drm_display.o ../../drm_display.cpp
 
-drm_buf.o: ../../drm_buf.cpp ../../drm_buf.h
+drm_buf.o: ../../drm_buf.cpp ../../drm_buf.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.hpp \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_version.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_type.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_buffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_single.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_task.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_mpi.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_expand.h \
+		../../include/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/RgaUtils.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o drm_buf.o ../../drm_buf.cpp
 
-camera_source.o: ../../camera_source.cpp ../../camera_source.h
+camera_source.o: ../../camera_source.cpp ../../include/rk_mpi.h \
+		../../include/rk_mpi_cmd.h \
+		../../include/rk_vdec_cmd.h \
+		../../include/rk_type.h \
+		../../include/mpp_err.h \
+		../../include/rk_vdec_cfg.h \
+		../../include/rk_venc_cmd.h \
+		../../include/mpp_frame.h \
+		../../include/mpp_buffer.h \
+		../../include/mpp_meta.h \
+		../../include/mpp_packet.h \
+		../../include/rk_venc_rc.h \
+		../../include/rk_venc_cfg.h \
+		../../include/rk_venc_ref.h \
+		../../include/mpp_task.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_sysctl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common/rk_aiq.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore/base/xcam_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/xcore/base/xcam_defs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common/rk_aiq_types.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common/rk_aiq_comm.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common/rk_aiq_mems_sensor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common/rk-camera-module.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common/rk_isp20_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adebayer/rk_aiq_types_adebayer_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adebayer/rk_aiq_types_adebayer_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ae/rk_aiq_types_ae_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ae/rk_aiq_types_ae_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/afd/rk_aiq_types_afd_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/awb/rk_aiq_types_awb_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/awb/rk_aiq_types_awb_stat_v200.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/awb/rk_aiq_types_awb_stat_v2xx.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/awb/rk_aiq_types_awb_stat_v201.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/awb/rk_aiq_types_awb_stat_v32.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/alsc/rk_aiq_types_alsc_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/alsc/rk_aiq_types_alsc_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/accm/rk_aiq_types_accm_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/accm/rk_aiq_types_accm_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/a3dlut/rk_aiq_types_a3dlut_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/a3dlut/rk_aiq_types_a3dlut_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/amerge/rk_aiq_types_amerge_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser/RkAiqCalibDbTypes.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/rk_aiq_algo_des.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common/list.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser/RkAiqCalibDbTypesIsp20.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adpcc/rk_aiq_types_adpcc_ext.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser/RkAiqCalibDbTypesIsp21.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/amerge_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/adehaze_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/amerge_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/atmo/rk_aiq_types_atmo_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/atmo_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/atmo/rk_aiq_types_atmo_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/atmo/rk_aiq_types_atmo_stat_v200.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adrc/rk_aiq_types_adrc_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/adrc_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/adrc_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adrc/rk_aiq_types_adrc_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adrc/rk_aiq_types_adrc_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/agamma/rk_aiq_types_agamma_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/agamma/rk_aiq_types_agamma_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/agamma/rk_aiq_types_agamma_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/agamma_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/agamma_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adegamma/rk_aiq_types_adegamma_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adegamma/rk_aiq_types_adegamma_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/adegamma_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adehaze/rk_aiq_types_adehaze_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adehaze/rk_aiq_types_adehaze_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adehaze/rk_aiq_types_adehaze_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adehaze/rk_aiq_types_adehaze_stat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/adehaze_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acp/rk_aiq_types_acp_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aie/rk_aiq_types_aie_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aie/rk_aiq_types_aie_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aorb/rk_aiq_types_orb_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asd/rk_aiq_types_asd_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/anr/rk_aiq_types_anr_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/anr/rk_aiq_types_anr_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/anr/rk_aiq_types_anr_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/bayernr_head_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/mfnr_head_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ynr_head_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/uvnr_head_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp/rk_aiq_types_asharp_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp/rk_aiq_types_asharp_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp/rk_aiq_types_asharp_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/sharp_head_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/edgefilter_head_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adpcc/rk_aiq_types_adpcc_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adpcc/rk_aiq_types_adpcc_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adpcc/rk_aiq_types_adpcc_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ablc/rk_aiq_types_ablc_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ablc/rk_aiq_types_ablc_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ablc/rk_aiq_types_ablc_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ablc_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ablc_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/agic/rk_aiq_types_algo_agic_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/agic_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aldch/rk_aiq_types_aldch_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/afec/rk_aiq_types_afec_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp3/rk_aiq_types_asharp_algo_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp3/rk_aiq_types_asharp_hw_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr2/rk_aiq_types_aynr_algo_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr2/rk_aiq_types_aynr_hw_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnr/rk_aiq_types_acnr_algo_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnr/rk_aiq_types_acnr_hw_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/arawnr2/rk_aiq_types_abayernr_algo_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/arawnr2/rk_aiq_types_abayernr_hw_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/amd/rk_aiq_types_amd_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/arawnr/rk_aiq_types_abayernr_algo_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/arawnr/rk_aiq_types_abayernr_hw_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/amfnr/rk_aiq_types_amfnr_algo_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/amfnr/rk_aiq_types_amfnr_hw_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr/rk_aiq_types_aynr_algo_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr/rk_aiq_types_aynr_hw_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/auvnr/rk_aiq_types_auvnr_algo_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/auvnr/rk_aiq_types_auvnr_hw_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/again/rk_aiq_types_again_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/again/rk_aiq_types_again_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acsm/rk_aiq_types_acsm_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/csm_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acgc/rk_aiq_types_acgc_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/cgc_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/af/rk_aiq_af_hw_v200.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/af/rk_aiq_types_af_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common/rk_aiq_types_v3x.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayer2dnr2/rk_aiq_types_abayer2dnr_algo_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayer2dnr2/rk_aiq_types_abayer2dnr_hw_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayertnr2/rk_aiq_types_abayertnr_algo_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayertnr2/rk_aiq_types_abayertnr_hw_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acac/rk_aiq_types_acac_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acac/rk_aiq_types_acac_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnr2/rk_aiq_types_acnr_algo_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnr2/rk_aiq_types_acnr_hw_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/again2/rk_aiq_types_again_algo_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/again2/rk_aiq_types_again_hw_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/again2/rk_aiq_types_again_stat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/amerge/rk_aiq_types_amerge_algo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/amerge/rk_aiq_types_amerge_hw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp4/rk_aiq_types_asharp_algo_v4.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp4/rk_aiq_types_asharp_hw_v4.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr3/rk_aiq_types_aynr_algo_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr3/rk_aiq_types_aynr_hw_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common/rk_aiq_types_v32.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayer2dnrV23/rk_aiq_types_abayer2dnr_algo_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayer2dnrV23/rk_aiq_types_abayer2dnr_hw_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayertnrV23/rk_aiq_types_abayertnr_algo_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayertnrV23/rk_aiq_types_abayertnr_hw_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ablcV32/rk_aiq_types_ablc_algo_int_v32.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ablcV32/rk_aiq_types_ablc_algo_v32.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ablcV32/rk_aiq_types_ablc_hw_v32.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ablc_head_V32.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ablc_uapi_head_v32.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnrV30/rk_aiq_types_acnr_algo_v30.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnrV30/rk_aiq_types_acnr_hw_v30.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharpV33/rk_aiq_types_asharp_algo_v33.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharpV33/rk_aiq_types_asharp_hw_v33.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynrV22/rk_aiq_types_aynr_algo_v22.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynrV22/rk_aiq_types_aynr_hw_v22.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/common/rk_aiq_offline_raw.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/anr/rkpostisp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_imgproc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_a3dlut.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/a3dlut/rk_aiq_uapi_a3dlut_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/a3dlut/rk_aiq_types_a3dlut_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/a3dlut/rk_aiq_types_a3dlut_ext.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_abayer2dnr_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayer2dnr2/rk_aiq_uapi_abayer2dnr_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayer2dnr2/rk_aiq_types_abayer2dnr_algo_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/bayer2dnr_head_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/bayer2dnr_uapi_head_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_abayer2dnr_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayer2dnrV23/rk_aiq_uapi_abayer2dnr_int_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayer2dnrV23/rk_aiq_types_abayer2dnr_algo_int_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/bayer2dnr_head_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/bayer2dnr_uapi_head_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_abayernr_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/arawnr2/rk_aiq_uapi_abayernr_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/arawnr2/rk_aiq_types_abayernr_algo_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/bayernr_head_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_abayertnr_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayertnr2/rk_aiq_uapi_abayertnr_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayertnr2/rk_aiq_types_abayertnr_algo_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/bayertnr_head_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/bayertnr_uapi_head_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_abayertnr_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayertnrV23/rk_aiq_uapi_abayertnr_int_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/abayertnrV23/rk_aiq_types_abayertnr_algo_int_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/bayertnr_head_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/bayertnr_uapi_head_v23.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_ablc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ablc/rk_aiq_uapi_ablc_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_accm.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/accm/rk_aiq_uapi_accm_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/accm/rk_aiq_types_accm_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ccm_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ccm_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_acnr_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnr/rk_aiq_uapi_acnr_int_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnr/rk_aiq_types_acnr_algo_int_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/cnr_head_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_acnr_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnr2/rk_aiq_uapi_acnr_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnr2/rk_aiq_types_acnr_algo_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/cnr_head_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/cnr_uapi_head_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_acnr_v30.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnrV30/rk_aiq_uapi_acnr_int_v30.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acnrV30/rk_aiq_types_acnr_algo_int_v30.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/cnr_head_v30.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/cnr_uapi_head_v30.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_acp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acp/rk_aiq_uapi_acp_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/acp_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_adebayer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adebayer/rk_aiq_uapi_adebayer_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adebayer/rk_aiq_types_adebayer_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/debayer_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_adegamma.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adegamma/rk_aiq_uapi_adegamma_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_adehaze.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adehaze/rk_aiq_uapi_adehaze_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/adehaze_uapi_compact.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_adpcc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adpcc/rk_aiq_uapi_adpcc_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_adrc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/adrc/rk_aiq_uapi_adrc_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/adrc_uapi_compact.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_ae.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ae/rk_aiq_uapi_ae_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ae/rk_aiq_uapi_ae_int_types_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ae/rk_aiq_types_ae_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/moduleinfo_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/aec_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/sensorinfo_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ae/rk_aiq_uapi_ae_int_types_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_af.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/af/rk_aiq_uapi_af_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/af/rk_aiq_types_af_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/af_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_afec.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/afec/rk_aiq_uapi_afec_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/afec/rk_aiq_types_afec_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_agamma.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/agamma_uapi_compact.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_aie.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aie/rk_aiq_uapi_aie_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/aie_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_aldch.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aldch/rk_aiq_uapi_aldch_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aldch/rk_aiq_types_aldch_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_alsc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/alsc/rk_aiq_uapi_alsc_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/alsc/rk_aiq_types_alsc_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/alsc_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/alsc/rk_aiq_types_alsc_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_amerge.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/amerge/rk_aiq_uapi_amerge_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/amerge_uapi_compact.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_anr.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/anr/rk_aiq_uapi_anr_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/arawnr/rk_aiq_uapi_abayernr_int_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/arawnr/rk_aiq_types_abayernr_algo_int_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr/rk_aiq_uapi_aynr_int_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr/rk_aiq_types_aynr_algo_int_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/auvnr/rk_aiq_uapi_auvnr_int_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/auvnr/rk_aiq_types_auvnr_algo_int_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/amfnr/rk_aiq_uapi_amfnr_int_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/amfnr/rk_aiq_types_amfnr_algo_int_v1.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_asharp_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp3/rk_aiq_uapi_asharp_int_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp3/rk_aiq_types_asharp_algo_int_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/sharp_head_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_asharp_v33.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharpV33/rk_aiq_uapi_asharp_int_v33.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharpV33/rk_aiq_types_asharp_algo_int_v33.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/sharp_head_v33.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/sharp_uapi_head_v33.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_asharp_v4.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp4/rk_aiq_uapi_asharp_int_v4.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/asharp4/rk_aiq_types_asharp_algo_int_v4.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/sharp_head_v4.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/sharp_uapi_head_v4.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_atmo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/atmo/rk_aiq_uapi_atmo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_awb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/awb/rk_aiq_uapi_awb_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/awb/rk_aiq_types_awb_algo_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/awb_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/awb_uapi_head.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_aynr_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr2/rk_aiq_uapi_aynr_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr2/rk_aiq_types_aynr_algo_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ynr_head_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_aynr_v22.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynrV22/rk_aiq_uapi_aynr_int_v22.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynrV22/rk_aiq_types_aynr_algo_int_v22.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ynr_head_v22.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ynr_uapi_head_v22.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_aynr_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr3/rk_aiq_uapi_aynr_int_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aynr3/rk_aiq_types_aynr_algo_int_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ynr_head_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/ynr_uapi_head_v3.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_again_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/again2/rk_aiq_types_again_algo_int_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/gain_head_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/iq_parser_v2/gain_uapi_head_v2.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_aldch_v21.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/aldch/rk_aiq_uapi_aldch_v21_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_ablc_v32.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/ablcV32/rk_aiq_uapi_ablc_int_v32.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_acsm.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acsm/rk_aiq_uapi_acsm_int.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/uAPI2/rk_aiq_user_api2_acgc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rkaiq/algos/acgc/rk_aiq_uapi_acgc_int.h \
+		../../camera_source.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.hpp \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_version.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_type.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/rga.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_common.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_buffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_single.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_task.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_mpi.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/rga/im2d_expand.h \
+		../../include/rga.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o camera_source.o ../../camera_source.cpp
 
 ir_camera_usb.o: ../../ir_camera_usb.cpp ../../ir_camera_usb.h \
-		../../include/USBLib.h
+		../../include/USBLib.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ir_camera_usb.o ../../ir_camera_usb.cpp
 
 IRTemperatureWrapper.o: ../../IRTemperatureWrapper.cpp ../../IRTemperatureWrapper.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QObject \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
 		../../ir_camera_usb.h \
 		../../include/USBLib.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o IRTemperatureWrapper.o ../../IRTemperatureWrapper.cpp
 
 xlsxdocpropscore.o: ../../src/xlsx/xlsxdocpropscore.cpp ../../src/xlsx/xlsxdocpropscore_p.h \
 		../../src/xlsx/xlsxglobal.h \
-		../../src/xlsx/xlsxabstractooxmlfile.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDateTime \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatetime.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxdocpropscore.o ../../src/xlsx/xlsxdocpropscore.cpp
 
 xlsxdocpropsapp.o: ../../src/xlsx/xlsxdocpropsapp.cpp ../../src/xlsx/xlsxdocpropsapp_p.h \
 		../../src/xlsx/xlsxglobal.h \
-		../../src/xlsx/xlsxabstractooxmlfile.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPair \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDateTime \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatetime.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxdocpropsapp.o ../../src/xlsx/xlsxdocpropsapp.cpp
 
 xlsxrelationships.o: ../../src/xlsx/xlsxrelationships.cpp ../../src/xlsx/xlsxrelationships_p.h \
-		../../src/xlsx/xlsxglobal.h
+		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxrelationships.o ../../src/xlsx/xlsxrelationships.cpp
 
 xlsxutility.o: ../../src/xlsx/xlsxutility.cpp ../../src/xlsx/xlsxutility_p.h \
 		../../src/xlsx/xlsxglobal.h \
-		../../src/xlsx/xlsxcellreference.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../src/xlsx/xlsxcellreference.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPoint \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRegularExpression \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregularexpression.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDateTime \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatetime.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxutility.o ../../src/xlsx/xlsxutility.cpp
 
 xlsxsharedstrings.o: ../../src/xlsx/xlsxsharedstrings.cpp ../../src/xlsx/xlsxrichstring.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedDataPointer \
 		../../src/xlsx/xlsxsharedstrings_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QHash \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
 		../../src/xlsx/xlsxutility_p.h \
 		../../src/xlsx/xlsxformat_p.h \
-		../../src/xlsx/xlsxcolor_p.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedData \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSet \
+		../../src/xlsx/xlsxcolor_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxsharedstrings.o ../../src/xlsx/xlsxsharedstrings.cpp
 
 xlsxcontenttypes.o: ../../src/xlsx/xlsxcontenttypes.cpp ../../src/xlsx/xlsxcontenttypes_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
-		../../src/xlsx/xlsxglobal.h
+		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMapIterator \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxcontenttypes.o ../../src/xlsx/xlsxcontenttypes.cpp
 
 xlsxtheme.o: ../../src/xlsx/xlsxtheme.cpp ../../src/xlsx/xlsxtheme_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
-		../../src/xlsx/xlsxglobal.h
+		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QIODevice \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxtheme.o ../../src/xlsx/xlsxtheme.cpp
 
 xlsxformat.o: ../../src/xlsx/xlsxformat.cpp ../../src/xlsx/xlsxformat.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
 		../../src/xlsx/xlsxformat_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedData \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSet \
 		../../src/xlsx/xlsxcolor_p.h \
-		../../src/xlsx/xlsxnumformatparser_p.h
+		../../src/xlsx/xlsxnumformatparser_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDataStream \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxformat.o ../../src/xlsx/xlsxformat.cpp
 
 xlsxstyles.o: ../../src/xlsx/xlsxstyles.cpp ../../src/xlsx/xlsxstyles_p.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QHash \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVector \
 		../../src/xlsx/xlsxformat_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedData \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSet \
 		../../src/xlsx/xlsxutility_p.h \
-		../../src/xlsx/xlsxcolor_p.h
+		../../src/xlsx/xlsxcolor_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDataStream \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxstyles.o ../../src/xlsx/xlsxstyles.cpp
 
 xlsxworkbook.o: ../../src/xlsx/xlsxworkbook.cpp ../../src/xlsx/xlsxworkbook.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
 		../../src/xlsx/xlsxabstractsheet.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QImage \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h \
 		../../src/xlsx/xlsxworkbook_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile_p.h \
 		../../src/xlsx/xlsxrelationships_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
 		../../src/xlsx/xlsxtheme_p.h \
 		../../src/xlsx/xlsxsimpleooxmlfile_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPair \
 		../../src/xlsx/xlsxsharedstrings_p.h \
 		../../src/xlsx/xlsxrichstring.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QHash \
 		../../src/xlsx/xlsxworksheet.h \
 		../../src/xlsx/xlsxcell.h \
 		../../src/xlsx/xlsxcellrange.h \
 		../../src/xlsx/xlsxcellreference.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPointF \
 		../../src/xlsx/xlsxchartsheet.h \
 		../../src/xlsx/xlsxstyles_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVector \
 		../../src/xlsx/xlsxworksheet_p.h \
 		../../src/xlsx/xlsxabstractsheet_p.h \
 		../../src/xlsx/xlsxdatavalidation.h \
 		../../src/xlsx/xlsxconditionalformatting.h \
 		../../src/xlsx/xlsxcellformula.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRegularExpression \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregularexpression.h \
 		../../src/xlsx/xlsxformat_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedData \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSet \
 		../../src/xlsx/xlsxmediafile_p.h \
-		../../src/xlsx/xlsxutility_p.h
+		../../src/xlsx/xlsxutility_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxworkbook.o ../../src/xlsx/xlsxworkbook.cpp
 
 xlsxabstractsheet.o: ../../src/xlsx/xlsxabstractsheet.cpp ../../src/xlsx/xlsxabstractsheet.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
 		../../src/xlsx/xlsxabstractsheet_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile_p.h \
 		../../src/xlsx/xlsxrelationships_p.h \
-		../../src/xlsx/xlsxworkbook.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../src/xlsx/xlsxworkbook.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QImage \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxabstractsheet.o ../../src/xlsx/xlsxabstractsheet.cpp
 
 xlsxworksheet.o: ../../src/xlsx/xlsxworksheet.cpp ../../src/xlsx/xlsxrichstring.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedDataPointer \
 		../../src/xlsx/xlsxcellreference.h \
 		../../src/xlsx/xlsxworksheet.h \
 		../../src/xlsx/xlsxabstractsheet.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
 		../../src/xlsx/xlsxcell.h \
 		../../src/xlsx/xlsxcellrange.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPointF \
 		../../src/xlsx/xlsxworksheet_p.h \
 		../../src/xlsx/xlsxabstractsheet_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile_p.h \
 		../../src/xlsx/xlsxrelationships_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
 		../../src/xlsx/xlsxdatavalidation.h \
 		../../src/xlsx/xlsxconditionalformatting.h \
 		../../src/xlsx/xlsxcellformula.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QImage \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRegularExpression \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregularexpression.h \
 		../../src/xlsx/xlsxworkbook.h \
 		../../src/xlsx/xlsxformat_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedData \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSet \
 		../../src/xlsx/xlsxutility_p.h \
 		../../src/xlsx/xlsxsharedstrings_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QHash \
 		../../src/xlsx/xlsxdrawing_p.h \
 		../../src/xlsx/xlsxstyles_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVector \
 		../../src/xlsx/xlsxcell_p.h \
 		../../src/xlsx/xlsxconditionalformatting_p.h \
 		../../src/xlsx/xlsxcolor_p.h \
 		../../src/xlsx/xlsxdrawinganchor_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPoint \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSize \
 		../../src/xlsx/xlsxchart.h \
-		../../src/xlsx/xlsxcellformula_p.h
+		../../src/xlsx/xlsxcellformula_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDateTime \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatetime.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QUrl \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qurl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qurlquery.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QTextDocument \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextdocument.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxworksheet.o ../../src/xlsx/xlsxworksheet.cpp
 
 xlsxchartsheet.o: ../../src/xlsx/xlsxchartsheet.cpp ../../src/xlsx/xlsxchartsheet.h \
 		../../src/xlsx/xlsxabstractsheet.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
 		../../src/xlsx/xlsxchartsheet_p.h \
 		../../src/xlsx/xlsxabstractsheet_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile_p.h \
 		../../src/xlsx/xlsxrelationships_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
 		../../src/xlsx/xlsxworkbook.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QImage \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h \
 		../../src/xlsx/xlsxutility_p.h \
 		../../src/xlsx/xlsxdrawing_p.h \
 		../../src/xlsx/xlsxdrawinganchor_p.h \
-		../../src/xlsx/xlsxchart.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPoint \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSize \
+		../../src/xlsx/xlsxchart.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxchartsheet.o ../../src/xlsx/xlsxchartsheet.cpp
 
-xlsxzipwriter.o: ../../src/xlsx/xlsxzipwriter.cpp ../../src/xlsx/xlsxzipwriter_p.h
+xlsxzipwriter.o: ../../src/xlsx/xlsxzipwriter.cpp ../../src/xlsx/xlsxzipwriter_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui/private/qzipwriter_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui/private/qtguiglobal_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore/private/qglobal_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore/private/qconfig_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore/private/qtcore-config_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qoperatingsystemversion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversionnumber.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui/private/qtgui-config_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxzipwriter.o ../../src/xlsx/xlsxzipwriter.cpp
 
 xlsxdrawing.o: ../../src/xlsx/xlsxdrawing.cpp ../../src/xlsx/xlsxdrawing_p.h \
 		../../src/xlsx/xlsxrelationships_p.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
 		../../src/xlsx/xlsxdrawinganchor_p.h \
-		../../src/xlsx/xlsxabstractsheet.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPoint \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSize \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../src/xlsx/xlsxabstractsheet.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxdrawing.o ../../src/xlsx/xlsxdrawing.cpp
 
 xlsxzipreader.o: ../../src/xlsx/xlsxzipreader.cpp ../../src/xlsx/xlsxzipreader_p.h \
-		../../src/xlsx/xlsxglobal.h
+		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QScopedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui/private/qzipreader_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui/private/qtguiglobal_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore/private/qglobal_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore/private/qconfig_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/5.15.10/QtCore/private/qtcore-config_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qoperatingsystemversion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversionnumber.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/5.15.10/QtGui/private/qtgui-config_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatetime.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxzipreader.o ../../src/xlsx/xlsxzipreader.cpp
 
 xlsxdocument.o: ../../src/xlsx/xlsxdocument.cpp ../../src/xlsx/xlsxdocument.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
 		../../src/xlsx/xlsxworksheet.h \
 		../../src/xlsx/xlsxabstractsheet.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
 		../../src/xlsx/xlsxcell.h \
 		../../src/xlsx/xlsxcellrange.h \
 		../../src/xlsx/xlsxcellreference.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPointF \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QObject \
 		../../src/xlsx/xlsxdocument_p.h \
 		../../src/xlsx/xlsxworkbook.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QImage \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h \
 		../../src/xlsx/xlsxcontenttypes_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
 		../../src/xlsx/xlsxrelationships_p.h \
 		../../src/xlsx/xlsxstyles_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QHash \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVector \
 		../../src/xlsx/xlsxtheme_p.h \
 		../../src/xlsx/xlsxdocpropsapp_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPair \
 		../../src/xlsx/xlsxdocpropscore_p.h \
 		../../src/xlsx/xlsxsharedstrings_p.h \
 		../../src/xlsx/xlsxrichstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedDataPointer \
 		../../src/xlsx/xlsxutility_p.h \
 		../../src/xlsx/xlsxworkbook_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile_p.h \
@@ -1106,127 +4372,1175 @@ xlsxdocument.o: ../../src/xlsx/xlsxdocument.cpp ../../src/xlsx/xlsxdocument.h \
 		../../src/xlsx/xlsxmediafile_p.h \
 		../../src/xlsx/xlsxchart.h \
 		../../src/xlsx/xlsxzipreader_p.h \
-		../../src/xlsx/xlsxzipwriter_p.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QScopedPointer \
+		../../src/xlsx/xlsxzipwriter_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QFile \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxdocument.o ../../src/xlsx/xlsxdocument.cpp
 
 xlsxcell.o: ../../src/xlsx/xlsxcell.cpp ../../src/xlsx/xlsxcell.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
 		../../src/xlsx/xlsxcell_p.h \
 		../../src/xlsx/xlsxcellrange.h \
 		../../src/xlsx/xlsxcellreference.h \
 		../../src/xlsx/xlsxrichstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedDataPointer \
 		../../src/xlsx/xlsxcellformula.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
 		../../src/xlsx/xlsxformat_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedData \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSet \
 		../../src/xlsx/xlsxutility_p.h \
 		../../src/xlsx/xlsxworksheet.h \
 		../../src/xlsx/xlsxabstractsheet.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
-		../../src/xlsx/xlsxworkbook.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPointF \
+		../../src/xlsx/xlsxworkbook.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QImage \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDateTime \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatetime.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxcell.o ../../src/xlsx/xlsxcell.cpp
 
 xlsxdatavalidation.o: ../../src/xlsx/xlsxdatavalidation.cpp ../../src/xlsx/xlsxdatavalidation.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
 		../../src/xlsx/xlsxdatavalidation_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedData \
 		../../src/xlsx/xlsxworksheet.h \
 		../../src/xlsx/xlsxabstractsheet.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
 		../../src/xlsx/xlsxcell.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
 		../../src/xlsx/xlsxcellrange.h \
-		../../src/xlsx/xlsxcellreference.h
+		../../src/xlsx/xlsxcellreference.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPointF \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxdatavalidation.o ../../src/xlsx/xlsxdatavalidation.cpp
 
 xlsxcellreference.o: ../../src/xlsx/xlsxcellreference.cpp ../../src/xlsx/xlsxcellreference.h \
-		../../src/xlsx/xlsxglobal.h
+		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QRegularExpression \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregularexpression.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxcellreference.o ../../src/xlsx/xlsxcellreference.cpp
 
 xlsxcellrange.o: ../../src/xlsx/xlsxcellrange.cpp ../../src/xlsx/xlsxcellrange.h \
 		../../src/xlsx/xlsxglobal.h \
-		../../src/xlsx/xlsxcellreference.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../src/xlsx/xlsxcellreference.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPoint \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxcellrange.o ../../src/xlsx/xlsxcellrange.cpp
 
 xlsxrichstring.o: ../../src/xlsx/xlsxrichstring.cpp ../../src/xlsx/xlsxrichstring.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedDataPointer \
 		../../src/xlsx/xlsxrichstring_p.h \
-		../../src/xlsx/xlsxformat_p.h
+		../../src/xlsx/xlsxformat_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedData \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSet \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QTextDocument \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextdocument.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qurl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qurlquery.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QTextFragment \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpen.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qbrush.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextoption.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextlayout.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qkeysequence.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qvector2d.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtouchdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qglyphrun.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrawfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfontdatabase.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtextcursor.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxrichstring.o ../../src/xlsx/xlsxrichstring.cpp
 
 xlsxconditionalformatting.o: ../../src/xlsx/xlsxconditionalformatting.cpp ../../src/xlsx/xlsxconditionalformatting.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxcellrange.h \
 		../../src/xlsx/xlsxcellreference.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
 		../../src/xlsx/xlsxconditionalformatting_p.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
 		../../src/xlsx/xlsxcolor_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedData \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
 		../../src/xlsx/xlsxworksheet.h \
 		../../src/xlsx/xlsxabstractsheet.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
 		../../src/xlsx/xlsxcell.h \
-		../../src/xlsx/xlsxstyles_p.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPointF \
+		../../src/xlsx/xlsxstyles_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QHash \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVector \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxconditionalformatting.o ../../src/xlsx/xlsxconditionalformatting.cpp
 
 xlsxcolor.o: ../../src/xlsx/xlsxcolor.cpp ../../src/xlsx/xlsxcolor_p.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
 		../../src/xlsx/xlsxstyles_p.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
-		../../src/xlsx/xlsxutility_p.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QHash \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVector \
+		../../src/xlsx/xlsxutility_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDataStream \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxcolor.o ../../src/xlsx/xlsxcolor.cpp
 
 xlsxnumformatparser.o: ../../src/xlsx/xlsxnumformatparser.cpp ../../src/xlsx/xlsxnumformatparser_p.h \
-		../../src/xlsx/xlsxglobal.h
+		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxnumformatparser.o ../../src/xlsx/xlsxnumformatparser.cpp
 
 xlsxdrawinganchor.o: ../../src/xlsx/xlsxdrawinganchor.cpp ../../src/xlsx/xlsxdrawinganchor_p.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPoint \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSize \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsize.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmargins.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
 		../../src/xlsx/xlsxdrawing_p.h \
 		../../src/xlsx/xlsxrelationships_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
 		../../src/xlsx/xlsxmediafile_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
 		../../src/xlsx/xlsxchart.h \
 		../../src/xlsx/xlsxworkbook.h \
 		../../src/xlsx/xlsxabstractsheet.h \
-		../../src/xlsx/xlsxutility_p.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QImage \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qimage.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpaintdevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrect.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpixelformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtransform.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qmatrix.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qpolygon.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qregion.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdatastream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qline.h \
+		../../src/xlsx/xlsxutility_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDir \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdir.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfileinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfile.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qfiledevice.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxdrawinganchor.o ../../src/xlsx/xlsxdrawinganchor.cpp
 
 xlsxmediafile.o: ../../src/xlsx/xlsxmediafile.cpp ../../src/xlsx/xlsxmediafile_p.h \
-		../../src/xlsx/xlsxglobal.h
+		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QCryptographicHash \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcryptographichash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxmediafile.o ../../src/xlsx/xlsxmediafile.cpp
 
 xlsxabstractooxmlfile.o: ../../src/xlsx/xlsxabstractooxmlfile.cpp ../../src/xlsx/xlsxabstractooxmlfile.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxabstractooxmlfile_p.h \
-		../../src/xlsx/xlsxrelationships_p.h
+		../../src/xlsx/xlsxrelationships_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QBuffer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbuffer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxabstractooxmlfile.o ../../src/xlsx/xlsxabstractooxmlfile.cpp
 
 xlsxchart.o: ../../src/xlsx/xlsxchart.cpp ../../src/xlsx/xlsxchart_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
 		../../src/xlsx/xlsxrelationships_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QList \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
 		../../src/xlsx/xlsxchart.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
 		../../src/xlsx/xlsxworksheet.h \
 		../../src/xlsx/xlsxabstractsheet.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QStringList \
 		../../src/xlsx/xlsxcell.h \
 		../../src/xlsx/xlsxformat.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QFont \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qfont.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtguiglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qtgui-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/QColor \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qcolor.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgb.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtGui/qrgba64.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QByteArray \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QVariant \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvariant.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qdebug.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtextstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlocale.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qset.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontiguouscache.h \
 		../../src/xlsx/xlsxcellrange.h \
 		../../src/xlsx/xlsxcellreference.h \
-		../../src/xlsx/xlsxutility_p.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QMap \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QPointF \
+		../../src/xlsx/xlsxutility_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QIODevice \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxchart.o ../../src/xlsx/xlsxchart.cpp
 
 xlsxsimpleooxmlfile.o: ../../src/xlsx/xlsxsimpleooxmlfile.cpp ../../src/xlsx/xlsxsimpleooxmlfile_p.h \
 		../../src/xlsx/xlsxabstractooxmlfile.h \
-		../../src/xlsx/xlsxglobal.h
+		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QIODevice \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxsimpleooxmlfile.o ../../src/xlsx/xlsxsimpleooxmlfile.cpp
 
 xlsxcellformula.o: ../../src/xlsx/xlsxcellformula.cpp ../../src/xlsx/xlsxcellformula.h \
 		../../src/xlsx/xlsxglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QtGlobal \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobal.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig-bootstrapped.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qconfig.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtcore-config.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsystemdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qprocessordetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcompilerdetection.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qtypeinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qsysinfo.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlogging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qflags.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbasicatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qgenericatomic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qatomic_msvc.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qglobalstatic.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmutex.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnumeric.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qversiontagging.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QExplicitlySharedDataPointer \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qshareddata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhash.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qchar.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiterator.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qrefcount.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qarraydata.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qhashfunctions.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstring.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qnamespace.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringliteral.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringalgorithms.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringview.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringbuilder.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpair.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvector.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainertools_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qpoint.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qbytearraylist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringlist.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qregexp.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qstringmatcher.h \
 		../../src/xlsx/xlsxcellformula_p.h \
 		../../src/xlsx/xlsxcellrange.h \
 		../../src/xlsx/xlsxcellreference.h \
-		../../src/xlsx/xlsxutility_p.h
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QSharedData \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QString \
+		../../src/xlsx/xlsxutility_p.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamReader \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qxmlstream.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qiodevice.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcoreevent.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qscopedpointer.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qmetatype.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qvarlengtharray.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qcontainerfwd.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/qobject_impl.h \
+		../../../../SDK_DIR/rk-linux5.10-SDK-20260122/buildroot/output/rockchip_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/usr/include/qt5/QtCore/QXmlStreamWriter
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o xlsxcellformula.o ../../src/xlsx/xlsxcellformula.cpp
 
 qrc_qml.o: qrc_qml.cpp 

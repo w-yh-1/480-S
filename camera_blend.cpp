@@ -19,6 +19,65 @@ IM_STATUS RGA_imcolorkey_3channel(const rga_buffer_t srcA,
                                   int sync = 1,
                                   int *release_fence_fd = NULL);
 
+// 在 BGRA8888 缓冲区上绘制绿色矩形边框（用于录像帧的 UV 绿框）
+static void draw_green_rect(void *buf, int buf_w, int buf_h, im_rect rect, int border_width = 3)
+{
+    if (!buf || rect.width <= 0 || rect.height <= 0)
+        return;
+
+    // 矩形与缓冲区求交集
+    int x1 = std::max(0, rect.x);
+    int y1 = std::max(0, rect.y);
+    int x2 = std::min(buf_w, rect.x + rect.width);
+    int y2 = std::min(buf_h, rect.y + rect.height);
+
+    if (x1 >= x2 || y1 >= y2)
+        return;
+
+    // 绿色像素 (BGRA8888: B=0, G=255, R=0, A=255)
+    uint32_t green_pixel = 0xFF00FF00;
+
+    // 限制边框宽度
+    int bw = std::min(border_width, std::min(x2 - x1, y2 - y1));
+
+    uint32_t *pixels = (uint32_t *)buf;
+
+    // 上边线
+    for (int y = y1; y < y1 + bw; y++) {
+        for (int x = x1; x < x2; x++) {
+            pixels[y * buf_w + x] = green_pixel;
+        }
+    }
+    // 下边线
+    for (int y = y2 - bw; y < y2; y++) {
+        for (int x = x1; x < x2; x++) {
+            pixels[y * buf_w + x] = green_pixel;
+        }
+    }
+    // 左边线（排除已画过的角）
+    for (int y = y1 + bw; y < y2 - bw; y++) {
+        for (int x = x1; x < x1 + bw; x++) {
+            pixels[y * buf_w + x] = green_pixel;
+        }
+    }
+    // 右边线（排除已画过的角）
+    for (int y = y1 + bw; y < y2 - bw; y++) {
+        for (int x = x2 - bw; x < x2; x++) {
+            pixels[y * buf_w + x] = green_pixel;
+        }
+    }
+}
+
+void camera_blend::setIrZoom(int level)
+{
+    mIrZoomLevel = level;
+    if (level == 2) {
+        mIrSrcRect = {160, 128, 320, 256};
+    } else {
+        mIrSrcRect = {0, 0, 640, 512};
+    }
+}
+
 void camera_blend::change_SrcRect_by_zoomRatio()
 {
     switch (mCurrentZoomRatio) // 960,540,1920,1080
@@ -226,13 +285,13 @@ void camera_blend::update_ir_uv_rects(int distance)
         zoom_ratio = 1.0f;
 
     // 参考 camera_process.cpp.back: 偏移 = 角度矫正 + 距离矫正
-    int x_offset = distance > 30? (int)(zoom_ratio * (mIruvHorzDistCorrectionFactor / (float)distance + mIruvHorzAngCorrectionFactor)): (int)(zoom_ratio * mIruvHorzAngCorrectionFactor);
-    int y_offset = distance > 30? (int)(zoom_ratio * (mIruvVertDistCorrectionFactor / (float)distance + mIruvVertAngCorrectionFactor)): (int)(zoom_ratio * mIruvVertAngCorrectionFactor);
+    // 红外变焦时偏移量也要同步放大，因为画面放大后同样的视差对应更多像素
+    int x_offset = distance > 1000? (int)(zoom_ratio * mIrZoomLevel * (mIruvHorzDistCorrectionFactor / (float)distance + mIruvHorzAngCorrectionFactor)): (int)(zoom_ratio * mIrZoomLevel * mIruvHorzAngCorrectionFactor);
+    int y_offset = distance > 1000? (int)(zoom_ratio * mIrZoomLevel * (mIruvVertDistCorrectionFactor / (float)distance + mIruvVertAngCorrectionFactor)): (int)(zoom_ratio * mIrZoomLevel * mIruvVertAngCorrectionFactor);
     //printf("distance: %d, x_offset: %d, y_offset: %d\n", distance, x_offset, y_offset);
-    // UV 目标尺寸 = 基准 × scaleFactor × zoom_ratio
-    // 水平和垂直使用独立的缩放因子
-    int temp_dst_width = (int)(mIruvOverlayRect.width * mIruvHorzScaleFactor * zoom_ratio);
-    int temp_dst_height = (int)(mIruvOverlayRect.height * mIruvVertScaleFactor * zoom_ratio);
+    // UV 目标尺寸 = 基准 × scaleFactor × zoom_ratio × irZoomLevel
+    int temp_dst_width = (int)(mIruvOverlayRect.width * mIruvHorzScaleFactor * zoom_ratio * mIrZoomLevel);
+    int temp_dst_height = (int)(mIruvOverlayRect.height * mIruvVertScaleFactor * zoom_ratio * mIrZoomLevel);
 
     // UV 目标位置：基于 mIruvOverlayRect 的中心，再加上偏移（固定偏移 + 动态偏移）
     int base_center_x = IRrect.x + mIruvOverlayRect.x + mIruvOverlayRect.width / 2;
@@ -248,6 +307,43 @@ void camera_blend::update_ir_uv_rects(int distance)
     // 确保有效尺寸
     if (mIruvDstRect.width <= 0) mIruvDstRect.width = 1;
     if (mIruvDstRect.height <= 0) mIruvDstRect.height = 1;
+
+    // 计算融合模式UV源矩形（不因红外变焦裁剪，保持与1倍时相同的源区域）
+    mUvSrcRectForBlend = mUvSrcRect;
+
+    // 将 mIruvDstRect 裁剪到 IRrect 范围内，超出红外的紫外部分直接裁掉
+    mIruvDstRectClipped = mIruvDstRect;
+    im_rect origDst = mIruvDstRect;
+
+    if (mIruvDstRectClipped.x < IRrect.x) {
+        int clip = IRrect.x - mIruvDstRectClipped.x;
+        mIruvDstRectClipped.x = IRrect.x;
+        mIruvDstRectClipped.width -= clip;
+        mUvSrcRectForBlend.x += (int)(clip * (float)mUvSrcRectForBlend.width / origDst.width);
+        mUvSrcRectForBlend.width -= (int)(clip * (float)mUvSrcRectForBlend.width / origDst.width);
+    }
+    if (mIruvDstRectClipped.y < IRrect.y) {
+        int clip = IRrect.y - mIruvDstRectClipped.y;
+        mIruvDstRectClipped.y = IRrect.y;
+        mIruvDstRectClipped.height -= clip;
+        mUvSrcRectForBlend.y += (int)(clip * (float)mUvSrcRectForBlend.height / origDst.height);
+        mUvSrcRectForBlend.height -= (int)(clip * (float)mUvSrcRectForBlend.height / origDst.height);
+    }
+    if (mIruvDstRectClipped.x + mIruvDstRectClipped.width > IRrect.x + IRrect.width) {
+        int clip = (mIruvDstRectClipped.x + mIruvDstRectClipped.width) - (IRrect.x + IRrect.width);
+        mIruvDstRectClipped.width -= clip;
+        mUvSrcRectForBlend.width -= (int)(clip * (float)mUvSrcRectForBlend.width / origDst.width);
+    }
+    if (mIruvDstRectClipped.y + mIruvDstRectClipped.height > IRrect.y + IRrect.height) {
+        int clip = (mIruvDstRectClipped.y + mIruvDstRectClipped.height) - (IRrect.y + IRrect.height);
+        mIruvDstRectClipped.height -= clip;
+        mUvSrcRectForBlend.height -= (int)(clip * (float)mUvSrcRectForBlend.height / origDst.height);
+    }
+
+    if (mUvSrcRectForBlend.width <= 0) mUvSrcRectForBlend.width = 1;
+    if (mUvSrcRectForBlend.height <= 0) mUvSrcRectForBlend.height = 1;
+    if (mIruvDstRectClipped.width <= 0) mIruvDstRectClipped.width = 1;
+    if (mIruvDstRectClipped.height <= 0) mIruvDstRectClipped.height = 1;
 }
 
 int camera_blend::setxy(int x, int y){
@@ -586,29 +682,37 @@ void *camera_blend::camBlendTask(void *args)
                 // 先将UV白色像素提取到mPhotonsBuf（全缓冲区，避免溢出1280x720）
                 RGA_imcolorkey(*camera_frame_to_RgaBuffer(p->mCamSourceUV, uv_frame_id),
                                p->mPhotonsBuf.rga_buf,
-                               p->mUvSrcRect,
+                               p->mUvSrcRectForBlend,
                                {0},
                                white_range,
                                IM_ALPHA_COLORKEY_NORMAL);
                 camera_source_put_frame(p->mCamSourceUV, uv_frame_id);
-                // 再将mPhotonsBuf非黑像素叠加到enc_buf的矫正后目标范围内
+                // 再将mPhotonsBuf非黑像素叠加到enc_buf的裁剪后目标范围内
                 if (p->enc)
+                {
                     RGA_imcolorkey(p->mPhotonsBuf.rga_buf, p->enc->mEnc_buf[index].rga_buf,
                                    {0},
-                                   p->mIruvDstRect,
+                                   p->mIruvDstRectClipped,
                                    black_range,
-                               IM_ALPHA_COLORKEY_NORMAL);
+                                   IM_ALPHA_COLORKEY_NORMAL);
+                    // 仅在录像时画绿框
+                        draw_green_rect(p->enc->mEnc_buf[index].ptr, 1920, 1080, p->mIruvDstRectClipped);
+                }
             }
             else
             {
-                // 直接将UV非黑像素叠加到enc_buf的矫正后目标范围内
+                // 直接将UV非黑像素叠加到enc_buf的裁剪后目标范围内
                 if (p->enc)
+                {
                     RGA_imcolorkey(*camera_frame_to_RgaBuffer(p->mCamSourceUV, uv_frame_id),
                                    p->enc->mEnc_buf[index].rga_buf,
-                                   p->mUvSrcRect,
-                                   p->mIruvDstRect,
+                                   p->mUvSrcRectForBlend,
+                                   p->mIruvDstRectClipped,
                                    black_range,
                                    IM_ALPHA_COLORKEY_NORMAL);
+                    // 仅在录像时画绿框
+                        draw_green_rect(p->enc->mEnc_buf[index].ptr, 1920, 1080, p->mIruvDstRectClipped);
+                }
                 camera_source_put_frame(p->mCamSourceUV, uv_frame_id);
             }
             break;

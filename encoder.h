@@ -144,6 +144,8 @@ public:
     void stop_record();
     void pause_record();
     bool start_record(char *save_path);
+    // 是否正在录像中
+    bool is_recording() { return m_record_state == record_doing; }
     HyBirdBuffer mEnc_buf[2];
     HyBirdBuffer *mCurrent_Enc_buf;
     MppFrame frame = NULL;

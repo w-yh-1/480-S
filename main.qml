@@ -170,7 +170,7 @@ Window {
     property bool showUvDebugRect: true  // 设为 false 可关闭调试框
     Rectangle {
         id: uvDebugRect
-        visible: showUvDebugRect && ebutton.getmoshi() === 4  // 仅在 IR_UV_blendMode 时显示
+        visible: false  // 预览不显示，仅在拍照时由 E_button.cpp 绘制到照片上
         x: ebutton.getIruvDstX()
         y: ebutton.getIruvDstY()
         width: ebutton.getIruvDstWidth()
@@ -191,7 +191,7 @@ Window {
             uvDebugRect.y = ebutton.getIruvDstY()
             uvDebugRect.width = ebutton.getIruvDstWidth()
             uvDebugRect.height = ebutton.getIruvDstHeight()
-            uvDebugRect.visible = showUvDebugRect && ebutton.getmoshi() === 4
+            uvDebugRect.visible = false
         }
     }
 
