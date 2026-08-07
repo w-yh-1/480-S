@@ -173,6 +173,14 @@ public:
     Q_INVOKABLE void setHorzAngCorrectionFactor(int v) { if (cam) cam->setHorzAngCorrectionFactor(v); }
     Q_INVOKABLE int getVertAngCorrectionFactor() { return cam ? cam->getVertAngCorrectionFactor() : 0; }
     Q_INVOKABLE void setVertAngCorrectionFactor(int v) { if (cam) cam->setVertAngCorrectionFactor(v); }
+    Q_INVOKABLE float getHorzScaleFactor() { return cam ? cam->getHorzScaleFactor() : 0.0f; }
+    Q_INVOKABLE void setHorzScaleFactor(float v) { if (cam) cam->setHorzScaleFactor(v); }
+    Q_INVOKABLE float getVertScaleFactor() { return cam ? cam->getVertScaleFactor() : 0.0f; }
+    Q_INVOKABLE void setVertScaleFactor(float v) { if (cam) cam->setVertScaleFactor(v); }
+
+    // 因子持久化
+    Q_INVOKABLE void saveFactors();
+    Q_INVOKABLE void loadFactors();
 
     //gps重连
     Q_INVOKABLE bool gps_reinit();

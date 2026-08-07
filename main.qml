@@ -3464,7 +3464,7 @@ property string dynamicText1: "C：0/M"
                     ListElement { name: "语言"; icon: "☎" }
                     ListElement { name: "时间设置"; icon: "◷" }
                     ListElement { name: "定位开关"; icon: "✈" }
-                    //ListElement { name: "因子矫正"; icon: "⚙" }
+                    ListElement { name: "因子矫正"; icon: "⚙" }
                 }
             }
 
@@ -3998,6 +3998,15 @@ property string dynamicText1: "C：0/M"
                     visible: false
                     z: 10
 
+                    property bool _factorActive: false
+
+                    onVisibleChanged: {
+                        if (visible && !_factorActive) {
+                            ebutton.loadFactors()
+                            _factorActive = true
+                        }
+                    }
+
                     // 顶部标题栏
                     Rectangle {
                         width: parent.width
@@ -4045,77 +4054,98 @@ property string dynamicText1: "C：0/M"
                             id: factorFieldComp
 
                             Column {
-                                spacing: 8
+                                spacing: 16
                                 anchors.verticalCenter: parent.verticalCenter
 
-                                // + 按钮
-                                Rectangle {
-                                    width: 80
-                                    height: 80
-                                    radius: 40
-                                    color: maUpFactor.pressed ? "#e0e0e0" : "#f5f5f5"
-                                    border.color: "#dddddd"
-                                    border.width: 2
+                                // 按钮 - 数值 - 按钮 水平排列
+                                Row {
+                                    spacing: 20
                                     anchors.horizontalCenter: parent.horizontalCenter
 
-                                    Text {
-                                        text: "+"
-                                        font.pixelSize: 40
-                                        color: "#666666"
-                                        anchors.centerIn: parent
-                                    }
+                                    // - 按钮
+                                    Rectangle {
+                                        width: 70
+                                        height: 70
+                                        radius: 35
+                                        color: maDownFactor.pressed ? "#e0e0e0" : "#f5f5f5"
+                                        border.color: "#dddddd"
+                                        border.width: 2
+                                        anchors.verticalCenter: parent.verticalCenter
 
-                                    MouseArea {
-                                        id: maUpFactor
-                                        anchors.fill: parent
-                                        onClicked: {
-                                            control.onIncrement()
-                                            control.value = control.getter()
+                                        Text {
+                                            text: "−"
+                                            font.pixelSize: 36
+                                            color: "#666666"
+                                            anchors.centerIn: parent
+                                        }
+
+                                        MouseArea {
+                                            id: maDownFactor
+                                            anchors.fill: parent
+                                            onClicked: {
+                                                control.onDecrement()
+                                                var c = control
+                                                control = {
+                                                    value: c.getter(),
+                                                    label: c.label,
+                                                    getter: c.getter,
+                                                    onIncrement: c.onIncrement,
+                                                    onDecrement: c.onDecrement
+                                                }
+                                            }
                                         }
                                     }
-                                }
 
-                                // 数值显示
-                                Rectangle {
-                                    width: 160
-                                    height: 100
-                                    radius: 16
-                                    color: "#fafafa"
-                                    border.color: "#e0e0e0"
-                                    border.width: 2
+                                    // 数值显示
+                                    Rectangle {
+                                        width: 150
+                                        height: 80
+                                        radius: 16
+                                        color: "#fafafa"
+                                        border.color: "#e0e0e0"
+                                        border.width: 2
+                                        anchors.verticalCenter: parent.verticalCenter
 
-                                    Text {
-                                        anchors.centerIn: parent
-                                        text: control.value
-                                        font.pixelSize: 52
-                                        font.bold: true
-                                        color: "#333333"
-                                    }
-                                }
-
-                                // - 按钮
-                                Rectangle {
-                                    width: 80
-                                    height: 80
-                                    radius: 40
-                                    color: maDownFactor.pressed ? "#e0e0e0" : "#f5f5f5"
-                                    border.color: "#dddddd"
-                                    border.width: 2
-                                    anchors.horizontalCenter: parent.horizontalCenter
-
-                                    Text {
-                                        text: "−"
-                                        font.pixelSize: 40
-                                        color: "#666666"
-                                        anchors.centerIn: parent
+                                        Text {
+                                            anchors.centerIn: parent
+                                            text: control.value
+                                            font.pixelSize: 48
+                                            font.bold: true
+                                            color: "#333333"
+                                        }
                                     }
 
-                                    MouseArea {
-                                        id: maDownFactor
-                                        anchors.fill: parent
-                                        onClicked: {
-                                            control.onDecrement()
-                                            control.value = control.getter()
+                                    // + 按钮
+                                    Rectangle {
+                                        width: 70
+                                        height: 70
+                                        radius: 35
+                                        color: maUpFactor.pressed ? "#e0e0e0" : "#f5f5f5"
+                                        border.color: "#dddddd"
+                                        border.width: 2
+                                        anchors.verticalCenter: parent.verticalCenter
+
+                                        Text {
+                                            text: "+"
+                                            font.pixelSize: 36
+                                            color: "#666666"
+                                            anchors.centerIn: parent
+                                        }
+
+                                        MouseArea {
+                                            id: maUpFactor
+                                            anchors.fill: parent
+                                            onClicked: {
+                                                control.onIncrement()
+                                                var c = control
+                                                control = {
+                                                    value: c.getter(),
+                                                    label: c.label,
+                                                    getter: c.getter,
+                                                    onIncrement: c.onIncrement,
+                                                    onDecrement: c.onDecrement
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -4127,86 +4157,140 @@ property string dynamicText1: "C：0/M"
                                     color: "#999999"
                                     anchors.horizontalCenter: parent.horizontalCenter
                                     horizontalAlignment: Text.AlignHCenter
-                                    width: 200
+                                    width: 240
                                     wrapMode: Text.WordWrap
                                 }
                             }
                         }
 
-                        // 四个因子排列：上下两行，每行两个
+                        // 六个因子排列：两行三列
                         Grid {
                             anchors.centerIn: parent
-                            columns: 2
-                            spacing: 40
+                            columns: 3
+                            spacing: 50
+
+                            // 水平缩放
+                            Loader {
+                                //active: _factorActive
+                                sourceComponent: factorFieldComp
+                                property var control: ({
+                                    value: ebutton.getHorzScaleFactor().toFixed(2),
+                                    label: "水平缩放",
+                                    getter: function() { return ebutton.getHorzScaleFactor().toFixed(2) },
+                                    onIncrement: function() {
+                                        var v = ebutton.getHorzScaleFactor() + 0.01
+                                        ebutton.setHorzScaleFactor(v)
+                                        ebutton.saveFactors()
+                                    },
+                                    onDecrement: function() {
+                                        var v = ebutton.getHorzScaleFactor() - 0.01
+                                        ebutton.setHorzScaleFactor(v)
+                                        ebutton.saveFactors()
+                                    }
+                                })
+                            }
 
                             // 水平距离
                             Loader {
+                                //active: _factorActive
                                 sourceComponent: factorFieldComp
                                 property var control: ({
                                     value: ebutton.getHorzDistCorrectionFactor(),
                                     label: "水平距离",
                                     getter: function() { return ebutton.getHorzDistCorrectionFactor() },
                                     onIncrement: function() {
-                                        var v = ebutton.getHorzDistCorrectionFactor()
-                                        ebutton.setHorzDistCorrectionFactor(v + 1)
+                                        var v = ebutton.getHorzDistCorrectionFactor() + 50
+                                        ebutton.setHorzDistCorrectionFactor(v)
+                                        ebutton.saveFactors()
                                     },
                                     onDecrement: function() {
-                                        var v = ebutton.getHorzDistCorrectionFactor()
-                                        ebutton.setHorzDistCorrectionFactor(v - 1)
-                                    }
-                                })
-                            }
-
-                            // 垂直距离
-                            Loader {
-                                sourceComponent: factorFieldComp
-                                property var control: ({
-                                    value: ebutton.getVertDistCorrectionFactor(),
-                                    label: "垂直距离",
-                                    getter: function() { return ebutton.getVertDistCorrectionFactor() },
-                                    onIncrement: function() {
-                                        var v = ebutton.getVertDistCorrectionFactor()
-                                        ebutton.setVertDistCorrectionFactor(v + 1)
-                                    },
-                                    onDecrement: function() {
-                                        var v = ebutton.getVertDistCorrectionFactor()
-                                        ebutton.setVertDistCorrectionFactor(v - 1)
+                                        var v = ebutton.getHorzDistCorrectionFactor() - 50
+                                        ebutton.setHorzDistCorrectionFactor(v)
+                                        ebutton.saveFactors()
                                     }
                                 })
                             }
 
                             // 水平角度
                             Loader {
+                                //active: _factorActive
                                 sourceComponent: factorFieldComp
                                 property var control: ({
                                     value: ebutton.getHorzAngCorrectionFactor(),
                                     label: "水平角度",
                                     getter: function() { return ebutton.getHorzAngCorrectionFactor() },
                                     onIncrement: function() {
-                                        var v = ebutton.getHorzAngCorrectionFactor()
-                                        ebutton.setHorzAngCorrectionFactor(v + 1)
+                                        var v = ebutton.getHorzAngCorrectionFactor() + 1
+                                        ebutton.setHorzAngCorrectionFactor(v)
+                                        ebutton.saveFactors()
                                     },
                                     onDecrement: function() {
-                                        var v = ebutton.getHorzAngCorrectionFactor()
-                                        ebutton.setHorzAngCorrectionFactor(v - 1)
+                                        var v = ebutton.getHorzAngCorrectionFactor() - 1
+                                        ebutton.setHorzAngCorrectionFactor(v)
+                                        ebutton.saveFactors()
+                                    }
+                                })
+                            }
+
+                            // 垂直缩放
+                            Loader {
+                                //active: _factorActive
+                                sourceComponent: factorFieldComp
+                                property var control: ({
+                                    value: ebutton.getVertScaleFactor().toFixed(2),
+                                    label: "垂直缩放",
+                                    getter: function() { return ebutton.getVertScaleFactor().toFixed(2) },
+                                    onIncrement: function() {
+                                        var v = ebutton.getVertScaleFactor() + 0.01
+                                        ebutton.setVertScaleFactor(v)
+                                        ebutton.saveFactors()
+                                    },
+                                    onDecrement: function() {
+                                        var v = ebutton.getVertScaleFactor() - 0.01
+                                        ebutton.setVertScaleFactor(v)
+                                        ebutton.saveFactors()
+                                    }
+                                })
+                            }
+
+                            // 垂直距离
+                            Loader {
+                                //active: _factorActive
+                                sourceComponent: factorFieldComp
+                                property var control: ({
+                                    value: ebutton.getVertDistCorrectionFactor(),
+                                    label: "垂直距离",
+                                    getter: function() { return ebutton.getVertDistCorrectionFactor() },
+                                    onIncrement: function() {
+                                        var v = ebutton.getVertDistCorrectionFactor() + 50
+                                        ebutton.setVertDistCorrectionFactor(v)
+                                        ebutton.saveFactors()
+                                    },
+                                    onDecrement: function() {
+                                        var v = ebutton.getVertDistCorrectionFactor() - 50
+                                        ebutton.setVertDistCorrectionFactor(v)
+                                        ebutton.saveFactors()
                                     }
                                 })
                             }
 
                             // 垂直角度
                             Loader {
+                                //active: _factorActive
                                 sourceComponent: factorFieldComp
                                 property var control: ({
                                     value: ebutton.getVertAngCorrectionFactor(),
                                     label: "垂直角度",
                                     getter: function() { return ebutton.getVertAngCorrectionFactor() },
                                     onIncrement: function() {
-                                        var v = ebutton.getVertAngCorrectionFactor()
-                                        ebutton.setVertAngCorrectionFactor(v + 1)
+                                        var v = ebutton.getVertAngCorrectionFactor() + 1
+                                        ebutton.setVertAngCorrectionFactor(v)
+                                        ebutton.saveFactors()
                                     },
                                     onDecrement: function() {
-                                        var v = ebutton.getVertAngCorrectionFactor()
-                                        ebutton.setVertAngCorrectionFactor(v - 1)
+                                        var v = ebutton.getVertAngCorrectionFactor() - 1
+                                        ebutton.setVertAngCorrectionFactor(v)
+                                        ebutton.saveFactors()
                                     }
                                 })
                             }

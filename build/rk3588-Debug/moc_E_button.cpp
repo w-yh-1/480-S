@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_E_button_t {
-    QByteArrayData data[102];
-    char stringdata0[1170];
+    QByteArrayData data[108];
+    char stringdata0[1270];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -121,19 +121,25 @@ QT_MOC_LITERAL(85, 915, 26), // "getHorzAngCorrectionFactor"
 QT_MOC_LITERAL(86, 942, 26), // "setHorzAngCorrectionFactor"
 QT_MOC_LITERAL(87, 969, 26), // "getVertAngCorrectionFactor"
 QT_MOC_LITERAL(88, 996, 26), // "setVertAngCorrectionFactor"
-QT_MOC_LITERAL(89, 1023, 10), // "gps_reinit"
-QT_MOC_LITERAL(90, 1034, 9), // "playAlarm"
-QT_MOC_LITERAL(91, 1044, 9), // "stopAlarm"
-QT_MOC_LITERAL(92, 1054, 17), // "getVideoThumbnail"
-QT_MOC_LITERAL(93, 1072, 9), // "videoPath"
-QT_MOC_LITERAL(94, 1082, 20), // "setIrMeasurementData"
-QT_MOC_LITERAL(95, 1103, 4), // "json"
-QT_MOC_LITERAL(96, 1108, 16), // "writeDigitToFile"
-QT_MOC_LITERAL(97, 1125, 8), // "filename"
-QT_MOC_LITERAL(98, 1134, 6), // "number"
-QT_MOC_LITERAL(99, 1141, 17), // "readDigitFromFile"
-QT_MOC_LITERAL(100, 1159, 4), // "mssz"
-QT_MOC_LITERAL(101, 1164, 5) // "yuyan"
+QT_MOC_LITERAL(89, 1023, 18), // "getHorzScaleFactor"
+QT_MOC_LITERAL(90, 1042, 18), // "setHorzScaleFactor"
+QT_MOC_LITERAL(91, 1061, 18), // "getVertScaleFactor"
+QT_MOC_LITERAL(92, 1080, 18), // "setVertScaleFactor"
+QT_MOC_LITERAL(93, 1099, 11), // "saveFactors"
+QT_MOC_LITERAL(94, 1111, 11), // "loadFactors"
+QT_MOC_LITERAL(95, 1123, 10), // "gps_reinit"
+QT_MOC_LITERAL(96, 1134, 9), // "playAlarm"
+QT_MOC_LITERAL(97, 1144, 9), // "stopAlarm"
+QT_MOC_LITERAL(98, 1154, 17), // "getVideoThumbnail"
+QT_MOC_LITERAL(99, 1172, 9), // "videoPath"
+QT_MOC_LITERAL(100, 1182, 20), // "setIrMeasurementData"
+QT_MOC_LITERAL(101, 1203, 4), // "json"
+QT_MOC_LITERAL(102, 1208, 16), // "writeDigitToFile"
+QT_MOC_LITERAL(103, 1225, 8), // "filename"
+QT_MOC_LITERAL(104, 1234, 6), // "number"
+QT_MOC_LITERAL(105, 1241, 17), // "readDigitFromFile"
+QT_MOC_LITERAL(106, 1259, 4), // "mssz"
+QT_MOC_LITERAL(107, 1264, 5) // "yuyan"
 
     },
     "E_button\0msszChanged\0\0yuyanChanged\0"
@@ -165,7 +171,10 @@ QT_MOC_LITERAL(101, 1164, 5) // "yuyan"
     "getHorzAngCorrectionFactor\0"
     "setHorzAngCorrectionFactor\0"
     "getVertAngCorrectionFactor\0"
-    "setVertAngCorrectionFactor\0gps_reinit\0"
+    "setVertAngCorrectionFactor\0"
+    "getHorzScaleFactor\0setHorzScaleFactor\0"
+    "getVertScaleFactor\0setVertScaleFactor\0"
+    "saveFactors\0loadFactors\0gps_reinit\0"
     "playAlarm\0stopAlarm\0getVideoThumbnail\0"
     "videoPath\0setIrMeasurementData\0json\0"
     "writeDigitToFile\0filename\0number\0"
@@ -179,101 +188,107 @@ static const uint qt_meta_data_E_button[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      83,   14, // methods
-       2,  580, // properties
+      89,   14, // methods
+       2,  620, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,  429,    2, 0x06 /* Public */,
-       3,    0,  430,    2, 0x06 /* Public */,
+       1,    0,  459,    2, 0x06 /* Public */,
+       3,    0,  460,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    0,  431,    2, 0x08 /* Private */,
+       4,    0,  461,    2, 0x08 /* Private */,
 
  // methods: name, argc, parameters, tag, flags
-       5,    1,  432,    2, 0x02 /* Public */,
-       7,    0,  435,    2, 0x02 /* Public */,
-       8,    0,  436,    2, 0x02 /* Public */,
-       9,    1,  437,    2, 0x02 /* Public */,
-      10,    0,  440,    2, 0x02 /* Public */,
-      11,    0,  441,    2, 0x02 /* Public */,
-      12,    0,  442,    2, 0x02 /* Public */,
-      13,    0,  443,    2, 0x02 /* Public */,
-      14,    0,  444,    2, 0x02 /* Public */,
-      15,    0,  445,    2, 0x02 /* Public */,
-      16,    0,  446,    2, 0x02 /* Public */,
-      17,    2,  447,    2, 0x02 /* Public */,
-      20,    0,  452,    2, 0x02 /* Public */,
-      21,    0,  453,    2, 0x02 /* Public */,
-      22,    0,  454,    2, 0x02 /* Public */,
-      23,    1,  455,    2, 0x02 /* Public */,
-      25,    1,  458,    2, 0x02 /* Public */,
-      26,    1,  461,    2, 0x02 /* Public */,
-      27,    1,  464,    2, 0x02 /* Public */,
-      28,    0,  467,    2, 0x02 /* Public */,
-      29,    0,  468,    2, 0x02 /* Public */,
-      30,    0,  469,    2, 0x02 /* Public */,
-      31,    0,  470,    2, 0x02 /* Public */,
-      32,    0,  471,    2, 0x02 /* Public */,
-      33,    0,  472,    2, 0x02 /* Public */,
-      34,    0,  473,    2, 0x02 /* Public */,
-      35,    0,  474,    2, 0x02 /* Public */,
-      36,    0,  475,    2, 0x02 /* Public */,
-      37,    0,  476,    2, 0x02 /* Public */,
-      38,    1,  477,    2, 0x02 /* Public */,
-      41,    0,  480,    2, 0x02 /* Public */,
-      42,    0,  481,    2, 0x02 /* Public */,
-      43,    0,  482,    2, 0x02 /* Public */,
-      44,    0,  483,    2, 0x02 /* Public */,
-      45,    0,  484,    2, 0x02 /* Public */,
-      46,    1,  485,    2, 0x02 /* Public */,
-      48,    1,  488,    2, 0x02 /* Public */,
-      49,    6,  491,    2, 0x02 /* Public */,
-      50,    1,  504,    2, 0x02 /* Public */,
-      51,    1,  507,    2, 0x02 /* Public */,
-      53,    0,  510,    2, 0x02 /* Public */,
-      54,    0,  511,    2, 0x02 /* Public */,
-      55,    1,  512,    2, 0x02 /* Public */,
-      57,    1,  515,    2, 0x02 /* Public */,
-      58,    0,  518,    2, 0x02 /* Public */,
-      59,    0,  519,    2, 0x02 /* Public */,
-      60,    0,  520,    2, 0x02 /* Public */,
-      61,    0,  521,    2, 0x02 /* Public */,
-      62,    1,  522,    2, 0x02 /* Public */,
-      63,    0,  525,    2, 0x02 /* Public */,
-      64,    0,  526,    2, 0x02 /* Public */,
-      65,    0,  527,    2, 0x02 /* Public */,
-      66,    0,  528,    2, 0x02 /* Public */,
-      67,    0,  529,    2, 0x02 /* Public */,
-      68,    0,  530,    2, 0x02 /* Public */,
-      69,    0,  531,    2, 0x02 /* Public */,
-      70,    0,  532,    2, 0x02 /* Public */,
-      71,    0,  533,    2, 0x02 /* Public */,
-      72,    1,  534,    2, 0x02 /* Public */,
-      73,    1,  537,    2, 0x02 /* Public */,
-      74,    1,  540,    2, 0x02 /* Public */,
-      76,    0,  543,    2, 0x02 /* Public */,
-      77,    0,  544,    2, 0x02 /* Public */,
-      78,    0,  545,    2, 0x02 /* Public */,
-      79,    0,  546,    2, 0x02 /* Public */,
-      80,    0,  547,    2, 0x02 /* Public */,
-      81,    1,  548,    2, 0x02 /* Public */,
-      83,    0,  551,    2, 0x02 /* Public */,
-      84,    1,  552,    2, 0x02 /* Public */,
-      85,    0,  555,    2, 0x02 /* Public */,
-      86,    1,  556,    2, 0x02 /* Public */,
-      87,    0,  559,    2, 0x02 /* Public */,
-      88,    1,  560,    2, 0x02 /* Public */,
-      89,    0,  563,    2, 0x02 /* Public */,
-      90,    0,  564,    2, 0x02 /* Public */,
-      91,    0,  565,    2, 0x02 /* Public */,
-      92,    1,  566,    2, 0x02 /* Public */,
-      94,    1,  569,    2, 0x02 /* Public */,
-      96,    2,  572,    2, 0x02 /* Public */,
-      99,    1,  577,    2, 0x02 /* Public */,
+       5,    1,  462,    2, 0x02 /* Public */,
+       7,    0,  465,    2, 0x02 /* Public */,
+       8,    0,  466,    2, 0x02 /* Public */,
+       9,    1,  467,    2, 0x02 /* Public */,
+      10,    0,  470,    2, 0x02 /* Public */,
+      11,    0,  471,    2, 0x02 /* Public */,
+      12,    0,  472,    2, 0x02 /* Public */,
+      13,    0,  473,    2, 0x02 /* Public */,
+      14,    0,  474,    2, 0x02 /* Public */,
+      15,    0,  475,    2, 0x02 /* Public */,
+      16,    0,  476,    2, 0x02 /* Public */,
+      17,    2,  477,    2, 0x02 /* Public */,
+      20,    0,  482,    2, 0x02 /* Public */,
+      21,    0,  483,    2, 0x02 /* Public */,
+      22,    0,  484,    2, 0x02 /* Public */,
+      23,    1,  485,    2, 0x02 /* Public */,
+      25,    1,  488,    2, 0x02 /* Public */,
+      26,    1,  491,    2, 0x02 /* Public */,
+      27,    1,  494,    2, 0x02 /* Public */,
+      28,    0,  497,    2, 0x02 /* Public */,
+      29,    0,  498,    2, 0x02 /* Public */,
+      30,    0,  499,    2, 0x02 /* Public */,
+      31,    0,  500,    2, 0x02 /* Public */,
+      32,    0,  501,    2, 0x02 /* Public */,
+      33,    0,  502,    2, 0x02 /* Public */,
+      34,    0,  503,    2, 0x02 /* Public */,
+      35,    0,  504,    2, 0x02 /* Public */,
+      36,    0,  505,    2, 0x02 /* Public */,
+      37,    0,  506,    2, 0x02 /* Public */,
+      38,    1,  507,    2, 0x02 /* Public */,
+      41,    0,  510,    2, 0x02 /* Public */,
+      42,    0,  511,    2, 0x02 /* Public */,
+      43,    0,  512,    2, 0x02 /* Public */,
+      44,    0,  513,    2, 0x02 /* Public */,
+      45,    0,  514,    2, 0x02 /* Public */,
+      46,    1,  515,    2, 0x02 /* Public */,
+      48,    1,  518,    2, 0x02 /* Public */,
+      49,    6,  521,    2, 0x02 /* Public */,
+      50,    1,  534,    2, 0x02 /* Public */,
+      51,    1,  537,    2, 0x02 /* Public */,
+      53,    0,  540,    2, 0x02 /* Public */,
+      54,    0,  541,    2, 0x02 /* Public */,
+      55,    1,  542,    2, 0x02 /* Public */,
+      57,    1,  545,    2, 0x02 /* Public */,
+      58,    0,  548,    2, 0x02 /* Public */,
+      59,    0,  549,    2, 0x02 /* Public */,
+      60,    0,  550,    2, 0x02 /* Public */,
+      61,    0,  551,    2, 0x02 /* Public */,
+      62,    1,  552,    2, 0x02 /* Public */,
+      63,    0,  555,    2, 0x02 /* Public */,
+      64,    0,  556,    2, 0x02 /* Public */,
+      65,    0,  557,    2, 0x02 /* Public */,
+      66,    0,  558,    2, 0x02 /* Public */,
+      67,    0,  559,    2, 0x02 /* Public */,
+      68,    0,  560,    2, 0x02 /* Public */,
+      69,    0,  561,    2, 0x02 /* Public */,
+      70,    0,  562,    2, 0x02 /* Public */,
+      71,    0,  563,    2, 0x02 /* Public */,
+      72,    1,  564,    2, 0x02 /* Public */,
+      73,    1,  567,    2, 0x02 /* Public */,
+      74,    1,  570,    2, 0x02 /* Public */,
+      76,    0,  573,    2, 0x02 /* Public */,
+      77,    0,  574,    2, 0x02 /* Public */,
+      78,    0,  575,    2, 0x02 /* Public */,
+      79,    0,  576,    2, 0x02 /* Public */,
+      80,    0,  577,    2, 0x02 /* Public */,
+      81,    1,  578,    2, 0x02 /* Public */,
+      83,    0,  581,    2, 0x02 /* Public */,
+      84,    1,  582,    2, 0x02 /* Public */,
+      85,    0,  585,    2, 0x02 /* Public */,
+      86,    1,  586,    2, 0x02 /* Public */,
+      87,    0,  589,    2, 0x02 /* Public */,
+      88,    1,  590,    2, 0x02 /* Public */,
+      89,    0,  593,    2, 0x02 /* Public */,
+      90,    1,  594,    2, 0x02 /* Public */,
+      91,    0,  597,    2, 0x02 /* Public */,
+      92,    1,  598,    2, 0x02 /* Public */,
+      93,    0,  601,    2, 0x02 /* Public */,
+      94,    0,  602,    2, 0x02 /* Public */,
+      95,    0,  603,    2, 0x02 /* Public */,
+      96,    0,  604,    2, 0x02 /* Public */,
+      97,    0,  605,    2, 0x02 /* Public */,
+      98,    1,  606,    2, 0x02 /* Public */,
+     100,    1,  609,    2, 0x02 /* Public */,
+     102,    2,  612,    2, 0x02 /* Public */,
+     105,    1,  617,    2, 0x02 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -356,17 +371,23 @@ static const uint qt_meta_data_E_button[] = {
     QMetaType::Void, QMetaType::Int,   82,
     QMetaType::Int,
     QMetaType::Void, QMetaType::Int,   82,
+    QMetaType::Float,
+    QMetaType::Void, QMetaType::Float,   82,
+    QMetaType::Float,
+    QMetaType::Void, QMetaType::Float,   82,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Bool,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::QString, QMetaType::QString,   93,
-    QMetaType::Void, QMetaType::QString,   95,
-    QMetaType::Void, QMetaType::QString, QMetaType::Int,   97,   98,
-    QMetaType::Int, QMetaType::QString,   97,
+    QMetaType::QString, QMetaType::QString,   99,
+    QMetaType::Void, QMetaType::QString,  101,
+    QMetaType::Void, QMetaType::QString, QMetaType::Int,  103,  104,
+    QMetaType::Int, QMetaType::QString,  103,
 
  // properties: name, type, flags
-     100, QMetaType::Int, 0x00495003,
-     101, QMetaType::Int, 0x00495003,
+     106, QMetaType::Int, 0x00495003,
+     107, QMetaType::Int, 0x00495003,
 
  // properties: notify_signal_id
        0,
@@ -506,15 +527,23 @@ void E_button::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 74: { int _r = _t->getVertAngCorrectionFactor();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         case 75: _t->setVertAngCorrectionFactor((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 76: { bool _r = _t->gps_reinit();
+        case 76: { float _r = _t->getHorzScaleFactor();
+            if (_a[0]) *reinterpret_cast< float*>(_a[0]) = std::move(_r); }  break;
+        case 77: _t->setHorzScaleFactor((*reinterpret_cast< float(*)>(_a[1]))); break;
+        case 78: { float _r = _t->getVertScaleFactor();
+            if (_a[0]) *reinterpret_cast< float*>(_a[0]) = std::move(_r); }  break;
+        case 79: _t->setVertScaleFactor((*reinterpret_cast< float(*)>(_a[1]))); break;
+        case 80: _t->saveFactors(); break;
+        case 81: _t->loadFactors(); break;
+        case 82: { bool _r = _t->gps_reinit();
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 77: _t->playAlarm(); break;
-        case 78: _t->stopAlarm(); break;
-        case 79: { QString _r = _t->getVideoThumbnail((*reinterpret_cast< const QString(*)>(_a[1])));
+        case 83: _t->playAlarm(); break;
+        case 84: _t->stopAlarm(); break;
+        case 85: { QString _r = _t->getVideoThumbnail((*reinterpret_cast< const QString(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
-        case 80: _t->setIrMeasurementData((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 81: _t->writeDigitToFile((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 82: { int _r = _t->readDigitFromFile((*reinterpret_cast< QString(*)>(_a[1])));
+        case 86: _t->setIrMeasurementData((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 87: _t->writeDigitToFile((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 88: { int _r = _t->readDigitFromFile((*reinterpret_cast< QString(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -588,13 +617,13 @@ int E_button::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 83)
+        if (_id < 89)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 83;
+        _id -= 89;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 83)
+        if (_id < 89)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 83;
+        _id -= 89;
     }
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty

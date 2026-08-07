@@ -59,11 +59,11 @@ private:
     // mIruvOverlayRect: IR图像上UV基准覆盖区域（1.0倍缩放时的UV目标区域）
     im_rect mIruvOverlayRect = {200, 150, 950, 780};
     float mIruvHorzScaleFactor = 0.75f;  // UV水平缩放因子（基准比例）
-    float mIruvVertScaleFactor = 0.55f;  // UV垂直缩放因子（基准比例，可独立调整）
+    float mIruvVertScaleFactor = 0.5f;  // UV垂直缩放因子（基准比例，可独立调整）
     int mIruvHorzDistCorrectionFactor = 0; // 水平距离矫正因子
-    int mIruvVertDistCorrectionFactor = 1000; // 垂直距离矫正因子
+    int mIruvVertDistCorrectionFactor = 0; // 垂直距离矫正因子
     int mIruvHorzAngCorrectionFactor = 15;  // 水平角度矫正因子
-    int mIruvVertAngCorrectionFactor = -25;  // 垂直角度矫正因子
+    int mIruvVertAngCorrectionFactor = 25;  // 垂直角度矫正因子
     struct sp_bo *mBo0 = NULL;
     struct sp_bo *mBo1 = NULL;
     int mCurrentZoomRatio = 5;    // 当前缩放倍率 单位：0.1倍 10代表1倍。
@@ -119,6 +119,16 @@ public:
     void setVertAngCorrectionFactor(int v) {
         mIruvVertAngCorrectionFactor = v;
         qDebug() << "VertAngFactor: " << v << endl;
+    }
+    float getHorzScaleFactor() { return mIruvHorzScaleFactor; }
+    void setHorzScaleFactor(float v) {
+        mIruvHorzScaleFactor = v;
+        qDebug() << "HorzScaleFactor: " << v << endl;
+    }
+    float getVertScaleFactor() { return mIruvVertScaleFactor; }
+    void setVertScaleFactor(float v) {
+        mIruvVertScaleFactor = v;
+        qDebug() << "VertScaleFactor: " << v << endl;
     }
 
     bool camBlendThreadStart(DrmDisplay *displayer,pOutput_func output_func,osd_infos osd_data);

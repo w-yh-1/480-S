@@ -286,8 +286,8 @@ void camera_blend::update_ir_uv_rects(int distance)
 
     // 参考 camera_process.cpp.back: 偏移 = 角度矫正 + 距离矫正
     // 红外变焦时偏移量也要同步放大，因为画面放大后同样的视差对应更多像素
-    int x_offset = distance > 1000? (int)(zoom_ratio * mIrZoomLevel * (mIruvHorzDistCorrectionFactor / (float)distance + mIruvHorzAngCorrectionFactor)): (int)(zoom_ratio * mIrZoomLevel * mIruvHorzAngCorrectionFactor);
-    int y_offset = distance > 1000? (int)(zoom_ratio * mIrZoomLevel * (mIruvVertDistCorrectionFactor / (float)distance + mIruvVertAngCorrectionFactor)): (int)(zoom_ratio * mIrZoomLevel * mIruvVertAngCorrectionFactor);
+    int x_offset = distance > 0? (int)(zoom_ratio * mIrZoomLevel * (mIruvHorzDistCorrectionFactor / (float)distance + mIruvHorzAngCorrectionFactor)): (int)(zoom_ratio * mIrZoomLevel * mIruvHorzAngCorrectionFactor);
+    int y_offset = distance > 0? (int)(zoom_ratio * mIrZoomLevel * (mIruvVertDistCorrectionFactor / (float)distance + mIruvVertAngCorrectionFactor)): (int)(zoom_ratio * mIrZoomLevel * mIruvVertAngCorrectionFactor);
     //printf("distance: %d, x_offset: %d, y_offset: %d\n", distance, x_offset, y_offset);
     // UV 目标尺寸 = 基准 × scaleFactor × zoom_ratio × irZoomLevel
     int temp_dst_width = (int)(mIruvOverlayRect.width * mIruvHorzScaleFactor * zoom_ratio * mIrZoomLevel);

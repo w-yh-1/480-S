@@ -634,6 +634,9 @@ int main(int argc, char *argv[])
     ebutton->cam->swtich_photons_color(0xFFFFFFFF);
     ebutton->uv = uv;
     ebutton->is = new ID_R_service();
+
+    ebutton->loadFactors();
+
     if (ebutton->is->init() == true)
     {
         qDebug() << "init succes -------51";

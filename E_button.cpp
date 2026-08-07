@@ -2019,6 +2019,67 @@ void E_button::stopAlarm()
         qDebug() << "Alarm sound stopped";
     }
 }
+// ========== 因子持久化 ==========
+#define FACTOR_DIR  "/opt/factor"
+#define FACTOR_FILE "/opt/factor/config"
+
+void E_button::saveFactors()
+{
+    if (!cam) return;
+    // 确保目录存在
+    QDir dir;
+    if (!dir.exists(FACTOR_DIR)) {
+        dir.mkpath(FACTOR_DIR);
+    }
+    QFile file(FACTOR_FILE);
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
+        qDebug() << "saveFactors: cannot open " FACTOR_FILE " for writing";
+        return;
+    }
+    QTextStream out(&file);
+    out << "HorzScaleFactor=" << cam->getHorzScaleFactor() << "\n";
+    out << "VertScaleFactor=" << cam->getVertScaleFactor() << "\n";
+    out << "HorzDistCorrectionFactor=" << cam->getHorzDistCorrectionFactor() << "\n";
+    out << "VertDistCorrectionFactor=" << cam->getVertDistCorrectionFactor() << "\n";
+    out << "HorzAngCorrectionFactor=" << cam->getHorzAngCorrectionFactor() << "\n";
+    out << "VertAngCorrectionFactor=" << cam->getVertAngCorrectionFactor() << "\n";
+    file.close();
+    qDebug() << "saveFactors: saved to " FACTOR_FILE;
+}
+
+void E_button::loadFactors()
+{
+    if (!cam) return;
+    QFile file(FACTOR_FILE);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug() << "loadFactors: " FACTOR_FILE " not found, using defaults";
+        return;
+    }
+    QTextStream in(&file);
+    while (!in.atEnd()) {
+        QString line = in.readLine().trimmed();
+        if (line.isEmpty()) continue;
+        QStringList parts = line.split('=');
+        if (parts.size() != 2) continue;
+        QString key = parts[0].trimmed();
+        QString val = parts[1].trimmed();
+        if (key == "HorzScaleFactor")
+            cam->setHorzScaleFactor(val.toFloat());
+        else if (key == "VertScaleFactor")
+            cam->setVertScaleFactor(val.toFloat());
+        else if (key == "HorzDistCorrectionFactor")
+            cam->setHorzDistCorrectionFactor(val.toInt());
+        else if (key == "VertDistCorrectionFactor")
+            cam->setVertDistCorrectionFactor(val.toInt());
+        else if (key == "HorzAngCorrectionFactor")
+            cam->setHorzAngCorrectionFactor(val.toInt());
+        else if (key == "VertAngCorrectionFactor")
+            cam->setVertAngCorrectionFactor(val.toInt());
+    }
+    file.close();
+    qDebug() << "loadFactors: loaded from " FACTOR_FILE;
+}
+
 //gps重连
 bool E_button::gps_reinit(){
     return this->gps->GPS_reinit();
